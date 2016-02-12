@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<ncl id="Dango_Balango" xmlns="http://www.ncl.org.br/NCL3.0/EDTVProfile">
+<ncl id="Serie_MulhereSe" xmlns="http://www.ncl.org.br/NCL3.0/EDTVProfile">
     <head>
 
         <connectorBase>
             <causalConnector id="onBeginStart">
                 <simpleCondition role="onBegin"/>
                 <simpleAction role="start" max="unbounded" qualifier="par"/>
+            </causalConnector>
+
+            <causalConnector id="onStopBackGroundStop">
+                <simpleCondition role="onEnd"/>
+                <simpleAction role="stop" max="unbounded" qualifier="par"/>
             </causalConnector>
 
             <causalConnector id="onStartMenu">
@@ -49,10 +54,7 @@
                 </compoundAction>
             </causalConnector>
 
-<!--
-
-
-
+            <!--
 
             <causalConnector id="onEndIconMenu">
                 <simpleCondition role="onEnd"/>
@@ -116,7 +118,8 @@
                     <simpleAction role="stop" max="unbounded" qualifier="par"/>
                 </compoundAction>
             </causalConnector>
-        -->
+
+             -->
 
         </connectorBase>
 
