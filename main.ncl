@@ -19,10 +19,10 @@
 			<region id="rgBtnYellow" width="10%"  height="4.5%" top="10%" left="70%"  zIndex="2"/>
 			<region id="rgBtnBlue" width="10%"  height="4.5%" top="10%" left="80%"  zIndex="2"/>
 			
-			<region id="rgFrameRed" width="39.9%"  height="75.4%" top="14.1%" left="50%"  zIndex="2"/>
-			<region id="rgFrameGreen" width="39.9%"  height="75.4%" top="14.1%" left="50%"  zIndex="2"/>
-			<region id="rgFrameYellow" width="39.9%"  height="75.4%" top="14.1%" left="50%"  zIndex="2"/>
-			<region id="rgFrameBlue" width="39.9%"  height="75.4%" top="14.1%" left="50%"  zIndex="2"/>
+			<region id="rgFrameRed" width="39.9%"  height="76.4%" top="14.1%" left="50%"  zIndex="2"/>
+			<region id="rgFrameGreen" width="39.9%"  height="76.4%" top="14.1%" left="50%"  zIndex="2"/>
+			<region id="rgFrameYellow" width="39.9%"  height="76.4%" top="14.1%" left="50%"  zIndex="2"/>
+			<region id="rgFrameBlue" width="39.9%"  height="76.4%" top="14.1%" left="50%"  zIndex="2"/>
 
 
 		</regionBase>
@@ -96,7 +96,7 @@
 			</bind>
 
 			<bind role="set" component="mediaVideo" interface="bounds">
-				<bindParam name="varSet" value="10.9%, 12%, 36%, 36.8%"/>
+				<bindParam name="varSet" value="10.9%, 12%, 36.3%, 36.8%"/>
 			</bind>
 	
 			<bind role="start" component="frameRed"/>
