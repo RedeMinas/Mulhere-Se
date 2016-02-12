@@ -241,10 +241,10 @@
 				<bind role="stop" component="frameBlue"/>
 				<bind role="stop" component="frameRed"/>
 				<bind role="stop" component="btnRed"/>	
-			    <bind role="stop" component="btnGreen"/>		   
-		        <bind role="stop" component="btnYellow"/>
-		        <bind role="stop" component="frameBlue"/>
-		        <bind role="stop" component="cima"/>
+			        <bind role="stop" component="btnGreen"/>		   
+		        	<bind role="stop" component="btnYellow"/>
+		        	<bind role="stop" component="frameBlue"/>
+		        	<bind role="stop" component="cima"/>
 				<bind role="stop" component="baixo"/>
 				<bind role="stop" component="direita"/>
 				<bind role="stop" component="esquerda"/>
