@@ -73,13 +73,8 @@
                 </compoundAction>
             </causalConnector>
 
-
-
-<!--
-
-
-
-
+			<!--
+			
             <causalConnector id="onEndIconMenu">
                 <simpleCondition role="onEnd"/>
                 <simpleAction role="start" max="unbounded" qualifier="par"/>
@@ -142,7 +137,8 @@
                     <simpleAction role="stop" max="unbounded" qualifier="par"/>
                 </compoundAction>
             </causalConnector>
-        -->
+			
+			-->
 
         </connectorBase>
 
