@@ -8,12 +8,27 @@
                 <simpleAction role="start" max="unbounded" qualifier="par"/>
             </causalConnector>
 
-            <causalConnector id="onStartMenu">
-                <simpleCondition role="onSelection" key="$keyCode"/>
-                <connectorParam name="keyCode"/>
+            <causalConnector id="onEndStart">
+                <simpleCondition role="stop"/>
+                <simpleAction role="stop" max="unbounded" qualifier="par"/>
+            </causalConnector>
+
+            <causalConnector id="onSlectionStart">
+                <simpleCondition role="onSelection"/>
                 <compoundAction operator="seq">
-                    <simpleAction role="start" max="unbounded" qualifier="par"/>
+                    <simpleAction role="start" max="unbounded" qualifier="seq"/>
+                    <simpleAction role="stop" max="unbounded" qualifier="seq"/>
+                </compoundAction>
+            </causalConnector>
+
+            <causalConnector id="onSelectionStartSet">
+                <connectorParam name="varSet"/>
+                <connectorParam name="keyCode"/>
+                <simpleCondition role="onSelection" key="$keyCode"/>
+                <compoundAction operator="seq">
                     <simpleAction role="stop" max="unbounded" qualifier="par"/>
+                    <simpleAction role="start" max="unbounded" qualifier="par"/>
+                    <simpleAction role="set" value="$varSet"/>
                 </compoundAction>
             </causalConnector>
 
@@ -28,16 +43,6 @@
                 </compoundAction>
             </causalConnector>
 
-            <causalConnector id="onSelectionCursorUpMenuGreen">
-                <connectorParam name="varSet"/>
-                <connectorParam name="keyCode"/>
-                <simpleCondition role="onSelection" key="$keyCode"/>
-                <compoundAction operator="seq">
-                    <simpleAction role="stop" max="unbounded" qualifier="par"/>
-                    <simpleAction role="start" max="unbounded" qualifier="par"/>
-                </compoundAction>
-            </causalConnector>
-
             <causalConnector id="onSelectionResizeBackVideo">
                 <connectorParam name="varSet"/>
                 <connectorParam name="keyCode"/>
@@ -48,6 +53,27 @@
                     <simpleAction role="set" value="$varSet"/>
                 </compoundAction>
             </causalConnector>
+
+            <causalConnector id="onSelectionMenuContext">
+                <connectorParam name="varSet"/>
+                <simpleCondition role="onSelection"/>
+                <compoundAction operator="seq">
+                    <simpleAction role="stop" max="unbounded" qualifier="par"/>
+                    <simpleAction role="start" max="unbounded" qualifier="par"/>
+                    <simpleAction role="set" value="$varSet"/>
+                </compoundAction>
+            </causalConnector>
+
+                <causalConnector id="onKeySelectionStartNStopN">
+                <connectorParam name="keyCode"/>
+                <simpleCondition role="onSelection" key="$keyCode"/>
+                <compoundAction operator="seq">
+                    <simpleAction role="start" max="unbounded" qualifier="seq"/>
+                    <simpleAction role="stop" max="unbounded" qualifier="seq"/>
+                </compoundAction>
+            </causalConnector>
+
+
 
 <!--
 
