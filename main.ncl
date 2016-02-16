@@ -19,7 +19,7 @@
 			<region id="rgFrameGreen" width="40%"  height="80.2%" top="10.1%" left="50%"  zIndex="2"/>
 			<region id="rgFrameYellow" width="40%"  height="80.2%" top="10.1%" left="50%"  zIndex="2"/>
 			<region id="rgFrameBlue" width="40%"  height="80.2%" top="10.1%" left="50%"  zIndex="2"/>
-
+			<region id="rgFrameexit" width="3%"  height="3%" top="89%" left="1%"  zIndex="2"/>
 		</regionBase>
 
 		<descriptorBase>
@@ -32,6 +32,7 @@
             <descriptor id="deFrameGreen" region="rgFrameGreen"/>
             <descriptor id="deFrameYellow" region="rgFrameYellow"/>
             <descriptor id="deFrameBlue" region="rgFrameBlue"/>
+            <descriptor id="deFrameexit" region="rgFrameexit"/>
 
 		</descriptorBase>
 
@@ -65,7 +66,7 @@
 		<media id="frameGreen" src="Media/Frame/verde.png" descriptor="deFrameGreen"/>
 		<media id="frameYellow" src="Media/Frame/amarelo.png" descriptor="deFrameYellow"/>
 		<media id="frameBlue" src="Media/Frame/azul.png" descriptor="deFrameBlue"/>
-
+		<media id="Sair" src="Media/sair.png" descriptor="deFrameexit"/>
 		<!--
 		###################################### Link Icon Interact ##########################################
 		-->
@@ -100,6 +101,7 @@
 			<bind role="start" component="frameRed"/>
 			<bind role="start" component="controlPagesOne"/>
 			<bind role="start" component="controlPagesTwo"/>
+			<bind role="start" component="Sair"/>
 
 		</link>
 
@@ -303,16 +305,17 @@
 		</link>
 
 		<link id="link_btnExitSelectResizeVideo" xconnector="conBase#onSelectionResizeBackVideo">
-			<bind role="onSelection" component="backGroundImage">
+			<bind role="onSelection" component="Sair">
 				<bindParam name="keyCode" value="EXIT"/>
 			</bind>
 
 			<bind role="stop" component="backGroundImage"/>
 			<bind role="start" component="iconInteract"/>
-
+			<bind role="stop" component="Sair"/>
 			<bind role="set" component="mediaVideo" interface="bounds">
 				<bindParam name="varSet" value="0%,0%,100%,100%"/>
 			</bind>
+
 
 		</link>
 
