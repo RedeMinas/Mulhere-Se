@@ -8,12 +8,25 @@
                 <simpleAction role="start" max="unbounded" qualifier="par"/>
             </causalConnector>
 
+            <causalConnector id="onBeginStop">
+                <simpleCondition role="onBegin"/>
+                <simpleAction role="stop" max="unbounded" qualifier="par"/>
+            </causalConnector>
+
             <causalConnector id="onEndStop">
                 <simpleCondition role="onEnd"/>
                 <simpleAction role="stop" max="unbounded" qualifier="par"/>
             </causalConnector>
 
-            <causalConnector id="onSlectionStart">
+            <causalConnector id="onSelectionStart">
+                <connectorParam name="keyCode"/>
+                <simpleCondition role="onSelection" key="$keyCode"/>
+                <compoundAction operator="seq">
+                    <simpleAction role="start" max="unbounded" qualifier="seq"/>
+                </compoundAction>
+            </causalConnector>
+
+            <causalConnector id="onSelectionStartStop">
                 <connectorParam name="keyCode"/>
                 <simpleCondition role="onSelection" key="$keyCode"/>
                 <compoundAction operator="seq">
