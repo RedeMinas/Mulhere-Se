@@ -29,7 +29,7 @@
             <descriptor id="deFrameYellow" region="rgFrameYellow"/>
             <descriptor id="deFrameBlue" region="rgFrameBlue"/>
             <descriptor id="deFrameexit" region="rgFrameexit"/>
-            <descriptor id="deFotos" region="RgFotos" moveUp="deFrameBlue" moveDown="deFrameBlue" focusIndex="1" focusBorderWidth="0"/>
+            <descriptor id="deFotos" region="RgFotos"  focusIndex="1" focusBorderWidth="0"/>
 		</descriptorBase>
 
 		<connectorBase>
@@ -147,7 +147,7 @@
 
 		<link id="link_frameRedLeft" xconnector="conBase#onSelectionStartStop">
 			<bind role="onSelection" component="frameRed">
-				<bindParam name="keyCode" value="CURSOR_DOWN"/>
+				<bindParam name="keyCode" value="CURSOR_RIGHT"/>
 			</bind>
 
 			<bind role="stop" component="frameRed"/>
@@ -156,7 +156,7 @@
 		</link>
 		<link id="link_frameRedRight" xconnector="conBase#onSelectionStartStop">
 			<bind role="onSelection" component="frameRed">
-				<bindParam name="keyCode" value="CURSOR_UP"/>
+				<bindParam name="keyCode" value="CURSOR_LEFT"/>
 			</bind>
 
 			<bind role="stop" component="frameRed"/>
@@ -196,7 +196,7 @@
 		<!--  Green -->
 		<link id="link_frameGreenLeft" xconnector="conBase#onSelectionStartStop">
 			<bind role="onSelection" component="frameGreen">
-				<bindParam name="keyCode" value="CURSOR_DOWN"/>
+				<bindParam name="keyCode" value="CURSOR_RIGHT"/>
 			</bind>
 
 			<bind role="stop" component="frameGreen"/>
@@ -206,7 +206,7 @@
 
 		<link id="link_frameGreenRight" xconnector="conBase#onSelectionStartStop">
 			<bind role="onSelection" component="frameGreen">
-				<bindParam name="keyCode" value="CURSOR_UP"/>
+				<bindParam name="keyCode" value="CURSOR_LEFT"/>
 			</bind>
 
 			<bind role="stop" component="frameGreen"/>
@@ -243,7 +243,7 @@
 		<!--  Yellow -->
 		<link id="link_frameYellowLeft" xconnector="conBase#onSelectionStartStop">
 			<bind role="onSelection" component="frameYellow">
-				<bindParam name="keyCode" value="CURSOR_DOWN"/>
+				<bindParam name="keyCode" value="CURSOR_RIGHT"/>
 			</bind>
 
 			<bind role="stop" component="frameYellow"/>
@@ -252,7 +252,7 @@
 
 		<link id="link_frameYellowRight" xconnector="conBase#onSelectionStartStop">
 			<bind role="onSelection" component="frameYellow">
-				<bindParam name="keyCode" value="CURSOR_UP"/>
+				<bindParam name="keyCode" value="CURSOR_LEFT"/>
 			</bind>
 
 			<bind role="start" component="frameBlue"/>
@@ -293,7 +293,7 @@
 		<!--  Blue -->
 		<link id="link_frameBlueLeft" xconnector="conBase#onSelectionStartStop">
 			<bind role="onSelection" component="frameBlue">
-				<bindParam name="keyCode" value="CURSOR_DOWN"/>
+				<bindParam name="keyCode" value="CURSOR_RIGHT"/>
 			</bind>
 
 			<bind role="start" component="frameYellow"/>
@@ -304,7 +304,7 @@
 
 		<link id="link_frameBlueRight" xconnector="conBase#onSelectionStartStop">
 			<bind role="onSelection" component="frameBlue">
-				<bindParam name="keyCode" value="CURSOR_UP"/>
+				<bindParam name="keyCode" value="CURSOR_LEFT"/>
 			</bind>
 
 			<bind role="start" component="frameRed"/>
@@ -373,7 +373,6 @@
 
 		<link id="link_onEndMediaStop" xconnector="conBase#onEndStop">
 			<bind role="onEnd" component="mediaVideo"/>
-
 			<bind role="stop" component="iconInteract"/>
 			<bind role="stop" component="ControlPageRed"/>
 			<bind role="stop" component="ControlPageGreen"/>

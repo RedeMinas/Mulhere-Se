@@ -105,7 +105,7 @@ function handler(evt)
   if (evt.class == 'key' and evt.type == 'press') then
 	  print(evt.key)
 
-	  if evt.key == "CURSOR_RIGHT" then
+	  if evt.key == "CURSOR_UP" then
       
       carrossel()
         stopped = false
@@ -115,7 +115,7 @@ function handler(evt)
        canvas:flush()
        
        
-	  elseif evt.key == "CURSOR_LEFT" then
+	  elseif evt.key == "CURSOR_DOWN" then
       
       
       carrossel()
