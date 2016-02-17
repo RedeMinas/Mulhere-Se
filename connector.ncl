@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <ncl id="Dango_Balango" xmlns="http://www.ncl.org.br/NCL3.0/EDTVProfile">
     <head>
-
         <connectorBase>
             <causalConnector id="onBeginStart">
                 <simpleCondition role="onBegin"/>
@@ -58,6 +57,18 @@
             </causalConnector>
 
         </connectorBase>
+
+            <causalConnector id="onBeginSet">
+                <connectorParam name="value"/>
+                <simpleCondition role="onBegin"/>
+                <simpleAction role="set" value="$value"/>
+            </causalConnector>
+
+         <causalConnector id="onEndSet">
+                <connectorParam name="value"/>
+                <simpleCondition role="onEnd"/>
+                <simpleAction role="set" value="$value"/>
+            </causalConnector>
 
     </head>
 </ncl>
