@@ -57,19 +57,13 @@
 
 		<media id="iconInteract" src="Media/icon.png" descriptor="deIconInteract"/>
 
-		<media id="controlPagesOne" descriptor="deFrameBlue"/>
-		<media id="controlPagesTwo" descriptor="deFrameBlue"/>
-		<media id="controlPagesTrhee" descriptor="deFrameBlue"/>
-		<media id="controlPagesFuor" descriptor="deFrameBlue"/>
-
 		<media id="frameRed" src="Media/Frame/vermelho.png" descriptor="deFrameRed"/>
 		<media id="frameGreen" src="Media/Frame/verde.png" descriptor="deFrameGreen"/>
 		<media id="frameYellow" src="Media/Frame/amarelo.png" descriptor="deFrameYellow"/>
 		<media id="frameBlue" src="Media/Frame/azul.png" descriptor="deFrameBlue"/>
 		<media id="Sair" src="Media/sair.png" descriptor="deFrameexit"/>
-		<!--
-		###################################### Link Icon Interact ##########################################
-		-->
+
+		<!-- Link Icon Interact -->
 
 		<link id="link_onBeginVideo"  xconnector="conBase#onBeginStart">
 			<bind component="mediaVideo" role="onBegin" interface="icon"/>
@@ -77,9 +71,7 @@
 
 		</link>
 
-		<!--
-		####################################### Link Start Interface #######################################
-		-->
+		<!-- Link Start Interface -->
 
 		<link id="link_iconMenuSelect" xconnector="conBase#onSelectionIconMenuResizeVideo">
 			<bind role="onSelection" component="iconInteract">
@@ -99,204 +91,232 @@
 			<bind role="onBegin" component="backGroundImage"/>
 
 			<bind role="start" component="frameRed"/>
-			<bind role="start" component="controlPagesOne"/>
-			<bind role="start" component="controlPagesTwo"/>
 			<bind role="start" component="Sair"/>
 
 		</link>
 
-		<!--
-		####################################### Link COntrol Frame ########################################
-		-->
+		<!-- Link Control Frame (preparação)
 
-		<link id="link_onBeginStop"  xconnector="conBase#onBeginStop">
+		<link id="link_onBeginStart"  xconnector="conBase#onBeginStart">
 			<bind component="frameRed" role="onBegin"/>
 
-			<bind role="stop" component="frameGreen"/>
-			<bind role="stop" component="frameYellow"/>
-			<bind role="stop" component="frameBlue"/>
-
-		</link>
-
-		<link id="link_onBeginStop"  xconnector="conBase#onBeginStop">
-			<bind component="frameGreen" role="onBegin"/>
-
-			<bind role="stop" component="frameRed"/>
-			<bind role="stop" component="frameYellow"/>
-			<bind role="stop" component="frameBlue"/>
-
-		</link>
-
-		<link id="link_onBeginStop"  xconnector="conBase#onBeginStop">
-			<bind component="frameYellow" role="onBegin"/>
-
-			<bind role="stop" component="frameGreen"/>
-			<bind role="stop" component="frameRed"/>
-			<bind role="stop" component="frameBlue"/>
-
-		</link>
-
-		<link id="link_onBeginStop"  xconnector="conBase#onBeginStop">
-			<bind component="frameBlue" role="onBegin"/>
-
-			<bind role="stop" component="frameGreen"/>
-			<bind role="stop" component="frameYellow"/>
-			<bind role="stop" component="frameRed"/>
+			<bind role="start" component="contentRed"/>
+			<bind role="start" component="noticias"/>
 
 		</link>
 
 
-		<!--
-		####################################### Link Selection Menu ########################################
+		<link id="link_onBeginStop"  xconnector="conBase#onBeginStart">
+			<bind component="frameRed" role="onBegin"/>
+
+			<bind role="stop" component="contentRed"/>
+			<bind role="stop" component="noticias"/>
+
+		</link>
+
+
+
+		<link id="link_onBeginStart"  xconnector="conBase#onBeginStart">
+			<bind component="frameRed" role="onBegin"/>
+
+			<bind role="start" component="contentRed"/>
+			<bind role="start" component="noticias"/>
+
+		</link>
+
 		-->
 
-		<!-- vermelho para o azul -->
-		<link id="link_controlPagesOneLeft" xconnector="conBase#onSelectionStartStop">
-			<bind role="onSelection" component="controlPagesOne">
+		<!-- Link Selection Colored Buttons -->
+
+		<link id="link_frameRedLeft" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameRed">
 				<bindParam name="keyCode" value="CURSOR_LEFT"/>
 			</bind>
 
+			<bind role="stop" component="frameRed"/>
 			<bind role="start" component="frameBlue"/>
-			<bind role="stop" component="controlPagesOne"/>
-			<bind role="start" component="controlPagesFuor"/>
 
 		</link>
 
-		<!-- Vermelho para o verde -->
-		<link id="link_controlPagesOneRight" xconnector="conBase#onSelectionStartStop">
-			<bind role="onSelection" component="controlPagesOne">
+		<link id="link_frameRedRight" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameRed">
 				<bindParam name="keyCode" value="CURSOR_RIGHT"/>
 			</bind>
 
-			<bind role="start" component="frameGreen"/>
-			<bind role="stop" component="controlPagesOne"/>
-			<bind role="start" component="controlPagesTwo"/>
-
-		</link>
-
-		<!-- verde para o vermelho -->
-		<link id="link_controlPagesTwoLeft" xconnector="conBase#onSelectionStartStop">
-			<bind role="onSelection" component="controlPagesTwo">
-				<bindParam name="keyCode" value="CURSOR_LEFT"/>
-			</bind>
-
-			<bind role="start" component="frameRed"/>
-			<bind role="stop" component="controlPagesTwo"/>
-			<bind role="start" component="controlPagesOne"/>
-
-		</link>
-
-		<!-- verde para o amarelo -->
-		<link id="link_controlPagesTwoRight" xconnector="conBase#onSelectionStartStop">
-			<bind role="onSelection" component="controlPagesTwo">
-				<bindParam name="keyCode" value="CURSOR_RIGHT"/>
-			</bind>
-
-			<bind role="start" component="frameYellow"/>
-			<bind role="stop" component="controlPagesTwo"/>
-			<bind role="start" component="controlPagesTrhee"/>
-
-		</link>
-
-		<!-- amarelo para o verde -->
-		<link id="link_controlPagesTrheeLeft" xconnector="conBase#onSelectionStartStop">
-			<bind role="onSelection" component="controlPagesTrhee">
-				<bindParam name="keyCode" value="CURSOR_LEFT"/>
-			</bind>
-
-			<bind role="start" component="frameGreen"/>
-			<bind role="stop" component="controlPagesTrhee"/>
-			<bind role="start" component="controlPagesTwo"/>
-
-		</link>
-
-		<!-- amarelo para o azul -->
-		<link id="link_controlPagesTrheeRight" xconnector="conBase#onSelectionStartStop">
-			<bind role="onSelection" component="controlPagesTrhee">
-				<bindParam name="keyCode" value="CURSOR_RIGHT"/>
-			</bind>
-
-			<bind role="start" component="frameBlue"/>
-			<bind role="stop" component="controlPagesTrhee"/>
-			<bind role="start" component="controlPagesFuor"/>
-
-		</link>
-
-		<!-- azul para o amarelo -->
-		<link id="link_controlPagesFuorLeft" xconnector="conBase#onSelectionStartStop">
-			<bind role="onSelection" component="controlPagesFuor">
-				<bindParam name="keyCode" value="CURSOR_LEFT"/>
-			</bind>
-
-			<bind role="start" component="frameYellow"/>
-			<bind role="stop" component="controlPagesFuor"/>
-			<bind role="start" component="controlPagesTrhee"/>
-
-		</link>
-
-		<!-- azul para o vermelho -->
-		<link id="link_controlPagesFuorRight" xconnector="conBase#onSelectionStartStop">
-			<bind role="onSelection" component="controlPagesFuor">
-				<bindParam name="keyCode" value="CURSOR_RIGHT"/>
-			</bind>
-
-			<bind role="start" component="frameRed"/>
-			<bind role="stop" component="controlPagesFuor"/>
-			<bind role="start" component="controlPagesOne"/>
-
-		</link>
-
-		<!--
-		################################## Link Selection Colored Buttons ###################################
-		-->
-
-		<link id="link_iconRed" xconnector="conBase#onSelectionStart">
-			<bind role="onSelection" component="backGroundImage">
-				<bindParam name="keyCode" value="RED"/>
-			</bind>
-
-			<bind role="start" component="frameRed"/>
-
-		</link>
-
-		<link id="link_iconGreen" xconnector="conBase#onSelectionStart">
-			<bind role="onSelection" component="backGroundImage">
-				<bindParam name="keyCode" value="GREEN"/>
-			</bind>
-
+			<bind role="stop" component="frameRed"/>
 			<bind role="start" component="frameGreen"/>
 
 		</link>
 
-		<link id="link_iconYellow" xconnector="conBase#onSelectionStart">
-			<bind role="onSelection" component="backGroundImage">
-				<bindParam name="keyCode" value="YELLOW"/>
-			</bind>
-
-			<bind role="start" component="frameYellow"/>
-
-		</link>
-
-		<link id="link_iconBlue" xconnector="conBase#onSelectionStart">
-			<bind role="onSelection" component="backGroundImage">
+		<link id="link_RedBlue" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameRed">
 				<bindParam name="keyCode" value="BLUE"/>
 			</bind>
+			<bind role="start" component="frameBlue"/>
+			<bind role="stop" component="frameRed"/>
+		</link>
 
-		    <bind role="start" component="frameBlue"/>
+
+		<link id="link_RedGreen" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameRed">
+				<bindParam name="keyCode" value="GREEN"/>
+			</bind>
+			<bind role="start" component="frameGreen"/>
+			<bind role="stop" component="frameRed"/>
+		</link>
+
+		<link id="link_RedYellow" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameRed">
+				<bindParam name="keyCode" value="YELLOW"/>
+			</bind>
+			<bind role="start" component="frameYellow"/>
+			<bind role="stop" component="frameRed"/>
+		</link>
+
+		<!--  Green -->
+		<link id="link_frameGreenLeft" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameGreen">
+				<bindParam name="keyCode" value="CURSOR_LEFT"/>
+			</bind>
+
+			<bind role="stop" component="frameGreen"/>
+			<bind role="start" component="frameRed"/>
+		</link>
+
+		<link id="link_frameGreenRight" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameGreen">
+				<bindParam name="keyCode" value="CURSOR_RIGHT"/>
+			</bind>
+
+			<bind role="stop" component="frameGreen"/>
+			<bind role="start" component="frameYellow"/>
+		</link>
+
+		<link id="link_GreenRed" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameGreen">
+				<bindParam name="keyCode" value="RED"/>
+			</bind>
+			<bind role="start" component="frameRed"/>
+			<bind role="stop" component="frameGreen"/>
+		</link>
+
+
+		<link id="link_GreenYellow" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameGreen">
+				<bindParam name="keyCode" value="YELLOW"/>
+			</bind>
+			<bind role="start" component="frameYellow"/>
+			<bind role="stop" component="frameGreen"/>
+		</link>
+
+		<link id="link_GreenBlue" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameGreen">
+				<bindParam name="keyCode" value="BLUE"/>
+			</bind>
+			<bind role="start" component="frameBlue"/>
+			<bind role="stop" component="frameGreen"/>
+		</link>
+
+		<!--  Yellow -->
+		<link id="link_frameYellowLeft" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameYellow">
+				<bindParam name="keyCode" value="CURSOR_LEFT"/>
+			</bind>
+
+			<bind role="stop" component="frameYellow"/>
+			<bind role="start" component="frameGreen"/>
+		</link>
+
+		<link id="link_frameYellowRight" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameYellow">
+				<bindParam name="keyCode" value="CURSOR_RIGHT"/>
+			</bind>
+
+			<bind role="start" component="frameBlue"/>
+			<bind role="stop" component="frameYellow"/>
 
 		</link>
 
-		<!--
-		#################################### Link Resize Video Back ########################################
-		-->
+		<link id="link_YellowRed" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameYellow">
+				<bindParam name="keyCode" value="RED"/>
+			</bind>
+			<bind role="start" component="frameRed"/>
+			<bind role="stop" component="frameYellow"/>
+		</link>
+
+
+		<link id="link_YellowGreen" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameYellow">
+				<bindParam name="keyCode" value="GREEN"/>
+			</bind>
+			<bind role="start" component="frameGreen"/>
+			<bind role="stop" component="frameYellow"/>
+		</link>
+
+		<link id="link_YellowBlue" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameYellow">
+				<bindParam name="keyCode" value="BLUE"/>
+			</bind>
+			<bind role="start" component="frameBlue"/>
+			<bind role="stop" component="frameYellow"/>
+		</link>
+
+
+		<!--  Blue -->
+		<link id="link_frameBlueLeft" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameBlue">
+				<bindParam name="keyCode" value="CURSOR_LEFT"/>
+			</bind>
+
+			<bind role="start" component="frameYellow"/>
+			<bind role="stop" component="frameBlue"/>
+
+		</link>
+
+		<link id="link_frameBlueRight" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameBlue">
+				<bindParam name="keyCode" value="CURSOR_RIGHT"/>
+			</bind>
+
+			<bind role="start" component="frameRed"/>
+			<bind role="stop" component="frameBlue"/>
+		</link>
+
+		<link id="link_BlueRed" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameBlue">
+				<bindParam name="keyCode" value="RED"/>
+			</bind>
+			<bind role="start" component="frameRed"/>
+			<bind role="stop" component="frameBlue"/>
+		</link>
+
+
+		<link id="link_BlueGreen" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameBlue">
+				<bindParam name="keyCode" value="GREEN"/>
+			</bind>
+			<bind role="start" component="frameGreen"/>
+			<bind role="stop" component="frameBlue"/>
+		</link>
+
+		<link id="link_BlueYellow" xconnector="conBase#onSelectionStartStop">
+			<bind role="onSelection" component="frameBlue">
+				<bindParam name="keyCode" value="YELLOW"/>
+			</bind>
+			<bind role="start" component="frameYellow"/>
+			<bind role="stop" component="frameBlue"/>
+		</link>
+
+		<!-- Link Resize Video Back -->
 
 		<link id="link_onEndStop" xconnector="conBase#onEndStop">
 			<bind role="onEnd" component="backGroundImage"/>
 
-			<bind role="stop" component="controlPagesOne"/>
-			<bind role="stop" component="controlPagesTwo"/>
-			<bind role="stop" component="controlPagesTrhee"/>
-			<bind role="stop" component="controlPagesFuor"/>
+			<bind role="stop" component="ControlPageRed"/>
+			<bind role="stop" component="ControlPageGreen"/>
+			<bind role="stop" component="ControlPageYellow"/>
+			<bind role="stop" component="ControlPageBlue"/>
 			<bind role="stop" component="frameRed"/>
 		    <bind role="stop" component="frameGreen"/>
 			<bind role="stop" component="frameYellow"/>
@@ -315,28 +335,23 @@
 			<bind role="set" component="mediaVideo" interface="bounds">
 				<bindParam name="varSet" value="0%,0%,100%,100%"/>
 			</bind>
-
-
 		</link>
 
-		<!--
-		#################################### Link onEnd Media ############################################
-		-->
+		<!-- Link onEnd Media -->
 
 		<link id="link_onEndMediaStop" xconnector="conBase#onEndStop">
 			<bind role="onEnd" component="mediaVideo"/>
 
 			<bind role="stop" component="iconInteract"/>
-			<bind role="stop" component="controlPagesOne"/>
-			<bind role="stop" component="controlPagesTwo"/>
-			<bind role="stop" component="controlPagesTrhee"/>
-			<bind role="stop" component="controlPagesFuor"/>
+			<bind role="stop" component="ControlPageRed"/>
+			<bind role="stop" component="ControlPageGreen"/>
+			<bind role="stop" component="ControlPageYellow"/>
+			<bind role="stop" component="ControlPageBlue"/>
 			<bind role="stop" component="backGroundImage"/>
 			<bind role="stop" component="frameRed"/>
 		    <bind role="stop" component="frameGreen"/>
 			<bind role="stop" component="frameYellow"/>
 			<bind role="stop" component="frameBlue"/>
-
 		</link>
 
 	</body>
