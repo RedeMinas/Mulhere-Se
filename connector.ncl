@@ -55,8 +55,7 @@
                     <simpleAction role="set" value="$varSet"/>
                 </compoundAction>
             </causalConnector>
-
-        </connectorBase>
+      
 
             <causalConnector id="onBeginSet">
                 <connectorParam name="value"/>
@@ -69,6 +68,6 @@
                 <simpleCondition role="onEnd"/>
                 <simpleAction role="set" value="$value"/>
             </causalConnector>
-
+    </connectorBase>
     </head>
 </ncl>

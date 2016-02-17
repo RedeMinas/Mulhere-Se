@@ -146,7 +146,7 @@ function handler(evt)
       --altera o índice da imagem a ser exibida.
       --Implementa uma "lista circular" para exibição das imagens.
 
-	  if evt.key == "CURSOR_UP" then
+	  if evt.key == "CURSOR_RIGHT" then
       
       carrossel()
         stopped = false
@@ -156,7 +156,7 @@ function handler(evt)
        canvas:flush()
        
        
-	  elseif evt.key == "CURSOR_DOWN" then
+	  elseif evt.key == "CURSOR_LEFT" then
       
       
       carrossel()
