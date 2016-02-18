@@ -17,25 +17,24 @@
 			<region id="rgFrameYellow" width="40%"  height="80.2%" top="10.1%" left="50%"  zIndex="2"/>
 			<region id="rgFrameBlue" width="40%"  height="80.2%" top="10.1%" left="50%"  zIndex="2"/>
 			<region id="rgFrameExit" width="3%"  height="3%" top="89%" left="1%"  zIndex="2"/>
-			<region id="RgPhotos"  top="56.5%" width="37%" height="32%" left="10.1%"  zIndex="3"/>
+			<region id="RgMenuAux"  top="56.5%" width="37%" height="32%" left="10.1%"  zIndex="3"/>
 		</regionBase>
 
 		<descriptorBase>
 			<descriptor id="deBackGroundImage" region="rgBackGroundImage"/>
 			<descriptor id="deFullScreenMedia" region="rgFullScreenMedia"/>
 			<descriptor id="deIconInteract" region="rgIconInteract"/>
-            <descriptor id="deFrameRed" region="rgFrameRed"/>
-            <descriptor id="deFrameGreen" region="rgFrameGreen"/>
-            <descriptor id="deFrameYellow" region="rgFrameYellow"/>
-            <descriptor id="deFrameBlue" region="rgFrameBlue"/>
-            <descriptor id="deFrameexit" region="rgFrameExit"/>
-            <descriptor id="dePhotos" region="RgPhotos"  focusIndex="1" focusBorderWidth="0"/>
+			<descriptor id="deFrameRed" region="rgFrameRed"/>
+			<descriptor id="deFrameGreen" region="rgFrameGreen"/>
+			<descriptor id="deFrameYellow" region="rgFrameYellow"/>
+			<descriptor id="deFrameBlue" region="rgFrameBlue"/>
+			<descriptor id="deFrameexit" region="rgFrameExit"/>
+			<descriptor id="deMenuAux" region="RgMenuAux"  focusIndex="1" focusBorderWidth="0"/>
 		</descriptorBase>
-
+		
+		<!-- library of used connectors -->
 		<connectorBase>
-
 			<importBase documentURI="connector.ncl" alias="conBase"/>
-
 		</connectorBase>
 
 	</head>
@@ -56,7 +55,7 @@
 		<media id="frameYellow" src="Media/Frame/amarelo.png" descriptor="deFrameYellow"/>
 		<media id="frameBlue" src="Media/Frame/azul.png" descriptor="deFrameBlue"/>
 		<media id="Sair" src="Media/Map/voltar.png" descriptor="deFrameexit"/>
-		<media id="photos" type="application/x-ginga-NCLua" src="carrosel.lua" descriptor="dePhotos"/>
+		<media id="MenuAux" type="application/x-ginga-NCLua" src="carrosel.lua" descriptor="deMenuAux"/>
 
 		<media id="settings" type="application/x-ginga-settings" >
 	   		<property name="service.currentKeyMaster" value=""/>
@@ -85,13 +84,13 @@
 			<bind role="onBegin" component="backGroundImage"/>
 
 			<bind role="start" component="frameRed"/>
+			<bind role="start" component="MenuAux"/>
 			<bind role="start" component="Sair"/>
 		</link>
 
 		<!-- Link onBegin FrameBLue -->
 		<link id="link_onBeginStart" xconnector="conBase#onBeginStart">
 			<bind component="frameBlue" role="onBegin"/>
-			<bind role="start" component="photos"/>
 		</link>
 
 		<!-- Link Selection Colored Buttons / RED -->
@@ -273,14 +272,14 @@
 
 		<!-- Link Control Focus -->
 		<link id="link_focoBeginBlue" xconnector="conBase#onBeginSet">
-			<bind role="onBegin" component="photos"/>
+			<bind role="onBegin" component="MenuAux"/>
 			<bind role="set" component="settings" interface="service.currentKeyMaster">
-				<bindParam name="value" value="photos"/>
+				<bindParam name="value" value="MenuAux"/>
 			</bind>
 		</link>
 
-		<link id="link_focoEndBlue" xconnector="conEx#onEndSet">
-			<bind role="onEnd" component="photos" />
+		<link id="link_focoEndBlue" xconnector="conBase#onEndSet">
+			<bind role="onEnd" component="MenuAux" />
 			<bind role="set" component="settings" interface="service.currentKeyMaster">
 				<bindParam name="value" value=""/>
 			</bind>
@@ -289,7 +288,6 @@
 		<!-- Link onEnd FrameBlue -->
 		<link id="link_onEnd" xconnector="conBase#onEndStop">
 			<bind component="frameBlue" role="onEnd"/>
-			<bind role="stop" component="photos"/>
 		</link>
 
 		<!-- Link Resize Video Back -->
@@ -312,28 +310,14 @@
 			</bind>
 
 			<bind role="stop" component="backGroundImage"/>
-			<bind role="start" component="iconInteract"/>
 			<bind role="stop" component="Sair"/>
+			<bind role="stop" component="MenuAux"/>
 			<bind role="set" component="mediaVideo" interface="bounds">
 				<bindParam name="varSet" value="0%,0%,100%,100%"/>
 			</bind>
+			<bind role="start" component="iconInteract"/>
 		</link>
 
-		<!-- Link onEnd Media -->
-		<link id="link_onEndMediaStop" xconnector="conBase#onEndStop">
-			<bind role="onEnd" component="mediaVideo"/>
-			<bind role="stop" component="iconInteract"/>
-			<bind role="stop" component="ControlPageRed"/>
-			<bind role="stop" component="ControlPageGreen"/>
-			<bind role="stop" component="ControlPageYellow"/>
-			<bind role="stop" component="ControlPageBlue"/>
-			<bind role="stop" component="backGroundImage"/>
-			<bind role="stop" component="frameRed"/>
-		    <bind role="stop" component="frameGreen"/>
-			<bind role="stop" component="frameYellow"/>
-			<bind role="stop" component="frameBlue"/>
-			<bind role="stop" component="photos"/>
-		</link>
 
 	</body>
 </ncl>
