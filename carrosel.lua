@@ -8,129 +8,82 @@ function findImages()
 	os.execute("find Media/images/ -name *.gif >> imagelist.txt")
 	os.execute("find Media/images/ -name *.png >> imagelist.txt")
 
-    local images = {}
-    
- 
-	for line in io.lines("imagelist.txt") do
-	   print(#images .. " - " .. line)
-	   table.insert(images, line)
-	end
+    local imagesMenu = {}
 
-    return images
+    for line in io.lines("imagelist.txt") do
+      print(#imagesMenu .. " - ".. line)
+      table.insert(imagesMenu, line)
+    end
+
+    return imagesMenu
 end
-
-
-
-
-function moveImageIndex(images, index, forward)
-  if forward then
-  	 index = index + 1
-  	 if index > #images then
-  	    index = 1
-  	 end
-  else
-  	 index = index - 1
-  	 if index <= 0 then
-  	    index = #images
-  	 end;
-  end
-  return index
-end 
 
 function showImage(images, index)
   if #images > 0 then
-
-
-  	
-  	canvas:drawRect('fill', 0, 0, canvas:attrSize());
-	
-  
+    canvas:drawRect('fill', 0, 0, canvas:attrSize());
     img = canvas:new(images[index])
-    main_w,main_h = canvas:attrSize()
-    img_w,img_h = img:attrSize()
-
-   stopped = true
-    x = 0
-   velocidade = 0
-
-	canvas:compose(10, 10, img)
-
+    canvas:compose(10, 10, img)
+    registerTimer()
     canvas:flush()
-    
-  
-
-
   end
 end
 
-
-
-function carrossel()  
-
-    canvas:attrColor(0, 0, 0, 0)
-    canvas:clear( x, 0 ,img_h, img_w )
-    
-    x = x + 30
-    canvas:compose(x,0,img)
-    canvas:flush()
-    
-    if x < main_w - img_w -300 then
-        event.timer(velocidade, carrossel)
-       
-    else
-       stopped = true
-       
-    end
+function moveImageIndex(images, index, forward)
+  if forward then
+     index = index + 1
+     if index > #images then
+        index = 1
+     end
+  else
+     index = index - 1
+     if index <= 0 then
+        index = #images
+     end;
   end
-
+  return index
+end
 
 local index = 1
-
 local images = findImages()
 
+function autoForward()
+  index = moveImageIndex(images, index, true)
+  showImage(images, index)
+end
+
+function registerTimer()
+
+  local timeout = 2000
 
 
-
-
+  if cancelTimerFunc then
+     cancelTimerFunc()
+  end
+  cancelTimerFunc = event.timer(timeout, autoForward)
+end
 
 function handler(evt)
 
-  print("Evento disparado: " .. evt.class .. " " .. evt.type)
- 
+    showImage(images, index)
+    print("Show Image: "..index)
 
-  
-   showImage(images, index)
-   carrossel()
-  
-  if (evt.class == 'key' and evt.type == 'press') then
-	  print(evt.key)
+    print("Evento disparado: " .. evt.class .. " " .. evt.type)
+    if (evt.class == 'key' and evt.type == 'press') then
 
-	  if evt.key == "CURSOR_UP" then
-      
-      carrossel()
-        stopped = false
-        canvas:clear()
-       
-	     index = moveImageIndex(images, index, true)
-       canvas:flush()
-       
-       
-	  elseif evt.key == "CURSOR_DOWN" then
-      
-      
-      carrossel()
-       stopped = false
-       canvas:clear()
-       
-	     index = moveImageIndex(images, index, false)
-       canvas:flush()
+      if evt.key == "CURSOR_UP" then
+        index = moveImageIndex(images, index, true)
+      elseif evt.key == "CURSOR_DOWN" then
+         index = moveImageIndex(images, index, false)
+      elseif evt.key == "EXIT" then
+        print ('chegou!')
 
-	  end
-		end
-    
-  
+      end
+
+    elseif evt.class == "ncl" and evt.type=="presentation" and evt.action=="start" then
+      autoForward()
+
+    end
+
 end
 
-
 event.register(handler)
-

@@ -56,7 +56,7 @@
 		<media id="frameYellow" src="Media/Frame/amarelo.png" descriptor="deFrameYellow"/>
 		<media id="frameBlue" src="Media/Frame/azul.png" descriptor="deFrameBlue"/>
 		<media id="Sair" src="Media/Map/voltar.png" descriptor="deFrameexit"/>
-		<media id="photos" type="application/x-ginga-NCLua" src="carrosel2.lua" descriptor="dePhotos"/>
+		<media id="photos" type="application/x-ginga-NCLua" src="carrosel.lua" descriptor="dePhotos"/>
 
 		<media id="settings" type="application/x-ginga-settings" >
 	   		<property name="service.currentKeyMaster" value=""/>
