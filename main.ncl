@@ -17,7 +17,7 @@
 			<region id="rgFrameYellow" width="40%"  height="80.2%" top="10.1%" left="50%"  zIndex="2"/>
 			<region id="rgFrameBlue" width="40%"  height="80.2%" top="10.1%" left="50%"  zIndex="2"/>
 			<region id="rgFrameExit" width="3%"  height="3%" top="89%" left="1%"  zIndex="2"/>
-			<region id="RgPhotos"  top="56.5%" width="38%" height="32%" left="9%"  zIndex="3"/>
+			<region id="RgPhotos"  top="56.5%" width="37%" height="32%" left="10.1%"  zIndex="3"/>
 		</regionBase>
 
 		<descriptorBase>
@@ -56,7 +56,7 @@
 		<media id="frameYellow" src="Media/Frame/amarelo.png" descriptor="deFrameYellow"/>
 		<media id="frameBlue" src="Media/Frame/azul.png" descriptor="deFrameBlue"/>
 		<media id="Sair" src="Media/Map/voltar.png" descriptor="deFrameexit"/>
-		<media id="photos" type="application/x-ginga-NCLua" src="carrosel.lua" descriptor="dePhotos"/>
+		<media id="photos" type="application/x-ginga-NCLua" src="carrosel2.lua" descriptor="dePhotos"/>
 
 		<media id="settings" type="application/x-ginga-settings" >
 	   		<property name="service.currentKeyMaster" value=""/>
