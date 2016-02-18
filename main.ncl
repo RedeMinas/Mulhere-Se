@@ -17,7 +17,7 @@
 			<region id="rgFrameYellow" width="40%"  height="80.2%" top="10.1%" left="50%"  zIndex="2"/>
 			<region id="rgFrameBlue" width="40%"  height="80.2%" top="10.1%" left="50%"  zIndex="2"/>
 			<region id="rgFrameExit" width="3%"  height="3%" top="89%" left="1%"  zIndex="2"/>
-			<region id="RgMenuAux"  top="56.5%" width="37%" height="32%" left="10.1%"  zIndex="3"/>
+			<region id="RgMenuAux"  top="54.2%" width="45%" height="40%" left="9.5%"  zIndex="3"/>
 		</regionBase>
 
 		<descriptorBase>
