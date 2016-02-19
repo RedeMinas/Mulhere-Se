@@ -16,8 +16,20 @@
 			<region id="rgFrameGreen" width="40%"  height="80.2%" top="10.1%" left="50%"  zIndex="2"/>
 			<region id="rgFrameYellow" width="40%"  height="80.2%" top="10.1%" left="50%"  zIndex="2"/>
 			<region id="rgFrameBlue" width="40%"  height="80.2%" top="10.1%" left="50%"  zIndex="2"/>
-			<region id="rgFrameExit" width="3%"  height="3%" top="89%" left="1%"  zIndex="2"/>
-			<region id="RgMenuAux"  top="54.2%" width="45%" height="40%" left="9.5%"  zIndex="3"/>
+			<region id="rgFrameExit" width="2%"  height="3%" top="86%" left="52%"  zIndex="5"/>
+			<region id="RgMenuAux"  top="51%" width="38.7%" height="39%" left="9.2%"  zIndex="3"/>
+			<region id="RgGaleriaBt1"  top="21.8%" width="13%" height="7%" left="51.2%"  zIndex="3"/>
+			<region id="RgGaleriaBt2"  top="28.8%" width="13%" height="7%" left="51.2%"  zIndex="3"/>
+			<region id="RgGaleriaBt3"  top="34.8%" width="13%" height="7%" left="51.2%"  zIndex="3"/>
+			<region id="RgGaleriaBt4"  top="40.8%" width="13%" height="7%" left="51.2%"  zIndex="3"/>
+			<region id="RgGaleriaBt5"  top="46.8%" width="13%" height="7%" left="51.2%"  zIndex="3"/>
+			<region id="RgGaleriaBt6"  top="52.8%" width="13%" height="7%" left="51.2%"  zIndex="3"/>
+			<region id="RgGaleriaBt7"  	top="59.8%" width="13%" height="7%" left="51.2%"  zIndex="3"/>
+			<region id="RgGaleriaBt8"  	 top="65.8%" width="13%" height="7%" left="51.2%"  zIndex="3"/>		
+			<region id="RgBotaoEsquerdo" top="45%" width="2%" height="5%" left="48%"  zIndex="3"/>
+			<region id="RgBotaoDireito"  top="45%" width="2%" height="5%" left="90%"  zIndex="3"/>	
+			<region id="RgBt1"  		 top="51%" width="38.7%" height="39%" left="9.2%"  zIndex="4"/>	
+			<region id="RgBt1"  		 top="51%" width="38.7%" height="39%" left="9.2%"  zIndex="4"/>	
 		</regionBase>
 
 		<descriptorBase>
@@ -29,7 +41,17 @@
 			<descriptor id="deFrameYellow" region="rgFrameYellow"/>
 			<descriptor id="deFrameBlue" region="rgFrameBlue"/>
 			<descriptor id="deFrameexit" region="rgFrameExit"/>
-			<descriptor id="deMenuAux" region="RgMenuAux"  focusIndex="1" focusBorderWidth="0"/>
+			<descriptor id="deMenuAux" region="RgMenuAux"   />
+			<descriptor id="deGaleriaBt1" region="RgGaleriaBt1"  focusIndex="10" focusBorderWidth="3" moveDown="11" moveUp="17" focusSrc="Media/galeria/01bton.png"/>
+			<descriptor id="deGaleriaBt2" region="RgGaleriaBt2"  focusIndex="11" focusBorderWidth="3" moveDown="12" moveUp="10"  focusSrc="Media/galeria/02bton.png"/>
+			<descriptor id="deGaleriaBt3" region="RgGaleriaBt3"  focusIndex="12" focusBorderWidth="3" moveDown="13" moveUp="11"/>
+			<descriptor id="deGaleriaBt4" region="RgGaleriaBt4"  focusIndex="13" focusBorderWidth="3" moveDown="14" moveUp="12"/>			
+			<descriptor id="deGaleriaBt5" region="RgGaleriaBt5"  focusIndex="14" focusBorderWidth="3" moveDown="15" moveUp="13"/>
+			<descriptor id="deGaleriaBt6" region="RgGaleriaBt6"  focusIndex="15" focusBorderWidth="3" moveDown="16" moveUp="14"/>
+			<descriptor id="deGaleriaBt7" region="RgGaleriaBt7"  focusIndex="16" focusBorderWidth="3" moveDown="17" moveUp="15"/>
+			<descriptor id="deGaleriaBt8" region="RgGaleriaBt8"  focusIndex="17" focusBorderWidth="3" moveDown="10" moveUp="16"/>	
+			<descriptor id="deBotaoEsquerdo" region="RgBotaoEsquerdo"/>	
+			<descriptor id="deBotaoDireito" region="RgBotaoDireito"/>
 		</descriptorBase>
 		
 		<!-- library of used connectors -->
@@ -49,13 +71,26 @@
 			<property name="bounds"/>
 		</media>
 
-		<media id="iconInteract" src="Media/icon.png" descriptor="deIconInteract"/>
-		<media id="frameRed" src="Media/Frame/vermelho.png" descriptor="deFrameRed"/>
-		<media id="frameGreen" src="Media/Frame/verde.png" descriptor="deFrameGreen"/>
-		<media id="frameYellow" src="Media/Frame/amarelo.png" descriptor="deFrameYellow"/>
-		<media id="frameBlue" src="Media/Frame/azul.png" descriptor="deFrameBlue"/>
-		<media id="Sair" src="Media/Map/voltar.png" descriptor="deFrameexit"/>
-		<media id="MenuAux" type="application/x-ginga-NCLua" src="carrosel.lua" descriptor="deMenuAux"/>
+		<media id="iconInteract" src="Media/icon.png"            descriptor="deIconInteract"/>
+		<media id="frameRed" src="Media/Frame/vermelho.png"      descriptor="deFrameRed"/>
+		<media id="frameGreen" 	 src="Media/Frame/verde.png"     descriptor="deFrameGreen"/>
+		<media id="frameYellow" src="Media/Frame/amarelo.png"    descriptor="deFrameYellow"/>
+		<media id="frameBlue" 	 src="Media/Frame/azul.png"      descriptor="deFrameBlue"/>
+		<media id="Sair" 		 src="Media/sair.png" 	 descriptor="deFrameexit"/>
+		<media id="GaleriaBt1" src="Media/galeria/01btoff.png" descriptor="deGaleriaBt1"/>
+		<media id="GaleriaBt2" src="Media/galeria/02btoff.png" descriptor="deGaleriaBt2"/>
+		<media id="GaleriaBt3" src="Media/galeria/03btoff.png" descriptor="deGaleriaBt3"/>
+		<media id="GaleriaBt4" src="Media/galeria/04btoff.png" descriptor="deGaleriaBt4"/>
+		<media id="GaleriaBt5" src="Media/galeria/05btoff.png" descriptor="deGaleriaBt5"/>
+		<media id="GaleriaBt6" src="Media/galeria/06btoff.png" descriptor="deGaleriaBt6"/>
+		<media id="GaleriaBt7" src="Media/galeria/07btoff.png" descriptor="deGaleriaBt7"/>
+		<media id="GaleriaBt8" src="Media/galeria/08btoff.png" descriptor="deGaleriaBt8"/>		
+		<media id="BotaoDireito" src="Media/direita.png" descriptor="deBotaoDireito"/>
+		<media id="BotaoEsquerdo" src="Media/esquerda.png" descriptor="deBotaoEsquerdo"/>	
+		<media id="MenuAuxNoticias" type="application/x-ginga-NCLua" src="carrosel.lua" descriptor="deMenuAux"/>
+		<media id="MenuAuxGaleria01" src="Media/galeria/01menuaux.png" descriptor="deMenuAux"/>
+		<media id="MenuAuxGaleria02" src="Media/galeria/02menuaux.png" descriptor="deMenuAux"/>
+
 
 		<media id="settings" type="application/x-ginga-settings" >
 	   		<property name="service.currentKeyMaster" value=""/>
@@ -84,14 +119,45 @@
 			<bind role="onBegin" component="backGroundImage"/>
 
 			<bind role="start" component="frameRed"/>
-			<bind role="start" component="MenuAux"/>
+			<bind role="start" component="MenuAuxNoticias"/>
+			<bind role="start" component="BotaoDireito"/>
+			<bind role="start" component="BotaoEsquerdo"/>
 			<bind role="start" component="Sair"/>
 		</link>
 
 		<!-- Link onBegin FrameBLue -->
 		<link id="link_onBeginStart" xconnector="conBase#onBeginStart">
 			<bind component="frameBlue" role="onBegin"/>
+			<bind role="start" component="GaleriaBt1"/>
+			<bind role="start" component="GaleriaBt2"/>
+			<bind role="start" component="GaleriaBt3"/>
+			<bind role="start" component="GaleriaBt4"/>
+		    <bind role="start" component="GaleriaBt5"/>
+			<bind role="start" component="GaleriaBt6"/>
+			<bind role="start" component="GaleriaBt7"/>
+			<bind role="start" component="GaleriaBt8"/>			
 		</link>
+
+	
+
+
+	<!-- Link onEnd FrameBlue -->
+		<link id="link_onEnd" xconnector="conBase#onEndStop">
+			<bind component="frameBlue" role="onEnd"/>
+			<bind role="stop" component="GaleriaBt1"/>
+			<bind role="stop" component="GaleriaBt2"/>
+			<bind role="stop" component="GaleriaBt3"/>
+			<bind role="stop" component="GaleriaBt4"/>
+		    <bind role="stop" component="GaleriaBt5"/>
+			<bind role="stop" component="GaleriaBt6"/>
+			<bind role="stop" component="GaleriaBt7"/>
+			<bind role="stop" component="GaleriaBt8"/>		
+
+		</link>
+
+
+
+
 
 		<!-- Link Selection Colored Buttons / RED -->
 		<link id="link_frameRedLeft" xconnector="conBase#onSelectionStartStop">
@@ -270,30 +336,50 @@
 			<bind role="stop" component="frameBlue"/>
 		</link>
 
-		<!-- Link Control Focus -->
-		<link id="link_focoBeginBlue" xconnector="conBase#onBeginSet">
-			<bind role="onBegin" component="MenuAux"/>
-			<bind role="set" component="settings" interface="service.currentKeyMaster">
-				<bindParam name="value" value="MenuAux"/>
-			</bind>
+		
+
+		<!-- submenu azul -->
+		<link id="link_galeriabt01" xconnector="conBase#onSelectionStarStop">
+			<bind component="GaleriaBt3" role="onSelection"/>
+			<bind role="stop" component="MenuAuxNoticias"/>
+			<bind role="start" component="MenuAuxGaleria01"/>
 		</link>
 
-		<link id="link_focoEndBlue" xconnector="conBase#onEndSet">
-			<bind role="onEnd" component="MenuAux" />
+		<link id="link_galeriabt02" xconnector="conBase#onSelectionStartStop">
+			<bind component="GaleriaBt2" role="onSelection"/>
+			<bind role="stop" component="MenuAuxNoticias"/>
+			<bind role="stop" component="MenuAuxGaleria01"/>
+			<bind role="start" component="MenuAuxGaleria02"/>
+		</link>
+
+
+
+		<!-- Link Control Focus 
+
+	
+			<link id="link_focoBeginBlue" xconnector="conBase#onBeginSet">
+			<bind role="onBegin" component="frameBlue"/>
+			<bind role="set" component="settings" interface="service.currentKeyMaster">
+				<bindParam name="value" value="11"/>
+			</bind>
+		</link>
+-->
+			<!-- verificar a necessidade futura 
+			<link id="link_focoEndBlue" xconnector="conBase#onEndSet">
+			<bind role="onEnd" component="GaleriaBt1" />
 			<bind role="set" component="settings" interface="service.currentKeyMaster">
 				<bindParam name="value" value=""/>
 			</bind>
 		</link>
+-->
 
-		<!-- Link onEnd FrameBlue -->
-		<link id="link_onEnd" xconnector="conBase#onEndStop">
-			<bind component="frameBlue" role="onEnd"/>
-		</link>
+
+	
+	
 
 		<!-- Link Resize Video Back -->
 		<link id="link_onEndStop" xconnector="conBase#onEndStop">
 			<bind role="onEnd" component="backGroundImage"/>
-
 			<bind role="stop" component="ControlPageRed"/>
 			<bind role="stop" component="ControlPageGreen"/>
 			<bind role="stop" component="ControlPageYellow"/>
@@ -311,6 +397,8 @@
 
 			<bind role="stop" component="backGroundImage"/>
 			<bind role="stop" component="Sair"/>
+			<bind role="stop" component="BotaoDireito"/>
+			<bind role="stop" component="BotaoEsquerdo"/>
 			<bind role="stop" component="MenuAux"/>
 			<bind role="set" component="mediaVideo" interface="bounds">
 				<bindParam name="varSet" value="0%,0%,100%,100%"/>
