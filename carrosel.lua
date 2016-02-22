@@ -1,12 +1,8 @@
 
 function findImages()
 
-	os.execute("find Media/images/ -name *.jpg > imagelist.txt")
-	os.execute("find Media/images/ -name *.JPG >> imagelist.txt")
-	os.execute("find Media/images/ -name *.jpeg >> imagelist.txt")
-	os.execute("find Media/images/ -name *.bmp >> imagelist.txt")
-	os.execute("find Media/images/ -name *.gif >> imagelist.txt")
-	os.execute("find Media/images/ -name *.png >> imagelist.txt")
+
+	os.execute("find Media/noticias/ -name *.png >> imagelist.txt")
 
     local imagesMenu = {}
 
@@ -53,7 +49,7 @@ end
 
 function registerTimer()
 
-  local timeout = 2000
+  local timeout = 3000
 
 
   if cancelTimerFunc then
@@ -70,16 +66,13 @@ function handler(evt)
     print("Evento disparado: " .. evt.class .. " " .. evt.type)
     if (evt.class == 'key' and evt.type == 'press') then
 
-      if evt.key == "CURSOR_UP" then
+      if evt.time == 3000 then
         index = moveImageIndex(images, index, true)
-      elseif evt.key == "CURSOR_DOWN" then
+      else
          index = moveImageIndex(images, index, false)
-      elseif evt.key == "EXIT" then
-        print ('chegou!')
+    
 
       end
-
-    elseif evt.class == "ncl" and evt.type=="presentation" and evt.action=="start" then
       autoForward()
 
     end
