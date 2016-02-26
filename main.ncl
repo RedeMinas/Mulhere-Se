@@ -11,24 +11,19 @@
 
 		<region id="rgBackGroundImage"     width="100%" height="100%" zIndex="1"/>
 			<region id="rgFullScreenMedia" width="100%" height="100%" zIndex="2"/>
-
 			<region id="rgIconInteract"    top="86%"    width="4.45%" height="4.7%"  left="93%"  zIndex="2"/>
 			<region id="rgFrameRed"        top="10.1%"  width="40%"   height="80.2%" left="50%"  zIndex="2"/>
 			<region id="rgFrameGreen"      top="10.1%"  width="40%"   height="80.2%" left="50%"  zIndex="2"/>
 			<region id="rgFrameYellow"     top="10.1%"  width="40%"   height="80.2%" left="50%"  zIndex="2"/>
 			<region id="rgFrameBlue"       top="10.1%"  width="40%"   height="80.2%" left="50%"  zIndex="2"/>
 			<region id="rgFrameExit"       top="86%"    width="2%"    height="3%"    left="52%"  zIndex="5"/>
-
 			<region id="rgGalleryBtn"  top="21.75%" width="18.9%" height="61.8%" left="51.1%"  zIndex="4"/>
-
 			<region id="rgMenuMulherese" top="9.8%" width="38.6%"  height="74%" left="50.45%" zIndex="5"/>
-
 			<region id="rgMenuGaleria" top="54.1%" width="38.7%" height="39%" left="9.4%"  zIndex="4"/>
 			<region id="rgMenuAux"     top="54.1%" width="38.7%" height="39%" left="9.4%"  zIndex="3"/>
-
+			<region id="rgMenuRedes" top="21.7%" width="38%"  height="62%" left="51%" zIndex="5"/>
 			<region id="rgmenuAuxFaixaMulherese" top="22%"   width="9%"     height="61%"   left="80%"    zIndex="4"/>
 			<region id="rgframemenuauxiliar"     top="21.7%" width="37.97%" height="61.8%" left="51.1%"  zIndex="3"/>
-
 			<region id="rgBtnLeft"   top="45%" width="2%" height="5%" left="48%"  zIndex="3"/>
 			<region id="rgBtnRight"  top="45%" width="2%" height="5%" left="90%"  zIndex="3"/>
 
@@ -44,31 +39,25 @@
 			<descriptor id="deFrameBlue"       region="rgFrameBlue"/>
 			<descriptor id="deFrameexit"       region="rgFrameExit"/>
 			<descriptor id="deMenuAux"         region="rgMenuAux"/>
-
 			<descriptor id="deMenuAuxGaleria" region="rgMenuGaleria"/>
-
 			<descriptor id="deGalleryBtn1" region="rgGalleryBtn"/>
 			<descriptor id="deGalleryBtn2" region="rgGalleryBtn"/>
 			<descriptor id="deGalleryBtn3" region="rgGalleryBtn"/>
 			<descriptor id="deGalleryBtn4" region="rgGalleryBtn"/>
 			<descriptor id="deGalleryBtn5" region="rgGalleryBtn"/>
 			<descriptor id="deGalleryBtn6" region="rgGalleryBtn"/>
-
 			<descriptor id="deBtnLeft"   region="rgBtnLeft"/>
 			<descriptor id="deBtnRight"  region="rgBtnRight"/>
 			<descriptor id="deMulherese" region="rgMenuMulherese"/>
-
+			<descriptor id="deRedes" 	 region="rgMenuRedes"/>
 			<descriptor id="deFrameBtn1" region="rgGalleryBtn"/>
 			<descriptor id="deFrameBtn2" region="rgGalleryBtn"/>
 			<descriptor id="deFrameBtn3" region="rgGalleryBtn"/>
 			<descriptor id="deFrameBtn4" region="rgGalleryBtn"/>
 			<descriptor id="deFrameBtn5" region="rgGalleryBtn"/>
 			<descriptor id="deFrameBtn6" region="rgGalleryBtn"/>
-
 			<descriptor id="demenuAuxFaixaMulherese" region="rgmenuAuxFaixaMulherese"/>
 			<descriptor id="deframemenuauxiliar"     region="rgframemenuauxiliar"/>
-
-
 		</descriptorBase>
 
 		<!-- library of used connectors -->
@@ -132,6 +121,8 @@
 
 		<media id="menuAuxMulherese" src="Media/quadros/quadrovermelho/MenuInterativoMulhere-se.png" descriptor="deMulherese"/>
 
+		<media id="menuAuxRedes" src="Media/quadros/quadroamarelo/redes.png" descriptor="deRedes"/>
+
 		<media id="menuAuxFaixaMulherese" src="Media/Frame/mulherese.png"         descriptor="demenuAuxFaixaMulherese"/>
 		<media id="framemenuauxiliar"     src="Media/Frame/framemenuauxiliar.png" descriptor="deframemenuauxiliar"/>
 
@@ -182,16 +173,16 @@
 		</link>
 
 		<!-- Link onBegin / onEnd FrameGreen -->
-		<link id="link_onBeginStart" xconnector="conBase#onBeginStopStart">
+		<link id="link_onBeginStart" xconnector="conBase#onBeginStart">
 			<bind component="frameGreen" role="onBegin"/>
 			<bind role="start" component="frameBtn1"/>
 			<bind role="start" component="framemenuauxiliar"/>
 			<bind role="start" component="menuAuxFaixaMulherese"/>
 			<bind role="start" component="menuAuxQuadros01"/>
-			<bind role="stop" component="menuAuxNoticias"/>
+			
 		</link>
 
-		<link id="link_onEnd" xconnector="conBase#onEndStopStart">
+		<link id="link_onEnd" xconnector="conBase#onEndStop">
 			<bind component="frameGreen" role="onEnd"/>
 			<bind role="stop" component="frameBtn1"/>
 			<bind role="stop" component="frameBtn2"/>
@@ -205,20 +196,33 @@
 			<bind role="stop" component="menuAuxQuadros04"/>
 			<bind role="stop" component="menuAuxQuadros05"/>
 			<bind role="stop" component="menuAuxQuadros06"/>
-			<bind role="start" component="menuAuxNoticias"/>
+			
+		</link>
+
+
+		<!-- Link onBegin / onEnd FrameYellow -->
+		<link id="link_onBeginStart" xconnector="conBase#onBeginStopStart">
+			<bind component="frameYellow" role="onBegin"/>
+			<bind role="stop" component="menuAuxFaixaMulherese"/>
+			<bind role="stop" component="framemenuauxiliar"/>
+			<bind role="start" component="menuAuxRedes"/>
+		</link>
+
+		<link id="link_onEnd" xconnector="conBase#onEndStop">
+			<bind component="frameYellow" role="onEnd"/>
+			<bind role="stop" component="menuAuxRedes"/>
 		</link>
 
 		<!-- Link onBegin / onEnd FrameBLue -->
-		<link id="link_onBeginStart" xconnector="conBase#onBeginStopStart">
+		<link id="link_onBeginStart" xconnector="conBase#onBeginStart">
 			<bind component="frameBlue" role="onBegin"/>
-			<bind role="start" component="galleryBtn1"/>
-			<bind role="stop" component="menuAuxNoticias"/>
+			<bind role="start" component="galleryBtn1"/>			
 			<bind role="start" component="menuAuxGaleria01"/>
 			<bind role="start" component="menuAuxFaixaMulherese"/>
 			<bind role="start" component="framemenuauxiliar"/>
 		</link>
 
-		<link id="link_onEnd" xconnector="conBase#onEndStopStart">
+		<link id="link_onEnd" xconnector="conBase#onEndStop">
 			<bind component="frameBlue" role="onEnd"/>
 			<bind role="stop" component="galleryBtn1"/>
 			<bind role="stop" component="galleryBtn2"/>
@@ -232,7 +236,6 @@
 			<bind role="stop" component="menuAuxGaleria04"/>
 			<bind role="stop" component="menuAuxGaleria05"/>
 			<bind role="stop" component="menuAuxGaleria06"/>
-			<bind role="start" component="menuAuxNoticias"/>
 		</link>
 
 		<!-- Link Selection Colored Buttons / RED / LEFT / RIGHT -->
