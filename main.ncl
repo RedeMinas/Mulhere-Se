@@ -17,16 +17,15 @@
 			<region id="rgFrameYellow"     top="10.1%"  width="40%"   height="80.2%" left="50%"  zIndex="2"/>
 			<region id="rgFrameBlue"       top="10.1%"  width="40%"   height="80.2%" left="50%"  zIndex="2"/>
 			<region id="rgFrameExit"       top="86%"    width="2%"    height="3%"    left="52%"  zIndex="5"/>
-			<region id="rgGalleryBtn"  top="21.75%" width="18.9%" height="61.8%" left="51.1%"  zIndex="4"/>
+			<region id="rgGalleryBtn"  	   top="21.75%" width="18.9%" height="61.8%" left="51.1%"  zIndex="4"/>
 			<region id="rgMenuMulherese" top="9.8%" width="38.6%"  height="74%" left="50.45%" zIndex="5"/>
-			<region id="rgMenuGaleria" top="54.1%" width="38.7%" height="39%" left="9.4%"  zIndex="4"/>
-			<region id="rgMenuAux"     top="54.1%" width="38.7%" height="39%" left="9.4%"  zIndex="3"/>
+			<region id="rgMenuGaleria" top="54.2%" width="38%" height="36.5%" left="9.95%"  zIndex="4"/>
+			<region id="rgMenuAux"     top="53%" width="38.8%" height="37.4%" left="9.2%"  zIndex="3"/>
 			<region id="rgMenuRedes" top="21.7%" width="38%"  height="62%" left="51%" zIndex="5"/>
 			<region id="rgmenuAuxFaixaMulherese" top="22%"   width="9%"     height="61%"   left="80%"    zIndex="4"/>
 			<region id="rgframemenuauxiliar"     top="21.7%" width="37.97%" height="61.8%" left="51.1%"  zIndex="3"/>
 			<region id="rgBtnLeft"   top="45%" width="2%" height="5%" left="48%"  zIndex="3"/>
 			<region id="rgBtnRight"  top="45%" width="2%" height="5%" left="90%"  zIndex="3"/>
-
 		</regionBase>
 
 		<descriptorBase>
