@@ -8,24 +8,22 @@
 	 -->
 	<head>
 	  <regionBase>
-
 		<region id="rgBackGroundImage"     width="100%" height="100%" zIndex="1"/>
-			<region id="rgFullScreenMedia" width="100%" height="100%" zIndex="2"/>
+			<region id="rgFullScreenMedia" width="100%" height="100%" zIndex="3"/>
 			<region id="rgIconInteract"    top="86%"    width="4.45%" height="4.7%"  left="93%"  zIndex="2"/>
-			<region id="rgFrameRed"        top="10.1%"  width="40%"   height="80.2%" left="50%"  zIndex="2"/>
-			<region id="rgFrameGreen"      top="10.1%"  width="40%"   height="80.2%" left="50%"  zIndex="2"/>
-			<region id="rgFrameYellow"     top="10.1%"  width="40%"   height="80.2%" left="50%"  zIndex="2"/>
-			<region id="rgFrameBlue"       top="10.1%"  width="40%"   height="80.2%" left="50%"  zIndex="2"/>
-			<region id="rgFrameExit"       top="86%"    width="2%"    height="3%"    left="52%"  zIndex="5"/>
-			<region id="rgGalleryBtn"  	   top="21.75%" width="18.9%" height="61.8%" left="51.1%"  zIndex="4"/>
-			<region id="rgMenuMulherese" top="9.8%" width="38.6%"  height="74%" left="50.45%" zIndex="5"/>
-			<region id="rgMenuGaleria" top="54.2%" width="38%" height="36.5%" left="9.95%"  zIndex="4"/>
-			<region id="rgMenuAux"     top="53%" width="38.8%" height="37.4%" left="9.2%"  zIndex="3"/>
-			<region id="rgMenuRedes" top="21.7%" width="38%"  height="62%" left="51%" zIndex="5"/>
-			<region id="rgmenuAuxFaixaMulherese" top="22%"   width="9%"     height="61%"   left="80%"    zIndex="4"/>
-			<region id="rgframemenuauxiliar"     top="21.7%" width="37.97%" height="61.8%" left="51.1%"  zIndex="3"/>
-			<region id="rgBtnLeft"   top="45%" width="2%" height="5%" left="48%"  zIndex="3"/>
-			<region id="rgBtnRight"  top="45%" width="2%" height="5%" left="90%"  zIndex="3"/>
+			<region id="rgFrameRed"        top="3%"  width="41%"   height="5.2%" left="54.95%"  zIndex="7"/>
+			<region id="rgFrameGreen"      top="3%"  width="41%"   height="5.2%" left="54.95%"  zIndex="7"/>
+			<region id="rgFrameYellow"     top="3%"  width="41%"   height="5.2%" left="54.95%"  zIndex="7"/>
+			<region id="rgFrameBlue"       top="3%"  width="41%"   height="5.2%" left="54.95%"  zIndex="7"/>
+			<region id="rgFrameExit"       top="87%"    width="2%"    height="3%"    left="97%"  zIndex="5"/>
+			<region id="rgGalleryBtn"  	   top="9%" width="22%" height="81%" left="60%"  zIndex="4"/>
+			<region id="rgMenuMulherese" top="5%" width="40.8%" height="85.7%" left="55%" zIndex="5"/>
+			<region id="rgMenuGaleria" top="50%" width="45%" height="40%" left="5%"  zIndex="4"/>
+			<region id="rgMenuAux"     top="49%" width="48%" height="42%" left="4%"  zIndex="3"/>
+			<region id="rgMenuRedes" top="5%" width="40.8%" height="85.7%" left="55%" zIndex="5"/>
+			<region id="rgmenuAuxFaixaMulherese" top="9%"   width="8%"     height="81%"   left="83%"    zIndex="4"/>
+			<region id="rgframemenuauxiliar"     top="5%" width="40.8%" height="85.7%" left="55%"  zIndex="3"/>
+			<region id="rgfundovideo"  top="3%" width=" 45.3%" height="45%" left="4.8%" zIndex="2"/>
 		</regionBase>
 
 		<descriptorBase>
@@ -45,8 +43,6 @@
 			<descriptor id="deGalleryBtn4" region="rgGalleryBtn"/>
 			<descriptor id="deGalleryBtn5" region="rgGalleryBtn"/>
 			<descriptor id="deGalleryBtn6" region="rgGalleryBtn"/>
-			<descriptor id="deBtnLeft"   region="rgBtnLeft"/>
-			<descriptor id="deBtnRight"  region="rgBtnRight"/>
 			<descriptor id="deMulherese" region="rgMenuMulherese"/>
 			<descriptor id="deRedes" 	 region="rgMenuRedes"/>
 			<descriptor id="deFrameBtn1" region="rgGalleryBtn"/>
@@ -57,6 +53,7 @@
 			<descriptor id="deFrameBtn6" region="rgGalleryBtn"/>
 			<descriptor id="demenuAuxFaixaMulherese" region="rgmenuAuxFaixaMulherese"/>
 			<descriptor id="deframemenuauxiliar"     region="rgframemenuauxiliar"/>
+			<descriptor id="defundovideo"     region="rgfundovideo"/>
 		</descriptorBase>
 
 		<!-- library of used connectors -->
@@ -82,6 +79,7 @@
 		<media id="frameYellow"  src="Media/Frame/amarelo.png"   descriptor="deFrameYellow"/>
 		<media id="frameBlue" 	 src="Media/Frame/azul.png"      descriptor="deFrameBlue"/>
 		<media id="Sair" 		 src="Media/sair.png" 	         descriptor="deFrameexit"/>
+		<media id="fundovideo" 	 src="Media/fundovideo.png"      descriptor="defundovideo"/>
 
 		<!-- Frames -->
 		<media id="frameBtn1" src="Media/quadros/quadroverde/btn1.png" descriptor="deFrameBtn1"/>
@@ -113,8 +111,6 @@
 		<media id="menuAuxGaleria05" src="Media/galeria/05menuaux.png" descriptor="deMenuAuxGaleria"/>
 		<media id="menuAuxGaleria06" src="Media/galeria/06menuaux.png" descriptor="deMenuAuxGaleria"/>
 
-		<media id="btnRight"  src="Media/direita.png"  descriptor="deBtnRight"/>
-		<media id="btnLeft"   src="Media/esquerda.png" descriptor="deBtnLeft"/>
 
 		<media id="menuAuxNoticias"  type="application/x-ginga-NCLua"  src="carrosel.lua" descriptor="deMenuAux"/>
 
@@ -142,9 +138,10 @@
 				<bindParam name="keyCode" value="ENTER"/>
 			</bind>
 			<bind role="set" component="mediaVideo" interface="bounds">
-				<bindParam name="varSet" value="10.9%, 12%, 36.3%, 36.8%"/>
+				<bindParam name="varSet" value="4.8%, 3%, 45.3%, 45%"/>
 
 			</bind>
+			
 			<bind role="start" component="backGroundImage"/>
 			<bind role="stop"  component="iconInteract"/>
 		</link>
@@ -153,8 +150,7 @@
 			<bind role="onBegin" component="backGroundImage"/>
 			<bind role="start" component="frameRed"/>
 			<bind role="start" component="menuAuxNoticias"/>
-			<bind role="start" component="btnRight"/>
-			<bind role="start" component="btnLeft"/>
+			<bind role="start" component="fundovideo"/>
 			<bind role="start" component="Sair"/>
 		</link>
 
@@ -702,9 +698,8 @@
 
 			<bind role="stop" component="backGroundImage"/>
 			<bind role="stop" component="Sair"/>
-			<bind role="stop" component="btnRight"/>
-			<bind role="stop" component="btnLeft"/>
 			<bind role="stop" component="MenuAux"/>
+			<bind role="stop" component="fundovideo"/>
 			<bind role="stop" component="menuAuxNoticias"/>
 			<bind role="stop" component="deMenuAuxGaleria"/>
 			<bind role="stop" component="menuAuxFaixaMulherese"/>
