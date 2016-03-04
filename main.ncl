@@ -10,7 +10,7 @@
 	  <regionBase>
 		<region id="rgBackGroundImage"     width="100%" height="100%" zIndex="1"/>
 			<region id="rgFullScreenMedia" width="100%" height="100%" zIndex="3"/>
-			<region id="rgIconInteract"    top="86%"    width="4.45%" height="4.7%"  left="93%"  zIndex="2"/>
+			<region id="rgIconInteract"    top="86%"    width="4.45%" height="4.7%"  left="93%"  zIndex="3"/>
 			<region id="rgFrameRed"        top="3%"  width="41%"   height="5.2%" left="54.95%"  zIndex="7"/>
 			<region id="rgFrameGreen"      top="3%"  width="41%"   height="5.2%" left="54.95%"  zIndex="7"/>
 			<region id="rgFrameYellow"     top="3%"  width="41%"   height="5.2%" left="54.95%"  zIndex="7"/>
@@ -708,6 +708,7 @@
 				<bindParam name="varSet" value="0%,0%,100%,100%"/>
 			</bind>
 			<bind role="start" component="iconInteract"/>
+
 		</link>
 
 	</body>
