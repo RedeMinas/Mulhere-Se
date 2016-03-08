@@ -8,6 +8,7 @@
 	 -->
 	<head>
 	  <regionBase>
+
 		<region id="rgBackGroundImage"     width="100%" height="100%" zIndex="1"/>
 			<region id="rgFullScreenMedia" width="100%" height="100%" zIndex="3"/>
 			<region id="rgIconInteract"    top="86%"    width="4.45%" height="4.7%"  left="93%"  zIndex="3"/>
@@ -15,20 +16,23 @@
 			<region id="rgFrameGreen"      top="3%"  width="41%"   height="5.2%" left="54.95%"  zIndex="7"/>
 			<region id="rgFrameYellow"     top="3%"  width="41%"   height="5.2%" left="54.95%"  zIndex="7"/>
 			<region id="rgFrameBlue"       top="3%"  width="41%"   height="5.2%" left="54.95%"  zIndex="7"/>
-			<region id="rgFrameExit"       top="87%"    width="2%"    height="3%"    left="97%"  zIndex="5"/>
+			<region id="rgFrameExit"       top="87%"    width="4%"    height="3%"    left="91%"  zIndex="8"/>
 			<region id="rgGalleryBtn"  	   top="9%" width="22%" height="81%" left="60%"  zIndex="4"/>
 			<region id="rgMenuMulherese" top="5%" width="40.8%" height="85.7%" left="55%" zIndex="5"/>
-			<region id="rgMenuGaleria" top="50%" width="45%" height="40%" left="5%"  zIndex="4"/>
-			<region id="rgMenuAux"     top="49%" width="48%" height="42%" left="4%"  zIndex="3"/>
+			<region id="rgMenuGaleria" top="50%" width="45.4%" height="40%" left="4.7%"  zIndex="4"/>
+			<region id="rgMenuAux"     top="50%" width="45.4%" height="40%" left="4.7%"  zIndex="3"/>
 			<region id="rgMenuRedes" top="5%" width="40.8%" height="85.7%" left="55%" zIndex="5"/>
 			<region id="rgmenuAuxFaixaMulherese" top="9%"   width="8%"     height="81%"   left="83%"    zIndex="4"/>
 			<region id="rgframemenuauxiliar"     top="5%" width="40.8%" height="85.7%" left="55%"  zIndex="3"/>
 			<region id="rgfundovideo"  top="3%" width=" 45.3%" height="45%" left="4.8%" zIndex="2"/>
+			<region id="rgBotaoEsc"       top="42%"    width="2%"    height="3%"    left="52%"  zIndex="5"/>
+			<region id="rgBotaoDir"       top="42%"    width="2%"    height="3%"    left="97%"  zIndex="5"/>
+
 		</regionBase>
 
 		<descriptorBase>
 			<descriptor id="deBackGroundImage" region="rgBackGroundImage"/>
-			<descriptor id="deFullScreenMedia" region="rgFullScreenMedia"/>
+			<descriptor id="deFullScreenMedia" region="rgFullScreenMedia"/> 
 			<descriptor id="deIconInteract"    region="rgIconInteract"/>
 			<descriptor id="deFrameRed"        region="rgFrameRed"/>
 			<descriptor id="deFrameGreen"      region="rgFrameGreen"/>
@@ -54,6 +58,9 @@
 			<descriptor id="demenuAuxFaixaMulherese" region="rgmenuAuxFaixaMulherese"/>
 			<descriptor id="deframemenuauxiliar"     region="rgframemenuauxiliar"/>
 			<descriptor id="defundovideo"     region="rgfundovideo"/>
+			<descriptor id="deBotaoDireito"     region="rgBotaoDir"/>
+			<descriptor id="deBotaoEsquerdo"     region="rgBotaoEsc"/>
+
 		</descriptorBase>
 
 		<!-- library of used connectors -->
@@ -110,7 +117,8 @@
 		<media id="menuAuxGaleria04" src="Media/galeria/04menuaux.png" descriptor="deMenuAuxGaleria"/>
 		<media id="menuAuxGaleria05" src="Media/galeria/05menuaux.png" descriptor="deMenuAuxGaleria"/>
 		<media id="menuAuxGaleria06" src="Media/galeria/06menuaux.png" descriptor="deMenuAuxGaleria"/>
-
+		<media id="botaoDir" src="Media/direita.png" descriptor="deBotaoDireito"/>
+		<media id="botaoEsquerdo" src="Media/esquerda.png" descriptor="deBotaoEsquerdo"/>
 
 		<media id="menuAuxNoticias"  type="application/x-ginga-NCLua"  src="carrosel.lua" descriptor="deMenuAux"/>
 
@@ -149,6 +157,8 @@
 		<link id="link_onBeginStart" xconnector="conBase#onBeginStart">
 			<bind role="onBegin" component="backGroundImage"/>
 			<bind role="start" component="frameRed"/>
+			<bind role="start" component="botaoDir"/>
+			<bind role="start" component="botaoEsquerdo"/>
 			<bind role="start" component="menuAuxNoticias"/>
 			<bind role="start" component="fundovideo"/>
 			<bind role="start" component="Sair"/>
@@ -704,6 +714,8 @@
 			<bind role="stop" component="deMenuAuxGaleria"/>
 			<bind role="stop" component="menuAuxFaixaMulherese"/>
 			<bind role="stop" component="framemenuauxiliar"/>
+			<bind role="stop" component="botaoDir"/>
+			<bind role="stop" component="botaoEsquerdo"/>
 			<bind role="set" component="mediaVideo" interface="bounds">
 				<bindParam name="varSet" value="0%,0%,100%,100%"/>
 			</bind>

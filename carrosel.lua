@@ -1,4 +1,3 @@
-
 function findImages()
 
 
@@ -17,8 +16,9 @@ end
 function showImage(images, index)
   if #images > 0 then
     canvas:drawRect('fill', 0, 0, canvas:attrSize());
+    print(canvas:attrSize())
     img = canvas:new(images[index])
-    canvas:compose(10, 10, img)
+    canvas:compose(0,0, img)
     registerTimer()
     canvas:flush()
   end
@@ -49,7 +49,7 @@ end
 
 function registerTimer()
 
-  local timeout = 3000
+  local timeout = 5000
 
 
   if cancelTimerFunc then
@@ -66,7 +66,7 @@ function handler(evt)
     print("Evento disparado: " .. evt.class .. " " .. evt.type)
     if (evt.class == 'key' and evt.type == 'press') then
 
-      if evt.time == 3000 then
+      if evt.time == 5000 then
         index = moveImageIndex(images, index, true)
       else
          index = moveImageIndex(images, index, false)
