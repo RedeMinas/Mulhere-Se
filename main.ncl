@@ -11,7 +11,7 @@
 
 		<region id="rgBackGroundImage"     width="100%" height="100%" zIndex="1"/>
 			<region id="rgFullScreenMedia" width="100%" height="100%" zIndex="3"/>
-			<region id="rgIconInteract"    top="86%"    width="4.45%" height="4.7%"  left="93%"  zIndex="3"/>
+			<region id="rgIconInteract"    top="86%"    width="4.45%" height="4.7%"  left="93%"  zIndex="1"/>
 			<region id="rgFrameRed"        top="3%"  width="41%"   height="5.2%" left="54.95%"  zIndex="7"/>
 			<region id="rgFrameGreen"      top="3%"  width="41%"   height="5.2%" left="54.95%"  zIndex="7"/>
 			<region id="rgFrameYellow"     top="3%"  width="41%"   height="5.2%" left="54.95%"  zIndex="7"/>
@@ -75,6 +75,15 @@
 
 		<media id="backGroundImage" src="Media/fundo.png" descriptor="deBackGroundImage"/>
 
+		<!-- substituir media para tv digital
+		
+		<media id="mediaVideo" src="sbtvd-ts://9.video(1)" descriptor="deFullScreenMedia">
+			<area id="icon" begin="2s"/>
+			<property name="bounds"/>
+		</media>
+
+
+		-->
 		<media id="mediaVideo" src="Media/video.mp4" descriptor="deFullScreenMedia">
 			<area id="icon" begin="2s"/>
 			<property name="bounds"/>
@@ -144,6 +153,20 @@
 		<link id="link_iconMenuSelect" xconnector="conBase#onSelectionIconMenuResizeVideo">
 			<bind role="onSelection" component="iconInteract">
 				<bindParam name="keyCode" value="ENTER"/>
+			</bind>
+			<bind role="set" component="mediaVideo" interface="bounds">
+				<bindParam name="varSet" value="4.8%, 3%, 45.3%, 45%"/>
+
+			</bind>
+			
+			<bind role="start" component="backGroundImage"/>
+			<bind role="stop"  component="iconInteract"/>
+		</link>
+
+		<!-- Link Start Interface botao 2 -->
+		<link id="link_iconMenuSelect" xconnector="conBase#onSelectionIconMenuResizeVideo">
+			<bind role="onSelection" component="iconInteract">
+				<bindParam name="keyCode" value="BLUE"/>
 			</bind>
 			<bind role="set" component="mediaVideo" interface="bounds">
 				<bindParam name="varSet" value="4.8%, 3%, 45.3%, 45%"/>
