@@ -33,14 +33,6 @@
                 </compoundAction>
             </causalConnector>
 
-            <causalConnector id="onEndStopStart">
-                <simpleCondition role="onEnd"/>
-                <compoundAction operator="seq">
-                    <simpleAction role="start" max="unbounded" qualifier="seq"/>
-                    <simpleAction role="stop" max="unbounded" qualifier="seq"/>
-                </compoundAction>
-            </causalConnector>
-
             <causalConnector id="onSelectionStart">
                 <connectorParam name="keyCode"/>
                 <simpleCondition role="onSelection" key="$keyCode"/>
