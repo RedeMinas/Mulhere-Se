@@ -77,7 +77,7 @@
 
         <!-- substituir media para tv digital
 
-        <media id="mediaVideo" src="sbtvd-ts://9.video(1)" descriptor="deFullScreenMedia">
+        <media id="mediaVideo" src="sbtvd-ts://video" descriptor="deFullScreenMedia">
             <area id="icon" begin="2s"/>
             <property name="bounds"/>
         </media>
@@ -105,12 +105,12 @@
         <media id="frameBtn5" src="Media/quadros/quadroverde/btn5.png" descriptor="deFrameBtn5"/>
         <media id="frameBtn6" src="Media/quadros/quadroverde/btn6.png" descriptor="deFrameBtn6"/>
 
-        <media id="menuAuxQuadros01" src="Media/quadros/quadroverde/sarau.png"        descriptor="deMenuAuxGaleria"/>
-        <media id="menuAuxQuadros02" src="Media/quadros/quadroverde/biografias.png"   descriptor="deMenuAuxGaleria"/>
-        <media id="menuAuxQuadros03" src="Media/quadros/quadroverde/dramaturgia.png"  descriptor="deMenuAuxGaleria"/>
-        <media id="menuAuxQuadros04" src="Media/quadros/quadroverde/conversacoes.png" descriptor="deMenuAuxGaleria"/>
-        <media id="menuAuxQuadros05" src="Media/quadros/quadroverde/agencia.png"      descriptor="deMenuAuxGaleria"/>
-        <media id="menuAuxQuadros06" src="Media/quadros/quadroverde/publico.png"      descriptor="deMenuAuxGaleria"/>
+        <media id="menuAuxQuadros01" src="Media/quadros/quadroverde/sarau.jpg"        descriptor="deMenuAuxGaleria"/>
+        <media id="menuAuxQuadros02" src="Media/quadros/quadroverde/biografias.jpg"   descriptor="deMenuAuxGaleria"/>
+        <media id="menuAuxQuadros03" src="Media/quadros/quadroverde/dramaturgia.jpg"  descriptor="deMenuAuxGaleria"/>
+        <media id="menuAuxQuadros04" src="Media/quadros/quadroverde/conversacoes.jpg" descriptor="deMenuAuxGaleria"/>
+        <media id="menuAuxQuadros05" src="Media/quadros/quadroverde/agencia.jpg"      descriptor="deMenuAuxGaleria"/>
+        <media id="menuAuxQuadros06" src="Media/quadros/quadroverde/publico.jpg"      descriptor="deMenuAuxGaleria"/>
 
         <!-- Gallery Media -->
         <media id="galleryBtn1" src="Media/galeria/btn1.png" descriptor="deGalleryBtn1"/>
@@ -120,12 +120,12 @@
         <media id="galleryBtn5" src="Media/galeria/btn5.png" descriptor="deGalleryBtn5"/>
         <media id="galleryBtn6" src="Media/galeria/btn6.png" descriptor="deGalleryBtn6"/>
 
-        <media id="menuAuxGaleria01" src="Media/galeria/01menuaux.png" descriptor="deMenuAuxGaleria"/>
-        <media id="menuAuxGaleria02" src="Media/galeria/02menuaux.png" descriptor="deMenuAuxGaleria"/>
-        <media id="menuAuxGaleria03" src="Media/galeria/03menuaux.png" descriptor="deMenuAuxGaleria"/>
-        <media id="menuAuxGaleria04" src="Media/galeria/04menuaux.png" descriptor="deMenuAuxGaleria"/>
-        <media id="menuAuxGaleria05" src="Media/galeria/05menuaux.png" descriptor="deMenuAuxGaleria"/>
-        <media id="menuAuxGaleria06" src="Media/galeria/06menuaux.png" descriptor="deMenuAuxGaleria"/>
+        <media id="menuAuxGaleria01" src="Media/galeria/01menuaux.jpg" descriptor="deMenuAuxGaleria"/>
+        <media id="menuAuxGaleria02" src="Media/galeria/02menuaux.jpg" descriptor="deMenuAuxGaleria"/>
+        <media id="menuAuxGaleria03" src="Media/galeria/03menuaux.jpg" descriptor="deMenuAuxGaleria"/>
+        <media id="menuAuxGaleria04" src="Media/galeria/04menuaux.jpg" descriptor="deMenuAuxGaleria"/>
+        <media id="menuAuxGaleria05" src="Media/galeria/05menuaux.jpg" descriptor="deMenuAuxGaleria"/>
+        <media id="menuAuxGaleria06" src="Media/galeria/06menuaux.jpg" descriptor="deMenuAuxGaleria"/>
         <media id="botaoDir" src="Media/direita.png" descriptor="deBotaoDireito"/>
         <media id="botaoEsquerdo" src="Media/esquerda.png" descriptor="deBotaoEsquerdo"/>
 

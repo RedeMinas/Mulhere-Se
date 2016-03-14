@@ -1,7 +1,8 @@
 function findImages()
 
 
-	os.execute("find Media/noticias/ -name *.png >> imagelist.txt")
+	os.execute("find Media/noticias/ -name *.png > imagelist.txt")
+	os.execute("find Media/noticias/ -name *.jpg >> imagelist.txt")
 
     local imagesMenu = {}
 
