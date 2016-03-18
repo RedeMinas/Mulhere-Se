@@ -146,6 +146,8 @@
         <media id="menuAuxGaleria07" src="Media/galeria/07menuaux.jpg" descriptor="deMenuAuxGaleria"/>
         <media id="menuAuxGaleria08" src="Media/galeria/08menuaux.jpg" descriptor="deMenuAuxGaleria"/>
         <media id="menuAuxGaleria09" src="Media/galeria/09menuaux.jpg" descriptor="deMenuAuxGaleria"/>
+
+        <media id="menuAuxlogo" src="Media/logo.jpg" descriptor="deMenuAuxGaleria"/>
         
         <media id="botaoDir" src="Media/direita.png" descriptor="deBotaoDireito"/>
         <media id="botaoEsquerdo" src="Media/esquerda.png" descriptor="deBotaoEsquerdo"/>
@@ -157,7 +159,7 @@
         <media id="menuAuxRedes" src="Media/quadros/quadroamarelo/redes.png" descriptor="deRedes"/>
 
        
-        <media id="framemenuauxiliar"     src="Media/Frame/framemenuauxiliar.png" descriptor="deframemenuauxiliar"/>
+        <media id="framemenuauxiliar" src="Media/Frame/framemenuauxiliar.png" descriptor="deframemenuauxiliar"/>
 
 
         <media id="settings" type="application/x-ginga-settings" >
@@ -198,13 +200,14 @@
         <link id="link_onBeginStartFrameRed" xconnector="conBase#onBeginStopStart">
             <bind component="frameRed" role="onBegin"/>
             <bind role="start" component="menuAuxMulherese"/>
-
+            <bind role="start" component="menuAuxlogo"/>
             <bind role="stop" component="framemenuauxiliar"/>
         </link>
 
         <link id="link_onEnd" xconnector="conBase#onEndStop">
             <bind component="frameRed" role="onEnd"/>
             <bind role="stop" component="menuAuxMulherese"/>
+            <bind role="stop" component="menuAuxlogo"/>
         </link>
 
         <!-- Link onBegin / onEnd FrameGreen -->
@@ -293,12 +296,18 @@
             <bind role="stop" component="galleryBtn4"/>
             <bind role="stop" component="galleryBtn5"/>
             <bind role="stop" component="galleryBtn6"/>
+            <bind role="stop" component="galleryBtn7"/>
+            <bind role="stop" component="galleryBtn8"/>
+            <bind role="stop" component="galleryBtn9"/>
             <bind role="stop" component="menuAuxGaleria01"/>
             <bind role="stop" component="menuAuxGaleria02"/>
             <bind role="stop" component="menuAuxGaleria03"/>
             <bind role="stop" component="menuAuxGaleria04"/>
             <bind role="stop" component="menuAuxGaleria05"/>
             <bind role="stop" component="menuAuxGaleria06"/>
+            <bind role="stop" component="menuAuxGaleria07"/>
+            <bind role="stop" component="menuAuxGaleria08"/>
+            <bind role="stop" component="menuAuxGaleria09"/>
         </link>
 
         <!-- Link Selection Colored Buttons / RED / LEFT / RIGHT -->
@@ -617,7 +626,7 @@
             <bind role="start" component="frameBtn5"/>
         </link>
 -->
-        <!-- Link Selection Buttons Frame Blue / UP / DOWN -->
+        <!-- Link Selection Buttons Frame Blue Galeria / UP / DOWN -->
         <link id="link_frameBlueMenuDownBtn1" xconnector="conBase#onSelectionStartStop">
             <bind role="onSelection" component="galleryBtn1">
                 <bindParam name="keyCode" value="CURSOR_DOWN"/>
@@ -816,7 +825,7 @@
             <bind role="start" component="galleryBtn8"/>
         </link>
 
-			<!-- YELLOW -->
+	<!-- YELLOW Notícias-->
            <link id="link_frameYellowMenuUpBtn1" xconnector="conBase#onSelectionStartStop">
             <bind role="onSelection" component="noticiasBtn1">
                 <bindParam name="keyCode" value="CURSOR_UP"/>
@@ -937,6 +946,7 @@
             <bind role="stop" component="frameGreen"/>
             <bind role="stop" component="frameYellow"/>
             <bind role="stop" component="frameBlue"/>
+            <bind role="stop" component="menuAuxlogo"/>
         </link>
 
         <link id="link_btnExitSelectResizeVideo" xconnector="conBase#onSelectionResizeBackVideo">
