@@ -20,7 +20,7 @@
             <region id="rgFrameBlueBtn"         top="10.2%"     width="40.9%"   height="81.9%"  left="54.95%"   zIndex="4"/>
             <region id="rgFrameGreenBtn"        top="10.2%"     width="40.9%"   height="40%"    left="54.95%"   zIndex="4"/>
             <region id="rgFrameRedContent"      top="7%"        width="40.9%"   height="84.95%" left="54.95%"   zIndex="5"/>
-            <region id="rgMenuAuxLua"              top="52%"       width="45.4%"   height="40%"    left="4.7%"     zIndex="4"/>
+            <region id="rgMenuAuxLua"           top="52%"       width="45.4%"   height="40%"    left="4.7%"     zIndex="4"/>
             <region id="rgMenuAux"              top="52%"       width="45.4%"   height="40%"    left="4.7%"     zIndex="3"/>
             <region id="rglogo"                 top="52%"       width="45.4%"   height="40%"    left="4.7%"     zIndex="3"/>
             <region id="rgBackgroundFrames"     top="6%"        width="40.8%"   height="86%"    left="55%"      zIndex="3"/>
@@ -62,11 +62,14 @@
 
         <port id="pMediaInitialPort" component="mediaVideo"/>
 
-        <media id="backGroundImage" src="Media/fundo.png" descriptor="deBackGroundImage"/>
-        <media id="backgroundVideo"   src="Media/fundovideo.png"      descriptor="deBackgroundVideo"/>
-        <media id="backgroundFrames"     src="Media/Frame/framemenuauxiliar.png" descriptor="deBackgroundFrames"/>
-        <media id="botaoDir" src="Media/direita.png" descriptor="deBotaoDireito"/>
-        <media id="botaoEsquerdo" src="Media/esquerda.png" descriptor="deBotaoEsquerdo"/>
+        <!-- Extra -->
+        <media id="backGroundImage"     src="Media/extra/fundo.png" descriptor="deBackGroundImage"/>
+        <media id="backgroundVideo"     src="Media/extra/fundovideo.png"      descriptor="deBackgroundVideo"/>
+        <media id="backgroundFrames"    src="Media/extra/framemenuauxiliar.png" descriptor="deBackgroundFrames"/>
+        <media id="botaoDir"            src="Media/extra/direita.png" descriptor="deBotaoDireito"/>
+        <media id="botaoEsquerdo"       src="Media/extra/esquerda.png" descriptor="deBotaoEsquerdo"/>
+        <media id="iconInteract"        src="Media/extra/icon.png"   descriptor="deIconInteract"/>
+        <media id="Exit"                src="Media/extra/sair.png"  descriptor="deBtnExit"/>
 
         <!-- substituir media para tv digital
         <media id="mediaVideo" src="sbtvd-ts://video" descriptor="deFullScreenMedia">
@@ -80,29 +83,26 @@
             <property name="bounds"/>
         </media>
 
-        <media id="iconInteract" src="Media/icon.png"   descriptor="deIconInteract"/>
-        <media id="Exit"         src="Media/sair.png"  descriptor="deBtnExit"/>
-
         <!-- Frame Red -->
-        <media id="menuRedOff"    src="Media/botoes/vermelhoDesligado.png"  descriptor="deMenuRed"/>
-        <media id="menuRedOn"     src="Media/botoes/vermelhoLigado.png"  descriptor="deMenuRed"/>
+        <media id="menuRedOff"    src="Media/menu/vermelhoDesligado.png"  descriptor="deMenuRed"/>
+        <media id="menuRedOn"     src="Media/menu/vermelhoLigado.png"     descriptor="deMenuRed"/>
 
-        <media id="frameRedContent" src="Media/quadros/quadrovermelho/MenuInterativoMulhere-se.png" descriptor="deFrameRedContent"/>
-        <media id="logo"   src="Media/Frame/logo.png"      descriptor="delogo"/>
+        <media id="frameRedContent" src="Media/quadros/vermelho/MenuInterativoMulhere-se.png" descriptor="deFrameRedContent"/>
+        <media id="logo"   src="Media/quadros/vermelho/logo.png"      descriptor="delogo"/>
 
         <!-- Frame Green -->
-        <media id="menuGreenOff"   src="Media/botoes/verdeDesligado.png" descriptor="deMenuGreen"/>
-        <media id="menuGreenOn"   src="Media/botoes/verdeLigado.png"     descriptor="deMenuGreen"/>
+        <media id="menuGreenOff"    src="Media/menu/verdeDesligado.png" descriptor="deMenuGreen"/>
+        <media id="menuGreenOn"     src="Media/menu/verdeLigado.png"    descriptor="deMenuGreen"/>
 
-        <media id="frameGreenBtn1" src="Media/quadros/quadroverde/btn1.png" descriptor="deFrameGreenBtn"/>
-        <media id="frameGreenBtn2" src="Media/quadros/quadroverde/btn2.png" descriptor="deFrameGreenBtn"/>
-        <media id="frameGreenBtn3" src="Media/quadros/quadroverde/btn3.png" descriptor="deFrameGreenBtn"/>
-        <media id="frameGreenBtn4" src="Media/quadros/quadroverde/btn4.png" descriptor="deFrameGreenBtn"/>
+        <media id="frameGreenBtn1" src="Media/quadros/verde/btn01.png" descriptor="deFrameGreenBtn"/>
+        <media id="frameGreenBtn2" src="Media/quadros/verde/btn02.png" descriptor="deFrameGreenBtn"/>
+        <media id="frameGreenBtn3" src="Media/quadros/verde/btn03.png" descriptor="deFrameGreenBtn"/>
+        <media id="frameGreenBtn4" src="Media/quadros/verde/btn04.png" descriptor="deFrameGreenBtn"/>
 
-        <media id="frameGreenMenuAux1" src="Media/quadros/quadroverde/sarau.jpg"        descriptor="deMenuAux"/>
-        <media id="frameGreenMenuAux2" src="Media/quadros/quadroverde/biografias.jpg"   descriptor="deMenuAux"/>
-        <media id="frameGreenMenuAux3" src="Media/quadros/quadroverde/conversacoes.jpg" descriptor="deMenuAux"/>
-        <media id="frameGreenMenuAux4" src="Media/quadros/quadroverde/agencia.jpg"      descriptor="deMenuAux"/>
+        <media id="frameGreenMenuAux1" src="Media/quadros/verde/01.jpg" descriptor="deMenuAux"/>
+        <media id="frameGreenMenuAux2" src="Media/quadros/verde/02.jpg" descriptor="deMenuAux"/>
+        <media id="frameGreenMenuAux3" src="Media/quadros/verde/03.jpg" descriptor="deMenuAux"/>
+        <media id="frameGreenMenuAux4" src="Media/quadros/verde/04.jpg" descriptor="deMenuAux"/>
 
         <!--
         <media id="frameBtn5" src="Media/quadros/quadroverde/btn5.png" descriptor="deFrameBtn5"/>
@@ -110,42 +110,42 @@
         -->
 
         <!-- Fremae Yellow -->
-        <media id="menuYellowOff"  src="Media/botoes/amareloDesligado.png"      descriptor="deMenuYellow"/>
-        <media id="menuYellowOn"  src="Media/botoes/amareloLigado.png"          descriptor="deMenuYellow"/>
+        <media id="menuYellowOff"  src="Media/menu/amareloDesligado.png"      descriptor="deMenuYellow"/>
+        <media id="menuYellowOn"  src="Media/menu/amareloLigado.png"          descriptor="deMenuYellow"/>
 
-        <media id="frameYellowBtn1" src="Media/noticias/btn1.png" descriptor="deFrameYellowBtn"/>
-        <media id="frameYellowBtn2" src="Media/noticias/btn2.png" descriptor="deFrameYellowBtn"/>
-        <media id="frameYellowBtn3" src="Media/noticias/btn3.png" descriptor="deFrameYellowBtn"/>
-        <media id="frameYellowBtn4" src="Media/noticias/btn4.png" descriptor="deFrameYellowBtn"/>
+        <media id="frameYellowBtn1" src="Media/quadros/amarelo/btn01.png" descriptor="deFrameYellowBtn"/>
+        <media id="frameYellowBtn2" src="Media/quadros/amarelo/btn02.png" descriptor="deFrameYellowBtn"/>
+        <media id="frameYellowBtn3" src="Media/quadros/amarelo/btn03.png" descriptor="deFrameYellowBtn"/>
+        <media id="frameYellowBtn4" src="Media/quadros/amarelo/btn04.png" descriptor="deFrameYellowBtn"/>
 
-        <media id="frameYellowMenuAux1" src="Media/noticias/01.png" descriptor="deMenuAux"/>
-        <media id="frameYellowMenuAux2" src="Media/noticias/02.png" descriptor="deMenuAux"/>
-        <media id="frameYellowMenuAux3" src="Media/noticias/03.png" descriptor="deMenuAux"/>
-        <media id="frameYellowMenuAux4" src="Media/noticias/04.png" descriptor="deMenuAux"/>
+        <media id="frameYellowMenuAux1" src="Media/quadros/amarelo/01.png" descriptor="deMenuAux"/>
+        <media id="frameYellowMenuAux2" src="Media/quadros/amarelo/02.png" descriptor="deMenuAux"/>
+        <media id="frameYellowMenuAux3" src="Media/quadros/amarelo/03.png" descriptor="deMenuAux"/>
+        <media id="frameYellowMenuAux4" src="Media/quadros/amarelo/04.png" descriptor="deMenuAux"/>
 
         <!-- Frame Blue -->
-        <media id="menuBlueOff"   src="Media/botoes/azulDesligado.png"   descriptor="deMenuBlue"/>
-        <media id="menuBlueOn"    src="Media/botoes/azulLigado.png"      descriptor="deMenuBlue"/>
+        <media id="menuBlueOff"   src="Media/menu/azulDesligado.png"   descriptor="deMenuBlue"/>
+        <media id="menuBlueOn"    src="Media/menu/azulLigado.png"      descriptor="deMenuBlue"/>
 
-        <media id="frameBlueBtn1" src="Media/galeria/btn1.png" descriptor="deFrameBlueBtn"/>
-        <media id="frameBlueBtn2" src="Media/galeria/btn2.png" descriptor="deFrameBlueBtn"/>
-        <media id="frameBlueBtn3" src="Media/galeria/btn3.png" descriptor="deFrameBlueBtn"/>
-        <media id="frameBlueBtn4" src="Media/galeria/btn4.png" descriptor="deFrameBlueBtn"/>
-        <media id="frameBlueBtn5" src="Media/galeria/btn5.png" descriptor="deFrameBlueBtn"/>
-        <media id="frameBlueBtn6" src="Media/galeria/btn6.png" descriptor="deFrameBlueBtn"/>
-        <media id="frameBlueBtn7" src="Media/galeria/btn7.png" descriptor="deFrameBlueBtn"/>
-        <media id="frameBlueBtn8" src="Media/galeria/btn8.png" descriptor="deFrameBlueBtn"/>
-        <media id="frameBlueBtn9" src="Media/galeria/btn9.png" descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn1" src="Media/quadros/azul/btn01.png" descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn2" src="Media/quadros/azul/btn02.png" descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn3" src="Media/quadros/azul/btn03.png" descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn4" src="Media/quadros/azul/btn04.png" descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn5" src="Media/quadros/azul/btn05.png" descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn6" src="Media/quadros/azul/btn06.png" descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn7" src="Media/quadros/azul/btn07.png" descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn8" src="Media/quadros/azul/btn08.png" descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn9" src="Media/quadros/azul/btn09.png" descriptor="deFrameBlueBtn"/>
 
-        <media id="frameBlueMenuAux1" src="Media/galeria/01menuaux.jpg" descriptor="deMenuAux"/>
-        <media id="frameBlueMenuAux2" src="Media/galeria/02menuaux.jpg" descriptor="deMenuAux"/>
-        <media id="frameBlueMenuAux3" src="Media/galeria/03menuaux.jpg" descriptor="deMenuAux"/>
-        <media id="frameBlueMenuAux4" src="Media/galeria/04menuaux.jpg" descriptor="deMenuAux"/>
-        <media id="frameBlueMenuAux5" src="Media/galeria/05menuaux.jpg" descriptor="deMenuAux"/>
-        <media id="frameBlueMenuAux6" src="Media/galeria/06menuaux.jpg" descriptor="deMenuAux"/>
-        <media id="frameBlueMenuAux7" src="Media/galeria/07menuaux.jpg" descriptor="deMenuAux"/>
-        <media id="frameBlueMenuAux8" src="Media/galeria/08menuaux.jpg" descriptor="deMenuAux"/>
-        <media id="frameBlueMenuAux9" src="Media/galeria/09menuaux.jpg" descriptor="deMenuAux"/>
+        <media id="frameBlueMenuAux1" src="Media/quadros/azul/01.jpg" descriptor="deMenuAux"/>
+        <media id="frameBlueMenuAux2" src="Media/quadros/azul/02.jpg" descriptor="deMenuAux"/>
+        <media id="frameBlueMenuAux3" src="Media/quadros/azul/03.jpg" descriptor="deMenuAux"/>
+        <media id="frameBlueMenuAux4" src="Media/quadros/azul/04.jpg" descriptor="deMenuAux"/>
+        <media id="frameBlueMenuAux5" src="Media/quadros/azul/05.jpg" descriptor="deMenuAux"/>
+        <media id="frameBlueMenuAux6" src="Media/quadros/azul/06.jpg" descriptor="deMenuAux"/>
+        <media id="frameBlueMenuAux7" src="Media/quadros/azul/07.jpg" descriptor="deMenuAux"/>
+        <media id="frameBlueMenuAux8" src="Media/quadros/azul/08.jpg" descriptor="deMenuAux"/>
+        <media id="frameBlueMenuAux9" src="Media/quadros/azul/09.jpg" descriptor="deMenuAux"/>
 
         <!--
         <media id="menuAuxNoticias"  type="application/x-ginga-NCLua"  src="carrosel.lua" descriptor="deMenuAuxLua"/>
@@ -201,6 +201,7 @@
         <link id="link_onEnd" xconnector="conBase#onEndStop">
             <bind component="menuRedOn" role="onEnd"/>
             <bind role="stop" component="frameRedContent"/>
+            <bind role="stop" component="logo"/>
         </link>
 
         <!-- Link onBegin / onEnd FrameGreen -->
@@ -1014,7 +1015,6 @@
             <bind role="stop" component="backGroundImage"/>
             <bind role="stop" component="Exit"/>
             <bind role="stop" component="backgroundVideo"/>
-            <bind role="stop" component="menuAuxNoticias"/>
             <bind role="stop" component="backgroundFrames"/>
             <bind role="stop" component="botaoDir"/>
             <bind role="stop" component="botaoEsquerdo"/>
