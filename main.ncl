@@ -283,6 +283,10 @@
             <bind role="stop" component="frameBlueBtn5"/>
             <bind role="stop" component="frameBlueBtn6"/>
             <bind role="stop" component="frameBlueBtn7"/>
+            <bind role="stop" component="frameGreenBtn1"/>
+            <bind role="stop" component="frameGreenBtn2"/>
+            <bind role="stop" component="frameGreenBtn3"/>
+            <bind role="stop" component="frameGreenBtn4"/>
 			<!--
             <bind role="stop" component="frameBlueBtn8"/>
             <bind role="stop" component="frameBlueBtn9"/>
@@ -460,7 +464,7 @@
             </bind>
 
             <bind role="start" component="menuBlueOn"/>
-            <bind role="start" component="frameBlueMenuAux1"/>
+            
             <bind role="stop" component="menuYellowOn"/>
         </link>
 
@@ -887,8 +891,7 @@
             </bind>
 
             <bind role="stop" component="frameYellowBtn1"/>
-            <bind role="stop" component="frameYellowMenuAux1"/>
-            <bind role="start" component="frameYellowMenuAux2"/>
+            
             <bind role="start" component="frameYellowBtn2"/>
         </link>
 
