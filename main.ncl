@@ -891,7 +891,8 @@
             </bind>
 
             <bind role="stop" component="frameYellowBtn1"/>
-            
+            <bind role="stop" component="frameYellowMenuAux1"/>
+            <bind role="start" component="frameYellowMenuAux2"/>
             <bind role="start" component="frameYellowBtn2"/>
         </link>
 
