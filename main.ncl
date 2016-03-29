@@ -28,7 +28,7 @@
             <region id="rgMenuAux"              top="52%"       width="45.4%"   height="40%"    left="4.7%"     zIndex="3"/>
             <region id="rglogo"                 top="52%"       width="45.4%"   height="40%"    left="4.7%"     zIndex="3"/>
             <region id="rgBackgroundFrames"     top="6%"        width="40.8%"   height="86%"    left="55%"      zIndex="3"/>
-            <region id="rgBackgroundVideo"      top="5%"        width="45.3%"   height="45%"    left="4.8%"     zIndex="2"/>
+            
             <region id="rgBotaoEsc"             top="44%"       width="2%"      height="3%"     left="52%"      zIndex="5"/>
             <region id="rgBotaoDir"             top="44%"       width="2%"      height="3%"     left="97%"      zIndex="5"/>
             <region id="rgFaixaBotoes"          top="9.9%"      width="41%"   height="0.8%"   left="54.94%"   zIndex="8"/>
@@ -54,7 +54,7 @@
             <descriptor id="deFrameGreenBtn"        region="rgFrameGreenBtn"/>
             <descriptor id="delogo"                 region="rglogo"/>
             <descriptor id="deBackgroundFrames"     region="rgBackgroundFrames"/>
-            <descriptor id="deBackgroundVideo"      region="rgBackgroundVideo"/>
+            
             <descriptor id="deBotaoDireito"         region="rgBotaoDir"/>
             <descriptor id="deBotaoEsquerdo"        region="rgBotaoEsc"/>
             <descriptor id="deFrameYellowBtn"       region="rgFrameGreenBtn"/>
@@ -73,8 +73,8 @@
 
         <!-- Extra -->
         <media id="backGroundImage"     src="Media/extra/fundo.png" descriptor="deBackGroundImage"/>
-        <media id="backgroundVideo"     src="Media/extra/fundovideo.png"      descriptor="deBackgroundVideo"/>
-        <media id="backgroundFrames"    src="Media/extra/framemenuauxiliar.png" descriptor="deBackgroundFrames"/>
+        
+        
         <media id="botaoDir"            src="Media/extra/direita.png" descriptor="deBotaoDireito"/>
         <media id="botaoEsquerdo"       src="Media/extra/esquerda.png" descriptor="deBotaoEsquerdo"/>
         <media id="iconInteract"        src="Media/extra/icon.png"   descriptor="deIconInteract"/>
@@ -262,6 +262,7 @@
             <bind role="stop" component="frameGreenBtn1"/>
             <bind role="stop" component="frameGreenBtn2"/>
             <bind role="stop" component="frameGreenBtn3"/>
+            <bind role="stop" component="frameGreenBtn4"/>
             <!--
             <bind role="stop" component="frameGreenBtn4"/>
         -->
@@ -1006,7 +1007,6 @@
             </bind>
             <bind role="stop" component="backGroundImage"/>
             <bind role="stop" component="Exit"/>
-            <bind role="stop" component="backgroundVideo"/>
             <bind role="stop" component="backgroundFrames"/>
             <bind role="stop" component="botaoDir"/>
             <bind role="stop" component="botaoEsquerdo"/>
