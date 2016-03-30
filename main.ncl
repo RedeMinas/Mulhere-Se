@@ -307,9 +307,7 @@
             <bind role="stop" component="frameYellowMenuAux1"/>
             <bind role="stop" component="frameYellowMenuAux2"/>
             <bind role="stop" component="frameYellowMenuAux3"/>
-            <!--
-            <bind role="stop" component="frameYellowMenuAux4"/>    
-            -->    
+            <bind role="stop" component="frameYellowMenuAux4"/>     
             <bind role="stop" component="faixaAmarela"/>
         </link>
 
