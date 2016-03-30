@@ -25,8 +25,8 @@
             <region id="rgFrameGreenBtn"        top="10.2%"     width="40.9%"   height="40%"    left="54.95%"   zIndex="4"/>
             <region id="rgFrameRedContent"      top="7%"        width="40.9%"   height="84.95%" left="54.95%"   zIndex="5"/>
             <region id="rgMenuAuxLua"           top="52%"       width="45.4%"   height="40%"    left="4.7%"     zIndex="4"/>
-            <region id="rgMenuAux"              top="52%"       width="45.4%"   height="40%"    left="4.7%"     zIndex="3"/>
-            <region id="rglogo"                 top="56%"       width="27.3%"   height="37%"    left="13.5%"     zIndex="3"/>
+            <region id="rgMenuAux"              top="55%"       width="40.62%"  height="37.6%"  left="7%"       zIndex="3"/>
+            <region id="rglogo"                 top="56%"       width="27.3%"   height="37%"    left="13.5%"    zIndex="3"/>
             <region id="rgBackgroundFrames"     top="6%"        width="40.8%"   height="86%"    left="55%"      zIndex="3"/>
             
             <region id="rgBotaoEsc"             top="44%"       width="2%"      height="3%"     left="52%"      zIndex="5"/>
@@ -54,7 +54,6 @@
             <descriptor id="deFrameGreenBtn"        region="rgFrameGreenBtn"/>
             <descriptor id="delogo"                 region="rglogo"/>
             <descriptor id="deBackgroundFrames"     region="rgBackgroundFrames"/>
-            
             <descriptor id="deBotaoDireito"         region="rgBotaoDir"/>
             <descriptor id="deBotaoEsquerdo"        region="rgBotaoEsc"/>
             <descriptor id="deFrameYellowBtn"       region="rgFrameGreenBtn"/>
