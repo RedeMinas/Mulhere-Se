@@ -11,7 +11,7 @@
 
         <region id="rgBackGroundImage"          width="100%"    height="100%"   zIndex="1"/>
             <region id="rgFullScreenMedia"      width="100%"    height="100%"   zIndex="3"/>
-            <region id="rgIconInteract"         top="88%"       width="13%"     height="7.6%"   left="85%"      zIndex="3"/>
+            <region id="rgIconInteract"         top="88%"       width="14.6%"   height="5.6%"   left="85%"      zIndex="3"/>
             <region id="rgFrameRed"             top="5%"        width="10.3%"   height="5.2%"   left="54.94%"   zIndex="7"/>
             <region id="rgFrameRedOff"          top="5%"        width="10.3%"   height="5.2%"   left="54.94%"   zIndex="6"/>
             <region id="rgFrameGreen"           top="5%"        width="10.3%"   height="5.2%"   left="65.1%"    zIndex="7"/>
@@ -21,14 +21,14 @@
             <region id="rgFrameBlue"            top="5%"        width="10.4%"   height="5.2%"   left="85.5%"    zIndex="7"/>
             <region id="rgFrameBlueOff"         top="5%"        width="10.4%"   height="5.2%"   left="85.5%"    zIndex="6"/>
             <region id="rgBtnExit"              top="92.3%"     width="5%"      height="3%"     left="91%"      zIndex="8"/>
-            <region id="rgFrameBlueBtn"         top="10.2%"     width="41,45%"   height="62.77%"  left="54.95%"   zIndex="4"/>
-            <region id="rgFrameGreenBtn"        top="10.2%"     width="41,45%"   height="40%"    left="54.95%"   zIndex="4"/>
+            <region id="rgFrameBlueBtn"         top="10.2%"     width="41,45%"  height="62.77%" left="54.95%"   zIndex="4"/>
+            <region id="rgFrameGreenBtn"        top="10.2%"     width="41,45%"  height="40%"    left="54.95%"   zIndex="4"/>
             <region id="rgFrameRedContent"      top="7%"        width="40.9%"   height="84.95%" left="54.95%"   zIndex="5"/>
             <region id="rgMenuAuxLua"           top="52%"       width="45.4%"   height="40%"    left="4.7%"     zIndex="4"/>
             <region id="rgMenuAux"              top="55%"       width="40.62%"  height="37.6%"  left="7%"       zIndex="3"/>
             <region id="rglogo"                 top="56%"       width="27.3%"   height="37%"    left="13.5%"    zIndex="3"/>
             <region id="rgBackgroundFrames"     top="6%"        width="40.8%"   height="86%"    left="55%"      zIndex="3"/>
-            
+
             <region id="rgBotaoEsc"             top="44%"       width="2%"      height="3%"     left="52%"      zIndex="5"/>
             <region id="rgBotaoDir"             top="44%"       width="2%"      height="3%"     left="97%"      zIndex="5"/>
             <region id="rgFaixaBotoes"          top="9.9%"      width="41%"   height="0.8%"   left="54.94%"   zIndex="8"/>
@@ -72,8 +72,7 @@
 
         <!-- Extra -->
         <media id="backGroundImage"     src="Media/extra/fundo.png" descriptor="deBackGroundImage"/>
-        
-        
+
         <media id="botaoDir"            src="Media/extra/direita.png" descriptor="deBotaoDireito"/>
         <media id="botaoEsquerdo"       src="Media/extra/esquerda.png" descriptor="deBotaoEsquerdo"/>
         <media id="iconInteract"        src="Media/extra/icon.png"   descriptor="deIconInteract"/>
@@ -129,12 +128,12 @@
         <media id="frameYellowBtn2" src="Media/quadros/amarelo/btn02.png" descriptor="deFrameYellowBtn"/>
         <media id="frameYellowBtn3" src="Media/quadros/amarelo/btn03.png" descriptor="deFrameYellowBtn"/>
         <media id="frameYellowBtn4" src="Media/quadros/amarelo/btn04.png" descriptor="deFrameYellowBtn"/>
-    
+
         <media id="frameYellowMenuAux1" src="Media/quadros/amarelo/01.png" descriptor="deMenuAux"/>
         <media id="frameYellowMenuAux2" src="Media/quadros/amarelo/02.png" descriptor="deMenuAux"/>
         <media id="frameYellowMenuAux3" src="Media/quadros/amarelo/03.png" descriptor="deMenuAux"/>
         <media id="frameYellowMenuAux4" src="Media/quadros/amarelo/04.png" descriptor="deMenuAux"/>
-   
+
         <!-- Frame Blue -->
         <media id="menuBlueOff"   src="Media/menu/azulDesligado.png"   descriptor="deMenuBlueOff"/>
         <media id="menuBlueOn"    src="Media/menu/azulLigado.png"      descriptor="deMenuBlue"/>
@@ -301,12 +300,12 @@
             <bind component="menuYellowOn" role="onEnd"/>
             <bind role="stop" component="frameYellowBtn1"/>
             <bind role="stop" component="frameYellowBtn2"/>
-            <bind role="stop" component="frameYellowBtn3"/>        
-            <bind role="stop" component="frameYellowBtn4"/>   
+            <bind role="stop" component="frameYellowBtn3"/>
+            <bind role="stop" component="frameYellowBtn4"/>
             <bind role="stop" component="frameYellowMenuAux1"/>
             <bind role="stop" component="frameYellowMenuAux2"/>
             <bind role="stop" component="frameYellowMenuAux3"/>
-            <bind role="stop" component="frameYellowMenuAux4"/>     
+            <bind role="stop" component="frameYellowMenuAux4"/>
             <bind role="stop" component="faixaAmarela"/>
         </link>
 
@@ -454,7 +453,7 @@
             </bind>
 
             <bind role="start" component="menuBlueOn"/>
-            
+
             <bind role="stop" component="menuYellowOn"/>
         </link>
 
@@ -950,7 +949,7 @@
             <bind role="start" component="frameYellowBtn1"/>
         </link>
 <!--
-        
+
         <link id="link_frameYellowMenuUpBtn5" xconnector="conBase#onSelectionStartStop">
             <bind role="onSelection" component="noticiasBtn5">
                 <bindParam name="keyCode" value="CURSOR_UP"/>
