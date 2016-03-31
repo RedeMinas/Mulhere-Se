@@ -72,7 +72,6 @@
 
         <!-- Extra -->
         <media id="backGroundImage"     src="Media/extra/fundo.png" descriptor="deBackGroundImage"/>
-
         <media id="botaoDir"            src="Media/extra/direita.png" descriptor="deBotaoDireito"/>
         <media id="botaoEsquerdo"       src="Media/extra/esquerda.png" descriptor="deBotaoEsquerdo"/>
         <media id="iconInteract"        src="Media/extra/icon.png"   descriptor="deIconInteract"/>
