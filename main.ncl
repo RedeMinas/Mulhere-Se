@@ -12,26 +12,26 @@
         <region id="rgBackGroundImage"          width="100%"    height="100%"   zIndex="1"/>
             <region id="rgFullScreenMedia"      width="100%"    height="100%"   zIndex="3"/>
             <region id="rgIconInteract"         top="88%"       width="20%"   height="5.6%"   left="78%"      zIndex="3"/>
-            <region id="rgFrameRed"             top="5%"        width="10.3%"   height="5.2%"   left="54.94%"   zIndex="7"/>
-            <region id="rgFrameRedOff"          top="5%"        width="10.3%"   height="5.2%"   left="54.94%"   zIndex="6"/>
-            <region id="rgFrameGreen"           top="5%"        width="10.3%"   height="5.2%"   left="65.1%"    zIndex="7"/>
-            <region id="rgFrameGreenOff"        top="5%"        width="10.3%"   height="5.2%"   left="65.1%"    zIndex="6"/>
-            <region id="rgFrameYellow"          top="5%"        width="10.3%"   height="5.2%"   left="75.3%"    zIndex="7"/>
-            <region id="rgFrameYellowOff"       top="5%"        width="10.3%"   height="5.2%"   left="75.3%"    zIndex="6"/>
-            <region id="rgFrameBlue"            top="5%"        width="10.4%"   height="5.2%"   left="85.5%"    zIndex="7"/>
-            <region id="rgFrameBlueOff"         top="5%"        width="10.4%"   height="5.2%"   left="85.5%"    zIndex="6"/>
+            <region id="rgFrameRed"             top="5%"        width="10.4166%"   height="4.6296%"   left="54.94%"   zIndex="7"/>
+            <region id="rgFrameRedOff"          top="5%"        width="10.4166%"   height="4.6296%"   left="54.94%"   zIndex="6"/>
+            <region id="rgFrameGreen"           top="5%"        width="10.4166%"   height="4.6296%"   left="65.3045%"    zIndex="7"/>
+            <region id="rgFrameGreenOff"        top="5%"        width="10.4166%"   height="4.6296%"   left="65.3045%"    zIndex="6"/>
+            <region id="rgFrameYellow"          top="5%"        width="10.4166%"   height="4.6296%"   left="75.669%"    zIndex="7"/>
+            <region id="rgFrameYellowOff"       top="5%"        width="10.4166%"   height="4.6296%"   left="75.669%"    zIndex="6"/>
+            <region id="rgFrameBlue"            top="5%"        width="10.4166%"   height="4.6296%"   left="86.0335%"    zIndex="7"/>
+            <region id="rgFrameBlueOff"         top="5%"        width="10.4166%"   height="4.6296%"   left="86.0335%"    zIndex="6"/>
             <region id="rgBtnExit"              top="92.3%"     width="5%"      height="3%"     left="91%"      zIndex="8"/>
-            <region id="rgFrameBlueBtn"         top="10.2%"     width="41.45%"  height="44.907%" left="54.95%"   zIndex="4"/>
-            <region id="rgFrameGreenBtn"        top="10.2%"     width="41.45%"  height="35.925%"    left="54.95%"   zIndex="4"/>
-	    <region id="rgFrameYellowBtn"       top="10.2%"     width="41.45%"  height="26.944%" left="54.95%"   zIndex="4"/>
-            <region id="rgFrameRedContent"      top="7%"        width="41.41%"   height="80.74%" left="54.95%"   zIndex="5"/>
+            <region id="rgFrameBlueBtn"         top="10.18%"     width="41.4583%"  height="44.907%" left="54.95%"   zIndex="4"/>
+            <region id="rgFrameGreenBtn"        top="10.18%"     width="41.4583%"  height="35.925%"    left="54.95%"   zIndex="4"/>
+	    <region id="rgFrameYellowBtn"       top="10.05%"     width="41.4583%"  height="26.944%" left="54.95%"   zIndex="4"/>
+            <region id="rgFrameRedContent"      top="10.18%"        width="41.4583%"   height="79.7222%" left="54.95%"   zIndex="5"/>
             <region id="rgMenuAuxLua"           top="52%"       width="45.4%"   height="40%"    left="4.7%"     zIndex="4"/>
             <region id="rgMenuAux"              top="55%"       width="40.62%"  height="37.6%"  left="7%"       zIndex="3"/>
             <region id="rglogo"                 top="56%"       width="27.3%"   height="37%"    left="13.5%"    zIndex="3"/>
             <region id="rgBackgroundFrames"     top="6%"        width="40.8%"   height="86%"    left="55%"      zIndex="3"/>
             <region id="rgBotaoEsc"             top="44%"       width="2%"      height="3%"     left="52%"      zIndex="5"/>
             <region id="rgBotaoDir"             top="44%"       width="2%"      height="3%"     left="97%"      zIndex="5"/>
-            <region id="rgFaixaBotoes"          top="9.9%"      width="41%"   height="0.8%"   left="54.94%"   zIndex="8"/>
+            <region id="rgFaixaBotoes"          top="9.5%"      width="41.4583%"   height="0.8%"   left="54.94%"   zIndex="8"/>
         </regionBase>
 
         <descriptorBase>
