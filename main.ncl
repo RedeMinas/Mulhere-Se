@@ -8,30 +8,29 @@
      -->
     <head>
       <regionBase>
-
-        <region id="rgBackGroundImage"          width="100%"    height="100%"   zIndex="1"/>
-            <region id="rgFullScreenMedia"      width="100%"    height="100%"   zIndex="3"/>
-            <region id="rgIconInteract"         top="88%"       width="20%"   height="5.6%"   left="78%"      zIndex="3"/>
-            <region id="rgFrameRed"             top="5%"        width="10.4166%"   height="4.6296%"   left="54.94%"   zIndex="7"/>
-            <region id="rgFrameRedOff"          top="5%"        width="10.4166%"   height="4.6296%"   left="54.94%"   zIndex="6"/>
+        <region id="rgBackGroundImage"                          width="100%"       height="100%"                         zIndex="1"/>
+            <region id="rgFullScreenMedia"                      width="100%"       height="100%"                         zIndex="3"/>
+            <region id="rgIconInteract"         top="88%"       width="20%"        height="5.6%"      left="78%"         zIndex="3"/>
+            <region id="rgFrameRed"             top="5%"        width="10.4166%"   height="4.6296%"   left="54.94%"      zIndex="7"/>
+            <region id="rgFrameRedOff"          top="5%"        width="10.4166%"   height="4.6296%"   left="54.94%"      zIndex="6"/>
             <region id="rgFrameGreen"           top="5%"        width="10.4166%"   height="4.6296%"   left="65.3045%"    zIndex="7"/>
             <region id="rgFrameGreenOff"        top="5%"        width="10.4166%"   height="4.6296%"   left="65.3045%"    zIndex="6"/>
-            <region id="rgFrameYellow"          top="5%"        width="10.4166%"   height="4.6296%"   left="75.669%"    zIndex="7"/>
-            <region id="rgFrameYellowOff"       top="5%"        width="10.4166%"   height="4.6296%"   left="75.669%"    zIndex="6"/>
+            <region id="rgFrameYellow"          top="5%"        width="10.4166%"   height="4.6296%"   left="75.669%"     zIndex="7"/>
+            <region id="rgFrameYellowOff"       top="5%"        width="10.4166%"   height="4.6296%"   left="75.669%"     zIndex="6"/>
             <region id="rgFrameBlue"            top="5%"        width="10.4166%"   height="4.6296%"   left="86.0335%"    zIndex="7"/>
             <region id="rgFrameBlueOff"         top="5%"        width="10.4166%"   height="4.6296%"   left="86.0335%"    zIndex="6"/>
-            <region id="rgBtnExit"              top="92.3%"     width="5%"      height="3%"     left="91%"      zIndex="8"/>
-            <region id="rgFrameBlueBtn"         top="10.18%"     width="41.4583%"  height="44.907%" left="54.95%"   zIndex="4"/>
-            <region id="rgFrameGreenBtn"        top="10.18%"     width="41.4583%"  height="35.925%"    left="54.95%"   zIndex="4"/>
-	    <region id="rgFrameYellowBtn"       top="10.05%"     width="41.4583%"  height="26.944%" left="54.95%"   zIndex="4"/>
-            <region id="rgFrameRedContent"      top="10.18%"        width="41.4583%"   height="79.7222%" left="54.95%"   zIndex="5"/>
-            <region id="rgMenuAuxLua"           top="52%"       width="45.4%"   height="40%"    left="4.7%"     zIndex="4"/>
-            <region id="rgMenuAux"              top="55%"       width="40.62%"  height="37.6%"  left="7%"       zIndex="3"/>
-            <region id="rglogo"                 top="56%"       width="27.3%"   height="37%"    left="13.5%"    zIndex="3"/>
-            <region id="rgBackgroundFrames"     top="6%"        width="40.8%"   height="86%"    left="55%"      zIndex="3"/>
-            <region id="rgBotaoEsc"             top="44%"       width="2%"      height="3%"     left="52%"      zIndex="5"/>
-            <region id="rgBotaoDir"             top="44%"       width="2%"      height="3%"     left="97%"      zIndex="5"/>
-            <region id="rgFaixaBotoes"          top="9.5%"      width="41.4583%"   height="0.8%"   left="54.94%"   zIndex="8"/>
+            <region id="rgBtnExit"              top="92.3%"     width="5%"         height="3%"        left="91%"         zIndex="8"/>
+            <region id="rgFrameBlueBtn"         top="10.18%"    width="41.4583%"   height="44.907%"   left="54.95%"      zIndex="4"/>
+            <region id="rgFrameGreenBtn"        top="10.18%"    width="41.4583%"   height="35.925%"   left="54.95%"      zIndex="4"/>
+	        <region id="rgFrameYellowBtn"       top="10.05%"    width="41.4583%"   height="26.944%"   left="54.95%"      zIndex="4"/>
+            <region id="rgFrameRedContent"      top="10.18%"    width="41.4583%"   height="79.7222%"  left="54.95%"      zIndex="5"/>
+            <region id="rgMenuAuxLua"           top="52%"       width="45.4%"      height="40%"       left="4.7%"        zIndex="4"/>
+            <region id="rgMenuAux"              top="55%"       width="40.62%"     height="37.6%"     left="7%"          zIndex="3"/>
+            <region id="rglogo"                 top="56%"       width="27.3%"      height="37%"       left="13.5%"       zIndex="3"/>
+            <region id="rgBackgroundFrames"     top="6%"        width="40.8%"      height="86%"       left="55%"         zIndex="3"/>
+            <region id="rgBotaoEsc"             top="44%"       width="2%"         height="3%"        left="52%"         zIndex="5"/>
+            <region id="rgBotaoDir"             top="44%"       width="2%"         height="3%"        left="97%"         zIndex="5"/>
+            <region id="rgFaixaBotoes"          top="9.5%"      width="41.4583%"   height="0.8%"      left="54.94%"      zIndex="8"/>
         </regionBase>
 
         <descriptorBase>
@@ -71,15 +70,15 @@
         <port id="pMediaInitialPort" component="mediaVideo"/>
 
         <!-- Extra -->
-        <media id="backGroundImage"     src="Media/extra/fundo.png" descriptor="deBackGroundImage"/>
-        <media id="botaoDir"            src="Media/extra/direita.png" descriptor="deBotaoDireito"/>
-        <media id="botaoEsquerdo"       src="Media/extra/esquerda.png" descriptor="deBotaoEsquerdo"/>
-        <media id="iconInteract"        src="Media/extra/icon.png"   descriptor="deIconInteract"/>
-        <media id="Exit"                src="Media/extra/sair.png"  descriptor="deBtnExit"/>
+        <media id="backGroundImage"     src="Media/extra/fundo.png"        descriptor="deBackGroundImage"/>
+        <media id="botaoDir"            src="Media/extra/direita.png"      descriptor="deBotaoDireito"/>
+        <media id="botaoEsquerdo"       src="Media/extra/esquerda.png"     descriptor="deBotaoEsquerdo"/>
+        <media id="iconInteract"        src="Media/extra/icon.png"         descriptor="deIconInteract"/>
+        <media id="Exit"                src="Media/extra/sair.png"         descriptor="deBtnExit"/>
         <media id="faixaVermelha"       src="Media/menu/linhaVermelha.png" descriptor="deFaixaBotoes"/>
-        <media id="faixaVerde"          src="Media/menu/linhaVerde.png" descriptor="deFaixaBotoes"/>
-        <media id="faixaAmarela"        src="Media/menu/linhaAmarela.png" descriptor="deFaixaBotoes"/>
-        <media id="faixaAzul"           src="Media/menu/linhaAzul.png" descriptor="deFaixaBotoes"/>
+        <media id="faixaVerde"          src="Media/menu/linhaVerde.png"    descriptor="deFaixaBotoes"/>
+        <media id="faixaAmarela"        src="Media/menu/linhaAmarela.png"  descriptor="deFaixaBotoes"/>
+        <media id="faixaAzul"           src="Media/menu/linhaAzul.png"     descriptor="deFaixaBotoes"/>
 
         <!-- substituir media para tv digital
         <media id="mediaVideo" src="sbtvd-ts://video" descriptor="deFullScreenMedia">
@@ -94,11 +93,11 @@
         </media>
 
         <!-- Frame Red -->
-        <media id="menuRedOff"    src="Media/menu/vermelhoDesligado.png"  descriptor="deMenuRedOff"/>
-        <media id="menuRedOn"     src="Media/menu/vermelhoLigado.png"     descriptor="deMenuRed"/>
+        <media id="menuRedOff"      src="Media/menu/vermelhoDesligado.png"                    descriptor="deMenuRedOff"/>
+        <media id="menuRedOn"       src="Media/menu/vermelhoLigado.png"                       descriptor="deMenuRed"/>
 
         <media id="frameRedContent" src="Media/quadros/vermelho/MenuInterativoMulhere-se.png" descriptor="deFrameRedContent"/>
-        <media id="logo"   src="Media/quadros/vermelho/logo.png"      descriptor="delogo"/>
+        <media id="logo"            src="Media/quadros/vermelho/logo.png"                     descriptor="delogo"/>
 
         <!-- Frame Green -->
         <media id="menuGreenOff"    src="Media/menu/verdeDesligado.png" descriptor="deMenuGreenOff"/>
@@ -120,9 +119,8 @@
         -->
 
         <!-- Fremae Yellow -->
-        <media id="menuYellowOff"  src="Media/menu/amareloDesligado.png"      descriptor="deMenuYellowOff"/>
-        <media id="menuYellowOn"  src="Media/menu/amareloLigado.png"          descriptor="deMenuYellow"/>
-
+        <media id="menuYellowOff"   src="Media/menu/amareloDesligado.png" descriptor="deMenuYellowOff"/>
+        <media id="menuYellowOn"    src="Media/menu/amareloLigado.png"    descriptor="deMenuYellow"/>
         <media id="frameYellowBtn1" src="Media/quadros/amarelo/btn01.png" descriptor="deFrameYellowBtn"/>
         <media id="frameYellowBtn2" src="Media/quadros/amarelo/btn02.png" descriptor="deFrameYellowBtn"/>
         <media id="frameYellowBtn3" src="Media/quadros/amarelo/btn03.png" descriptor="deFrameYellowBtn"/>
@@ -140,11 +138,11 @@
         <media id="menuBlueOff"   src="Media/menu/azulDesligado.png"   descriptor="deMenuBlueOff"/>
         <media id="menuBlueOn"    src="Media/menu/azulLigado.png"      descriptor="deMenuBlue"/>
 
-        <media id="frameBlueBtn1" src="Media/quadros/azul/btn01.png" descriptor="deFrameBlueBtn"/>
-        <media id="frameBlueBtn2" src="Media/quadros/azul/btn02.png" descriptor="deFrameBlueBtn"/>
-        <media id="frameBlueBtn3" src="Media/quadros/azul/btn03.png" descriptor="deFrameBlueBtn"/>
-        <media id="frameBlueBtn4" src="Media/quadros/azul/btn04.png" descriptor="deFrameBlueBtn"/>
-        <media id="frameBlueBtn5" src="Media/quadros/azul/btn05.png" descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn1" src="Media/quadros/azul/btn01.png"   descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn2" src="Media/quadros/azul/btn02.png"   descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn3" src="Media/quadros/azul/btn03.png"   descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn4" src="Media/quadros/azul/btn04.png"   descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn5" src="Media/quadros/azul/btn05.png"   descriptor="deFrameBlueBtn"/>
 
         <!--
         <media id="frameBlueBtn6" src="Media/quadros/azul/btn06.png" descriptor="deFrameBlueBtn"/>
@@ -193,21 +191,21 @@
 
         <link id="link_onBeginStart" xconnector="conBase#onBeginStart">
             <bind role="onBegin" component="backGroundImage"/>
-            <bind role="start" component="menuRedOn"/>
-            <bind role="start" component="faixaVermelha"/>
-            <bind role="start" component="menuGreenOff"/>
-            <bind role="start" component="menuYellowOff"/>
-            <bind role="start" component="menuBlueOff"/>
-            <bind role="start" component="botaoDir"/>
-            <bind role="start" component="botaoEsquerdo"/>
-            <bind role="start" component="backgroundVideo"/>
-            <bind role="start" component="Exit"/>
+            <bind role="start"   component="menuRedOn"/>
+            <bind role="start"   component="faixaVermelha"/>
+            <bind role="start"   component="menuGreenOff"/>
+            <bind role="start"   component="menuYellowOff"/>
+            <bind role="start"   component="menuBlueOff"/>
+            <bind role="start"   component="botaoDir"/>
+            <bind role="start"   component="botaoEsquerdo"/>
+            <bind role="start"   component="backgroundVideo"/>
+            <bind role="start"   component="Exit"/>
         </link>
 
         <!-- Link onBegin / onEnd FrameRed -->
         <link id="link_onBeginStartFrameRed" xconnector="conBase#onBeginStopStart">
             <bind component="menuRedOn" role="onBegin"/>
-            <bind role="stop" component="backgroundFrames"/>
+            <bind role="stop"  component="backgroundFrames"/>
             <bind role="start" component="faixaVermelha"/>
             <bind role="start" component="frameRedContent"/>
 			<bind role="start" component="logo"/>
@@ -215,16 +213,16 @@
             <bind role="start" component="menuYellowOff"/>
             <bind role="start" component="menuBlueOff"/>
             <bind role="start" component="faixaVermelha"/>
-			<bind role="stop" component="menuGreenOn"/>
-            <bind role="stop" component="menuYellowOn"/>
-            <bind role="stop" component="menuBlueOn"/>
+			<bind role="stop"  component="menuGreenOn"/>
+            <bind role="stop"  component="menuYellowOn"/>
+            <bind role="stop"  component="menuBlueOn"/>
         </link>
 
         <link id="link_onEnd" xconnector="conBase#onEndStop">
             <bind component="menuRedOn" role="onEnd"/>
-            <bind role="stop" component="frameRedContent"/>
-            <bind role="stop" component="logo"/>
-            <bind role="stop" component="faixaVermelha"/>
+            <bind role="stop"  component="frameRedContent"/>
+            <bind role="stop"  component="logo"/>
+            <bind role="stop"  component="faixaVermelha"/>
             <bind role="start" component="menuRedOff"/>
         </link>
 
@@ -242,9 +240,9 @@
             <bind role="stop" component="frameBlueBtn8"/>
             <bind role="stop" component="frameBlueBtn9"/>
             -->
-            <bind role="stop" component="menuRedOn"/>
-            <bind role="stop" component="menuYellowOn"/>
-            <bind role="stop" component="menuBlueOn"/>
+            <bind role="stop"  component="menuRedOn"/>
+            <bind role="stop"  component="menuYellowOn"/>
+            <bind role="stop"  component="menuBlueOn"/>
             <bind role="start" component="menuRedOff"/>
             <bind role="start" component="menuYellowOff"/>
             <bind role="start" component="menuBlueOff"/>
@@ -256,15 +254,15 @@
 
         <link id="link_onEndFrameGreen" xconnector="conBase#onEndStop">
             <bind component="menuGreenOn" role="onEnd"/>
-            <bind role="stop" component="frameGreenBtn1"/>
-            <bind role="stop" component="frameGreenBtn2"/>
-            <bind role="stop" component="frameGreenBtn3"/>
-            <bind role="stop" component="frameGreenBtn4"/>
-            <bind role="stop" component="frameGreenMenuAux1"/>
-            <bind role="stop" component="frameGreenMenuAux2"/>
-            <bind role="stop" component="frameGreenMenuAux3"/>
-            <bind role="stop" component="frameGreenMenuAux4"/>
-            <bind role="stop" component="faixaVerde"/>
+            <bind role="stop"  component="frameGreenBtn1"/>
+            <bind role="stop"  component="frameGreenBtn2"/>
+            <bind role="stop"  component="frameGreenBtn3"/>
+            <bind role="stop"  component="frameGreenBtn4"/>
+            <bind role="stop"  component="frameGreenMenuAux1"/>
+            <bind role="stop"  component="frameGreenMenuAux2"/>
+            <bind role="stop"  component="frameGreenMenuAux3"/>
+            <bind role="stop"  component="frameGreenMenuAux4"/>
+            <bind role="stop"  component="faixaVerde"/>
             <bind role="start" component="menuGreenOff"/>
         </link>
 
@@ -286,9 +284,9 @@
             <bind role="stop" component="frameBlueBtn8"/>
             <bind role="stop" component="frameBlueBtn9"/>
             -->
-            <bind role="stop" component="menuBlueOn"/>
-			<bind role="stop" component="menuRedOn"/>
-            <bind role="stop" component="menuGreenOn"/>
+            <bind role="stop"  component="menuBlueOn"/>
+			<bind role="stop"  component="menuRedOn"/>
+            <bind role="stop"  component="menuGreenOn"/>
             <bind role="start" component="menuRedOff"/>
             <bind role="start" component="menuGreenOff"/>
             <bind role="start" component="menuBlueOff"/>
@@ -314,9 +312,9 @@
         <!-- Link onBegin / onEnd FrameBLue -->
         <link id="link_onBeginStartFrameBlue" xconnector="conBase#onBeginStopStart">
             <bind component="menuBlueOn" role="onBegin"/>
-            <bind role="stop" component="menuRedOn"/>
-            <bind role="stop" component="menuGreenOn"/>
-            <bind role="stop" component="menuYellowOn"/>
+            <bind role="stop"  component="menuRedOn"/>
+            <bind role="stop"  component="menuGreenOn"/>
+            <bind role="stop"  component="menuYellowOn"/>
             <bind role="start" component="frameBlueBtn1"/>
             <bind role="start" component="frameBlueMenuAux1"/>
             <bind role="start" component="menuRedOff"/>
@@ -357,8 +355,7 @@
             <bind role="onSelection" component="menuRedOn">
                 <bindParam name="keyCode" value="CURSOR_LEFT"/>
             </bind>
-
-            <bind role="stop" component="menuRedOn"/>
+            <bind role="stop"  component="menuRedOn"/>
             <bind role="start" component="menuBlueOn"/>
         </link>
 
@@ -366,8 +363,7 @@
             <bind role="onSelection" component="menuRedOn">
                 <bindParam name="keyCode" value="CURSOR_RIGHT"/>
             </bind>
-
-            <bind role="stop" component="menuRedOn"/>
+            <bind role="stop"  component="menuRedOn"/>
             <bind role="start" component="menuGreenOn"/>
         </link>
 
@@ -385,7 +381,7 @@
                 <bindParam name="keyCode" value="GREEN"/>
             </bind>
             <bind role="start" component="menuGreenOn"/>
-            <bind role="stop" component="menuRedOn"/>
+            <bind role="stop"  component="menuRedOn"/>
         </link>
 
         <link id="link_RedYellow" xconnector="conBase#onSelectionStartStop">
@@ -393,7 +389,7 @@
                 <bindParam name="keyCode" value="YELLOW"/>
             </bind>
             <bind role="start" component="menuYellowOn"/>
-            <bind role="stop" component="menuRedOn"/>
+            <bind role="stop"  component="menuRedOn"/>
         </link>
 
         <!-- Green -->
@@ -402,7 +398,7 @@
                 <bindParam name="keyCode" value="CURSOR_LEFT"/>
             </bind>
 
-            <bind role="stop" component="menuGreenOn"/>
+            <bind role="stop"  component="menuGreenOn"/>
             <bind role="start" component="menuRedOn"/>
         </link>
 
@@ -411,7 +407,7 @@
                 <bindParam name="keyCode" value="CURSOR_RIGHT"/>
             </bind>
 
-            <bind role="stop" component="menuGreenOn"/>
+            <bind role="stop"  component="menuGreenOn"/>
             <bind role="start" component="menuYellowOn"/>
         </link>
 
@@ -419,7 +415,7 @@
             <bind role="onSelection" component="menuGreenOn">
                 <bindParam name="keyCode" value="RED"/>
             </bind>
-            <bind role="stop" component="menuGreenOn"/>
+            <bind role="stop"  component="menuGreenOn"/>
             <bind role="start" component="menuRedOn"/>
         </link>
 
@@ -428,7 +424,7 @@
                 <bindParam name="keyCode" value="YELLOW"/>
             </bind>
             <bind role="start" component="menuYellowOn"/>
-            <bind role="stop" component="menuGreenOn"/>
+            <bind role="stop"  component="menuGreenOn"/>
         </link>
 
         <link id="link_GreenBlue" xconnector="conBase#onSelectionStartStop">
@@ -436,7 +432,7 @@
                 <bindParam name="keyCode" value="BLUE"/>
             </bind>
             <bind role="start" component="menuBlueOn"/>
-            <bind role="stop" component="menuGreenOn"/>
+            <bind role="stop"  component="menuGreenOn"/>
         </link>
 
         <!-- Yellow -->
@@ -445,7 +441,7 @@
                 <bindParam name="keyCode" value="CURSOR_LEFT"/>
             </bind>
 
-            <bind role="stop" component="menuYellowOn"/>
+            <bind role="stop"  component="menuYellowOn"/>
             <bind role="start" component="menuGreenOn"/>
         </link>
 
@@ -464,7 +460,7 @@
                 <bindParam name="keyCode" value="RED"/>
             </bind>
             <bind role="start" component="menuRedOn"/>
-            <bind role="stop" component="menuYellowOn"/>
+            <bind role="stop"  component="menuYellowOn"/>
         </link>
 
         <link id="link_YellowGreen" xconnector="conBase#onSelectionStartStop">
@@ -473,7 +469,7 @@
             </bind>
             <bind role="start" component="menuGreenOn"/>
             <bind role="start" component="frameGreenMenuAux1"/>
-            <bind role="stop" component="menuYellowOn"/>
+            <bind role="stop"  component="menuYellowOn"/>
         </link>
 
         <link id="link_YellowBlue" xconnector="conBase#onSelectionStartStop">
@@ -481,7 +477,7 @@
                 <bindParam name="keyCode" value="BLUE"/>
             </bind>
             <bind role="start" component="menuBlueOn"/>
-            <bind role="stop" component="menuYellowOn"/>
+            <bind role="stop"  component="menuYellowOn"/>
         </link>
 
         <!-- Blue -->
@@ -491,7 +487,7 @@
             </bind>
 
             <bind role="start" component="menuYellowOn"/>
-            <bind role="stop" component="menuBlueOn"/>
+            <bind role="stop"  component="menuBlueOn"/>
         </link>
 
         <link id="link_frameBlueRight" xconnector="conBase#onSelectionStartStop">
@@ -500,7 +496,7 @@
             </bind>
 
             <bind role="start" component="menuRedOn"/>
-            <bind role="stop" component="menuBlueOn"/>
+            <bind role="stop"  component="menuBlueOn"/>
         </link>
 
         <link id="link_BlueRed" xconnector="conBase#onSelectionStartStop">
@@ -509,7 +505,7 @@
             </bind>
 
             <bind role="start" component="menuRedOn"/>
-            <bind role="stop" component="menuBlueOn"/>
+            <bind role="stop"  component="menuBlueOn"/>
         </link>
 
         <link id="link_BlueGreen" xconnector="conBase#onSelectionStartStop">
@@ -518,7 +514,7 @@
             </bind>
 
             <bind role="start" component="menuGreenOn"/>
-            <bind role="stop" component="menuBlueOn"/>
+            <bind role="stop"  component="menuBlueOn"/>
         </link>
 
         <link id="link_BlueYellow" xconnector="conBase#onSelectionStartStop">
@@ -527,7 +523,7 @@
             </bind>
 
             <bind role="start" component="menuYellowOn"/>
-            <bind role="stop" component="menuBlueOn"/>
+            <bind role="stop"  component="menuBlueOn"/>
         </link>
 
         <!-- Link Selection Buttons Frame Green / UP / DOWN -->
@@ -536,8 +532,8 @@
                 <bindParam name="keyCode" value="CURSOR_DOWN"/>
             </bind>
 
-            <bind role="stop" component="frameGreenBtn1"/>
-            <bind role="stop" component="frameGreenMenuAux1"/>
+            <bind role="stop"  component="frameGreenBtn1"/>
+            <bind role="stop"  component="frameGreenMenuAux1"/>
             <bind role="start" component="frameGreenMenuAux2"/>
             <bind role="start" component="frameGreenBtn2"/>
         </link>
@@ -547,8 +543,8 @@
                 <bindParam name="keyCode" value="CURSOR_UP"/>
             </bind>
 
-            <bind role="stop" component="frameGreenBtn1"/>
-            <bind role="stop" component="frameGreenMenuAux1"/>
+            <bind role="stop"  component="frameGreenBtn1"/>
+            <bind role="stop"  component="frameGreenMenuAux1"/>
             <bind role="start" component="frameGreenMenuAux4"/>
             <bind role="start" component="frameGreenBtn4"/>
         </link>
@@ -558,8 +554,8 @@
                 <bindParam name="keyCode" value="CURSOR_DOWN"/>
             </bind>
 
-            <bind role="stop" component="frameGreenBtn2"/>
-            <bind role="stop" component="frameGreenMenuAux2"/>
+            <bind role="stop"  component="frameGreenBtn2"/>
+            <bind role="stop"  component="frameGreenMenuAux2"/>
             <bind role="start" component="frameGreenMenuAux3"/>
             <bind role="start" component="frameGreenBtn3"/>
         </link>
@@ -569,8 +565,8 @@
                 <bindParam name="keyCode" value="CURSOR_UP"/>
             </bind>
 
-            <bind role="stop" component="frameGreenBtn2"/>
-            <bind role="stop" component="frameGreenMenuAux2"/>
+            <bind role="stop"  component="frameGreenBtn2"/>
+            <bind role="stop"  component="frameGreenMenuAux2"/>
             <bind role="start" component="frameGreenMenuAux1"/>
             <bind role="start" component="frameGreenBtn1"/>
         </link>
@@ -580,8 +576,8 @@
                 <bindParam name="keyCode" value="CURSOR_DOWN"/>
             </bind>
 
-            <bind role="stop" component="frameGreenBtn3"/>
-            <bind role="stop" component="frameGreenMenuAux3"/>
+            <bind role="stop"  component="frameGreenBtn3"/>
+            <bind role="stop"  component="frameGreenMenuAux3"/>
             <bind role="start" component="frameGreenMenuAux4"/>
             <bind role="start" component="frameGreenBtn4"/>
         </link>
@@ -591,8 +587,8 @@
                 <bindParam name="keyCode" value="CURSOR_UP"/>
             </bind>
 
-            <bind role="stop" component="frameGreenBtn3"/>
-            <bind role="stop" component="frameGreenMenuAux3"/>
+            <bind role="stop"  component="frameGreenBtn3"/>
+            <bind role="stop"  component="frameGreenMenuAux3"/>
             <bind role="start" component="frameGreenMenuAux2"/>
             <bind role="start" component="frameGreenBtn2"/>
         </link>
@@ -602,8 +598,8 @@
                 <bindParam name="keyCode" value="CURSOR_DOWN"/>
             </bind>
 
-            <bind role="stop" component="frameGreenBtn4"/>
-            <bind role="stop" component="frameGreenMenuAux4"/>
+            <bind role="stop"  component="frameGreenBtn4"/>
+            <bind role="stop"  component="frameGreenMenuAux4"/>
             <bind role="start" component="frameGreenMenuAux1"/>
             <bind role="start" component="frameGreenBtn1"/>
         </link>
@@ -613,8 +609,8 @@
                 <bindParam name="keyCode" value="CURSOR_UP"/>
             </bind>
 
-            <bind role="stop" component="frameGreenBtn4"/>
-            <bind role="stop" component="frameGreenMenuAux4"/>
+            <bind role="stop"  component="frameGreenBtn4"/>
+            <bind role="stop"  component="frameGreenMenuAux4"/>
             <bind role="start" component="frameGreenMenuAux3"/>
             <bind role="start" component="frameGreenBtn3"/>
         </link>
@@ -671,8 +667,8 @@
                 <bindParam name="keyCode" value="CURSOR_DOWN"/>
             </bind>
 
-            <bind role="stop" component="frameBlueBtn1"/>
-            <bind role="stop" component="frameBlueMenuAux1"/>
+            <bind role="stop"  component="frameBlueBtn1"/>
+            <bind role="stop"  component="frameBlueMenuAux1"/>
             <bind role="start" component="frameBlueMenuAux2"/>
             <bind role="start" component="frameBlueBtn2"/>
         </link>
@@ -682,8 +678,8 @@
                 <bindParam name="keyCode" value="CURSOR_UP"/>
             </bind>
 
-            <bind role="stop" component="frameBlueBtn1"/>
-            <bind role="stop" component="frameBlueMenuAux1"/>
+            <bind role="stop"  component="frameBlueBtn1"/>
+            <bind role="stop"  component="frameBlueMenuAux1"/>
             <bind role="start" component="frameBlueMenuAux5"/>
             <bind role="start" component="frameBlueBtn5"/>
         </link>
@@ -693,8 +689,8 @@
                 <bindParam name="keyCode" value="CURSOR_DOWN"/>
             </bind>
 
-            <bind role="stop" component="frameBlueBtn2"/>
-            <bind role="stop" component="frameBlueMenuAux2"/>
+            <bind role="stop"  component="frameBlueBtn2"/>
+            <bind role="stop"  component="frameBlueMenuAux2"/>
             <bind role="start" component="frameBlueMenuAux3"/>
             <bind role="start" component="frameBlueBtn3"/>
         </link>
@@ -704,8 +700,8 @@
                 <bindParam name="keyCode" value="CURSOR_UP"/>
             </bind>
 
-            <bind role="stop" component="frameBlueBtn2"/>
-            <bind role="stop" component="frameBlueMenuAux2"/>
+            <bind role="stop"  component="frameBlueBtn2"/>
+            <bind role="stop"  component="frameBlueMenuAux2"/>
             <bind role="start" component="frameBlueMenuAux1"/>
             <bind role="start" component="frameBlueBtn1"/>
         </link>
@@ -715,8 +711,8 @@
                 <bindParam name="keyCode" value="CURSOR_DOWN"/>
             </bind>
 
-            <bind role="stop" component="frameBlueBtn3"/>
-            <bind role="stop" component="frameBlueMenuAux3"/>
+            <bind role="stop"  component="frameBlueBtn3"/>
+            <bind role="stop"  component="frameBlueMenuAux3"/>
             <bind role="start" component="frameBlueMenuAux4"/>
             <bind role="start" component="frameBlueBtn4"/>
         </link>
@@ -726,8 +722,8 @@
                 <bindParam name="keyCode" value="CURSOR_UP"/>
             </bind>
 
-            <bind role="stop" component="frameBlueBtn3"/>
-            <bind role="stop" component="frameBlueMenuAux3"/>
+            <bind role="stop"  component="frameBlueBtn3"/>
+            <bind role="stop"  component="frameBlueMenuAux3"/>
             <bind role="start" component="frameBlueMenuAux2"/>
             <bind role="start" component="frameBlueBtn2"/>
         </link>
@@ -737,8 +733,8 @@
                 <bindParam name="keyCode" value="CURSOR_DOWN"/>
             </bind>
 
-            <bind role="stop" component="frameBlueBtn4"/>
-            <bind role="stop" component="frameBlueMenuAux4"/>
+            <bind role="stop"  component="frameBlueBtn4"/>
+            <bind role="stop"  component="frameBlueMenuAux4"/>
             <bind role="start" component="frameBlueMenuAux5"/>
             <bind role="start" component="frameBlueBtn5"/>
         </link>
@@ -748,8 +744,8 @@
                 <bindParam name="keyCode" value="CURSOR_UP"/>
             </bind>
 
-            <bind role="stop" component="frameBlueBtn4"/>
-            <bind role="stop" component="frameBlueMenuAux4"/>
+            <bind role="stop"  component="frameBlueBtn4"/>
+            <bind role="stop"  component="frameBlueMenuAux4"/>
             <bind role="start" component="frameBlueMenuAux3"/>
             <bind role="start" component="frameBlueBtn3"/>
         </link>
@@ -759,8 +755,8 @@
                 <bindParam name="keyCode" value="CURSOR_DOWN"/>
             </bind>
 
-            <bind role="stop" component="frameBlueBtn5"/>
-            <bind role="stop" component="frameBlueMenuAux5"/>
+            <bind role="stop"  component="frameBlueBtn5"/>
+            <bind role="stop"  component="frameBlueMenuAux5"/>
             <bind role="start" component="frameBlueMenuAux1"/>
             <bind role="start" component="frameBlueBtn1"/>
         </link>
@@ -770,8 +766,8 @@
                 <bindParam name="keyCode" value="CURSOR_UP"/>
             </bind>
 
-            <bind role="stop" component="frameBlueBtn5"/>
-            <bind role="stop" component="frameBlueMenuAux5"/>
+            <bind role="stop"  component="frameBlueBtn5"/>
+            <bind role="stop"  component="frameBlueMenuAux5"/>
             <bind role="start" component="frameBlueMenuAux4"/>
             <bind role="start" component="frameBlueBtn4"/>
         </link>
@@ -871,8 +867,8 @@
                 <bindParam name="keyCode" value="CURSOR_UP"/>
             </bind>
 
-            <bind role="stop" component="frameYellowBtn1"/>
-            <bind role="stop" component="frameYellowMenuAux1"/>
+            <bind role="stop"  component="frameYellowBtn1"/>
+            <bind role="stop"  component="frameYellowMenuAux1"/>
             <bind role="start" component="frameYellowMenuAux3"/>
             <bind role="start" component="frameYellowBtn3"/>
         </link>
@@ -882,8 +878,8 @@
                 <bindParam name="keyCode" value="CURSOR_DOWN"/>
             </bind>
 
-            <bind role="stop" component="frameYellowBtn1"/>
-            <bind role="stop" component="frameYellowMenuAux1"/>
+            <bind role="stop"  component="frameYellowBtn1"/>
+            <bind role="stop"  component="frameYellowMenuAux1"/>
             <bind role="start" component="frameYellowMenuAux2"/>
             <bind role="start" component="frameYellowBtn2"/>
         </link>
@@ -892,8 +888,8 @@
             <bind role="onSelection" component="frameYellowBtn2">
                 <bindParam name="keyCode" value="CURSOR_UP"/>
             </bind>
-            <bind role="stop" component="frameYellowBtn2"/>
-            <bind role="stop" component="frameYellowMenuAux2"/>
+            <bind role="stop"  component="frameYellowBtn2"/>
+            <bind role="stop"  component="frameYellowMenuAux2"/>
             <bind role="start" component="frameYellowMenuAux1"/>
             <bind role="start" component="frameYellowBtn1"/>
         </link>
@@ -902,8 +898,8 @@
                 <bindParam name="keyCode" value="CURSOR_DOWN"/>
             </bind>
 
-            <bind role="stop" component="frameYellowBtn2"/>
-            <bind role="stop" component="frameYellowMenuAux2"/>
+            <bind role="stop"  component="frameYellowBtn2"/>
+            <bind role="stop"  component="frameYellowMenuAux2"/>
             <bind role="start" component="frameYellowMenuAux3"/>
             <bind role="start" component="frameYellowBtn3"/>
         </link>
@@ -913,8 +909,8 @@
                 <bindParam name="keyCode" value="CURSOR_UP"/>
             </bind>
 
-            <bind role="stop" component="frameYellowBtn3"/>
-            <bind role="stop" component="frameYellowMenuAux3"/>
+            <bind role="stop"  component="frameYellowBtn3"/>
+            <bind role="stop"  component="frameYellowMenuAux3"/>
             <bind role="start" component="frameYellowMenuAux2"/>
             <bind role="start" component="frameYellowBtn2"/>
         </link>
@@ -924,8 +920,8 @@
                 <bindParam name="keyCode" value="CURSOR_DOWN"/>
             </bind>
 
-            <bind role="stop" component="frameYellowBtn3"/>
-            <bind role="stop" component="frameYellowMenuAux3"/>
+            <bind role="stop"  component="frameYellowBtn3"/>
+            <bind role="stop"  component="frameYellowMenuAux3"/>
             <bind role="start" component="frameYellowMenuAux1"/>
             <bind role="start" component="frameYellowBtn1"/>
         </link>
@@ -980,14 +976,14 @@
         <!-- Link Resize Video Back -->
         <link id="link_onEndStop" xconnector="conBase#onEndStop">
             <bind role="onEnd" component="backGroundImage"/>
-            <bind role="stop" component="menuRedOn"/>
-            <bind role="stop" component="menuGreenOn"/>
-            <bind role="stop" component="menuYellowOn"/>
-            <bind role="stop" component="menuBlueOn"/>
-            <bind role="stop" component="menuRedOff"/>
-            <bind role="stop" component="menuGreenOff"/>
-            <bind role="stop" component="menuYellowOff"/>
-            <bind role="stop" component="menuBlueOff"/>
+            <bind role="stop"  component="menuRedOn"/>
+            <bind role="stop"  component="menuGreenOn"/>
+            <bind role="stop"  component="menuYellowOn"/>
+            <bind role="stop"  component="menuBlueOn"/>
+            <bind role="stop"  component="menuRedOff"/>
+            <bind role="stop"  component="menuGreenOff"/>
+            <bind role="stop"  component="menuYellowOff"/>
+            <bind role="stop"  component="menuBlueOff"/>
         </link>
 
         <link id="link_btnExitSelectResizeVideo" xconnector="conBase#onSelectionResizeBackVideo">
@@ -1000,7 +996,7 @@
             <bind role="stop" component="botaoDir"/>
             <bind role="stop" component="botaoEsquerdo"/>
             <bind role="stop" component="logo"/>
-            <bind role="set" component="mediaVideo" interface="bounds">
+            <bind role="set"  component="mediaVideo" interface="bounds">
                 <bindParam name="varSet" value="0%,0%,100%,100%"/>
             </bind>
             <bind role="start" component="iconInteract"/>
