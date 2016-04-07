@@ -30,7 +30,7 @@
             <region id="rgBackgroundFrames"     top="6%"        width="40.8%"      height="86%"       left="55%"         zIndex="3"/>
             <region id="rgBotaoEsc"             top="44%"       width="2%"         height="3%"        left="52%"         zIndex="5"/>
             <region id="rgBotaoDir"             top="44%"       width="2%"         height="3%"        left="97%"         zIndex="5"/>
-            <region id="rgFaixaBotoes"          top="9.5%"      width="41.4583%"   height="0.8%"      left="54.94%"      zIndex="8"/>
+            <region id="rgFaixaBotoes"          top="9.5%"      width="41.49%"   height="0.8%"      left="54.94%"      zIndex="8"/>
         </regionBase>
 
         <descriptorBase>
