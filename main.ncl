@@ -20,9 +20,9 @@
             <region id="rgFrameBlue"            top="5%"        width="10.4166%"   height="4.6296%"   left="86.0335%"    zIndex="7"/>
             <region id="rgFrameBlueOff"         top="5%"        width="10.4166%"   height="4.6296%"   left="86.0335%"    zIndex="6"/>
             <region id="rgBtnExit"              top="92.3%"     width="5%"         height="3%"        left="91%"         zIndex="8"/>
-            <region id="rgFrameBlueBtn"         top="10.1%"    width="41.45625%"   height="44.907%"   left="54.95%"      zIndex="4"/>
-            <region id="rgFrameGreenBtn"        top="10.18%"    width="41.45625%"  height="38.9259259%"   left="54.95%"      zIndex="4"/>
-	        <region id="rgFrameYellowBtn"       top="10.05%"    width="41.45625%"  height="35.9999999%"   left="54.95%"      zIndex="4"/>
+            <region id="rgFrameBlueBtn"         top="10.1%"     width="41.40%"     height="36.01%"    left="54.95%"      zIndex="4"/>
+            <region id="rgFrameGreenBtn"        top="10.18%"    width="41.40%"     height="35.92%"    left="54.95%"      zIndex="4"/>
+	        <region id="rgFrameYellowBtn"       top="10.05%"    width="41.40%"     height="35.92%"    left="54.95%"      zIndex="4"/>
             <region id="rgFrameRedContent"      top="10.18%"    width="41.4583%"   height="79.7222%"  left="54.95%"      zIndex="5"/>
             <region id="rgMenuAuxLua"           top="52%"       width="45.4%"      height="40%"       left="4.7%"        zIndex="4"/>
             <region id="rgMenuAux"              top="55%"       width="40.62%"     height="37.6%"     left="7%"          zIndex="3"/>
