@@ -84,11 +84,11 @@
             <property name="bounds"/>
         </media>
         -->
-
-        <media id="mediaVideo" src="Media/video.mp4" descriptor="deFullScreenMedia">
-            <area id="icon" begin="2s"/>
-            <property name="bounds"/>
-        </media>
+   <media id="mediaVideo" src="Media/video.mp4" descriptor="deFullScreenMedia">
+      <area id="icon" begin="2s"/>  
+      <property name="bounds"/>
+      <property name="zIndex"/>
+    </media>
 
         <!-- Frame Red -->
         <media id="menuRedOff"      src="Media/menu/vermelhoDesligado.png"                    descriptor="deMenuRedOff"/>
