@@ -22,7 +22,7 @@
             <region id="rgBtnExit"              top="92.3%"     width="5%"         height="3%"        left="91%"         zIndex="8"/>
             <region id="rgFrameBlueBtn"         top="10.1%"     width="41.4583333%"     height="44.9074074%"    left="54.95%"      zIndex="4"/>
             <region id="rgFrameGreenBtn"        top="10.18%"    width="41.4583333%"     height="35%"    left="54.95%"      zIndex="4"/>
-	        <region id="rgFrameYellowBtn"       top="10.05%"    width="41.4583333%"     height="44.9074074%"    left="54.95%"      zIndex="4"/>
+	    <region id="rgFrameYellowBtn"       top="10.05%"    width="41.4583333%"     height="44.9074074%"    left="54.95%"      zIndex="4"/>
             <region id="rgFrameRedContent"      top="10.18%"    width="41.4583%"   height="79.7222%"  left="54.95%"      zIndex="5"/>
             <region id="rgMenuAuxLua"           top="52%"       width="45.4%"      height="40%"       left="4.7%"        zIndex="4"/>
             <region id="rgMenuAux"              top="55%"       width="40.62%"     height="37.6%"     left="7%"          zIndex="3"/>
@@ -78,17 +78,11 @@
         <media id="faixaAmarela"        src="Media/menu/linhaAmarela.png"  descriptor="deFaixaBotoes"/>
         <media id="faixaAzul"           src="Media/menu/linhaAzul.png"     descriptor="deFaixaBotoes"/>
 
-        <!-- substituir media para tv digital
-        <media id="mediaVideo" src="sbtvd-ts://video" descriptor="deFullScreenMedia">
-            <area id="icon" begin="2s"/>
-            <property name="bounds"/>
-        </media>
-        -->
-   <media id="mediaVideo" src="Media/video.mp4" descriptor="deFullScreenMedia">
-      <area id="icon" begin="2s"/>  
-      <property name="bounds"/>
-      <property name="zIndex"/>
-    </media>
+	<media id="mediaVideo" src="Media/video.mp4" descriptor="deFullScreenMedia">
+	  <area id="icon" begin="2s"/>  
+	  <property name="bounds"/>
+	  <property name="zIndex"/>
+	</media>
 
         <!-- Frame Red -->
         <media id="menuRedOff"      src="Media/menu/vermelhoDesligado.png"                    descriptor="deMenuRedOff"/>
@@ -179,7 +173,9 @@
             </bind>
             <bind role="set" component="mediaVideo" interface="bounds">
                 <bindParam name="varSet" value="4.8%, 5%, 45.3%, 45%"/>
-
+            </bind>
+            <bind role="set" component="mediaVideo" interface="zIndex">
+                <bindParam name="varSet" value="3"/>
             </bind>
 
             <bind role="start" component="backGroundImage"/>
@@ -970,7 +966,7 @@
             <bind role="stop"  component="menuBlueOff"/>
         </link>
 
-        <link id="link_btnExitSelectResizeVideo" xconnector="conBase#onSelectionResizeBackVideo">
+        <link id="link_btnExitSelectResizeVideo" xconnector="conBase#onSelectionIconMenuResizeVideo">
             <bind role="onSelection" component="Exit">
                 <bindParam name="keyCode" value="EXIT"/>
             </bind>
@@ -979,9 +975,15 @@
             <bind role="stop" component="botaoDir"/>
             <bind role="stop" component="botaoEsquerdo"/>
             <bind role="stop" component="logo"/>
-            <bind role="set"  component="mediaVideo" interface="bounds">
+
+	    <bind role="set"  component="mediaVideo" interface="bounds">
                 <bindParam name="varSet" value="0%,0%,100%,100%"/>
             </bind>
+	    <bind role="set"  component="mediaVideo" interface="zIndex">
+                <bindParam name="varSet" value="3"/>
+            </bind>
+	    
+	    
             <bind role="start" component="iconInteract"/>
         </link>
 
