@@ -68,7 +68,7 @@
         <port id="pMediaInitialPort" component="mediaVideo"/>
 
         <!-- Extra -->
-        <media id="backGroundImage"     src="Media/extra/fundo.png"        descriptor="deBackGroundImage"/>
+        <media id="backGroundImage"     src="Media/extra/fundo.png"       descriptor="deBackGroundImage"/>
         <media id="botaoDir"            src="Media/extra/direita.png"      descriptor="deBotaoDireito"/>
         <media id="botaoEsquerdo"       src="Media/extra/esquerda.png"     descriptor="deBotaoEsquerdo"/>
         <media id="iconInteract"        src="Media/extra/icon.png"         descriptor="deIconInteract"/>
@@ -84,7 +84,13 @@
             <property name="bounds"/>
             <property name="zIndex" value="3"/>
         </media>
-
+        <!--
+        <media id="mediaVideo" src="Media/video.mp4" descriptor="deFullScreenMedia">
+            <area id="icon" begin="2s"/>
+            <property name="bounds"/>
+            <property name="zIndex" value="3"/>
+        </media>-->
+        
         <!-- Frame Red -->
         <media id="menuRedOff"      src="Media/menu/vermelhoDesligado.png"                    descriptor="deMenuRedOff"/>
         <media id="menuRedOn"       src="Media/menu/vermelhoLigado.png"                       descriptor="deMenuRed"/>
@@ -122,7 +128,6 @@
 
 
         <media id="frameYellowMenuAux1" src="Media/quadros/amarelo/01.png" descriptor="deMenuAux"/>
-        
         <media id="frameYellowMenuAux2" src="Media/quadros/amarelo/02.png" descriptor="deMenuAux"/>
         <media id="frameYellowMenuAux3" src="Media/quadros/amarelo/03.png" descriptor="deMenuAux"/>
         <media id="frameYellowMenuAux4" src="Media/quadros/amarelo/04.png" descriptor="deMenuAux"/>
@@ -178,7 +183,7 @@
                 <bindParam name="keyCode" value="ENTER"/>
             </bind>
             <bind role="set" component="mediaVideo" interface="bounds">
-                <bindParam name="varSet" value="4.8%, 5%, 45.3%, 45%"/>
+                <bindParam name="varSet" value="4.8%, 5%, 45.3125%,45%"/>
 
             </bind>
 
