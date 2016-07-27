@@ -43,7 +43,8 @@
             <region id="rgBotaoCima"            top="92%"     width="2.14%"       height="3.33%"      left="78%"         zIndex="8"/>
             <region id="rgBotaoBaixo"           top="92%"     width="2.14%"       height="3.33%"      left="80%"         zIndex="8"/>
             
-            <region id="rgFaixaBotoes"          top="9.5%"      width="41.49%"      height="0.8%"      left="54.94%"      zIndex="8"/>
+            <region id="rgFaixaBotoes"          top="9.5%"      width="41.49%"      height="0.8%"      left="54.94%"      zIndex="6"/>
+            
             <region id="rgFaixaTelaInicial"     top="9.5%"      width="41.4583%"    height="0.8%"      left="54.94%"      zIndex="8"/>
         </regionBase>
 
