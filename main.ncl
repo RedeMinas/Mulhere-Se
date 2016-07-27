@@ -195,9 +195,7 @@
         <media id="frameBlueBtn16" src="Media/quadros/azul/btn16.png"   descriptor="deFrameBlueBtn"/>
         <media id="frameBlueBtn17" src="Media/quadros/azul/btn17.png"   descriptor="deFrameBlueBtn"/>
         <media id="frameBlueBtn18" src="Media/quadros/azul/btn18.png"   descriptor="deFrameBlueBtn"/>
-        
         <media id="frameBlueBtn19" src="Media/quadros/azul/btn19.png"   descriptor="deFrameBlueBtn"/>
-        
         <media id="frameBlueMenuAux1" src="Media/quadros/azul/01.png"   descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux2" src="Media/quadros/azul/02.png"   descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux3" src="Media/quadros/azul/03.png"   descriptor="deMenuAux"/>
@@ -216,8 +214,7 @@
         <media id="frameBlueMenuAux16" src="Media/quadros/azul/16.png"  descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux17" src="Media/quadros/azul/17.png"  descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux18" src="Media/quadros/azul/18.png"  descriptor="deMenuAux"/>
-        
-        <media id="frameBlueMenuAux19" src="Media/quadros/azul/18.png"  descriptor="deMenuAux"/>
+        <media id="frameBlueMenuAux19" src="Media/quadros/azul/19.png"  descriptor="deMenuAux"/>
         <!--
         <media id="menuAuxNoticias"  type="application/x-ginga-NCLua" src="carrosel.lua" descriptor="deMenuAuxLua"/>
         -->
