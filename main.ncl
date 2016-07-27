@@ -22,21 +22,26 @@
             <region id="rgFrameBlueOff"         top="5%"        width="10.413%"    height="4.6296%"   left="86.0335%"    zIndex="6"/>
             
             
-            <region id="rgFrameBlueBtn"         top="10.1%"     width="41.4583333%" height="82.31%"    left="54.95%"      zIndex="4"/>
+            <region id="rgFrameBlueBtn"         top="10.1%"     width="41.4583333%" height="80%"    left="54.95%"      zIndex="4"/>
             
             <region id="rgFrameGreenBtn"        top="10.18%"    width="41.4583333%" height="40.28%"    left="54.95%"      zIndex="4"/>
             
-	        <region id="rgFrameYellowBtn"       top="10.05%"    width="41.4583333%" height="18.05%"    left="54.95%"      zIndex="4"/>
-            <region id="rgFrameRedBtn"          top="10.18%"    width="41.4583333%" 	height="53.61%"    left="54.95%"      zIndex="4"/>
-          
-            <region id="rgBtnExit"              top="92.3%"     width="5%"          height="3%"        left="91%"         zIndex="8"/>
+	        <region id="rgFrameYellowBtn"       top="10.18%"    width="41.4583333%" height="26.85%"    left="54.95%"      zIndex="4"/>
+            <region id="rgFrameRedBtn"          top="10.18%"    width="41.4583333%" height="53.61%"    left="54.95%"      zIndex="4"/>
+            
             <region id="rgFrameTelaInicial"     top="9%"    	width="41.4583%"    height="79.7222%"  left="54.95%"      zIndex="5"/>
             <region id="rgMenuAuxLua"           top="52%"       width="45.4%"       height="40%"       left="4.7%"        zIndex="4"/>
             
+            
             <region id="rgMenuAux"              top="51%"       width="40.42%"      height="38%"     left="5%"          zIndex="3"/>
             
-            <region id="rgBotaoEsc"             top="44%"       width="2%"          height="3%"        left="52%"         zIndex="5"/>
-            <region id="rgBotaoDir"             top="44%"       width="2%"          height="3%"        left="97%"         zIndex="5"/>
+            <region id="rgBtnExit"              top="90%"     width="5%"          height="3%"        left="91%"         zIndex="8"/>
+            
+            <region id="rgBotaoEsc"             top="90%"     width="1.88%"       height="3.8%"      left="80%"         zIndex="8"/>
+            <region id="rgBotaoDir"             top="90%"     width="1.88%"       height="3.8%"      left="76%"         zIndex="8"/>
+            <region id="rgBotaoCima"            top="90%"     width="1.88%"       height="3.8%"      left="68%"         zIndex="8"/>
+            <region id="rgBotaoBaixo"           top="90%"     width="1.88%"       height="38.%"      left="64%"         zIndex="8"/>
+            
             <region id="rgFaixaBotoes"          top="9.5%"      width="41.49%"      height="0.8%"      left="54.94%"      zIndex="8"/>
             <region id="rgFaixaTelaInicial"     top="9.5%"      width="41.4583%"    height="0.8%"      left="54.94%"      zIndex="8"/>
         </regionBase>
@@ -65,6 +70,8 @@
             <descriptor id="deFrameGreenBtn"        region="rgFrameGreenBtn"/>
             <descriptor id="deBotaoDireito"         region="rgBotaoDir"/>
             <descriptor id="deBotaoEsquerdo"        region="rgBotaoEsc"/>
+            <descriptor id="deBotaoCima"         	region="rgBotaoCima"/>
+            <descriptor id="deBotaoBaixo"        	region="rgBotaoBaixo"/>
             <descriptor id="deFrameYellowBtn"       region="rgFrameYellowBtn"/>
             <descriptor id="deFaixaBotoes"          region="rgFaixaBotoes"/>
         </descriptorBase>
@@ -80,15 +87,19 @@
         <port id="pMediaInitialPort" component="mediaVideo"/>
 
         <!-- Extra -->
-        <media id="backGroundImage"     src="Media/extra/fundo120.png"       descriptor="deBackGroundImage"/>
-        <media id="botaoDir"            src="Media/extra/direita.png"      descriptor="deBotaoDireito"/>
-        <media id="botaoEsquerdo"       src="Media/extra/esquerda.png"     descriptor="deBotaoEsquerdo"/>
-        <media id="iconInteract"        src="Media/extra/icon.png"         descriptor="deIconInteract"/>
-        <media id="Exit"                src="Media/extra/sair.png"         descriptor="deBtnExit"/>
-        <media id="faixaVermelha"       src="Media/menu/linhaVermelha.png" descriptor="deFaixaBotoes"/>
-        <media id="faixaVerde"          src="Media/menu/linhaVerde.png"    descriptor="deFaixaBotoes"/>
-        <media id="faixaAmarela"        src="Media/menu/linhaAmarela.png"  descriptor="deFaixaBotoes"/>
-        <media id="faixaAzul"           src="Media/menu/linhaAzul.png"     descriptor="deFaixaBotoes"/>
+        <media id="backGroundImage"     src="Media/extra/fundo120.png"        descriptor="deBackGroundImage"/>
+        
+        <media id="botaoDir"            src="Media/extra/direita.png"      	  descriptor="deBotaoDireito"/>
+        <media id="botaoEsquerdo"       src="Media/extra/esquerda.png"     	  descriptor="deBotaoEsquerdo"/>
+        <media id="botaoCima"       	src="Media/extra/cima.png"     		  descriptor="deBotaoEsquerdo"/>
+        <media id="botaoBaixo" 		    src="Media/extra/baixo.png"     	  descriptor="deBotaoEsquerdo"/>
+        
+        <media id="iconInteract"        src="Media/extra/icon.png"         	  descriptor="deIconInteract"/>
+        <media id="Exit"                src="Media/extra/sair.png"         	  descriptor="deBtnExit"/>
+        <media id="faixaVermelha"       src="Media/menu/linhaVermelha.png" 	  descriptor="deFaixaBotoes"/>
+        <media id="faixaVerde"          src="Media/menu/linhaVerde.png"    	  descriptor="deFaixaBotoes"/>
+        <media id="faixaAmarela"        src="Media/menu/linhaAmarela.png"  	  descriptor="deFaixaBotoes"/>
+        <media id="faixaAzul"           src="Media/menu/linhaAzul.png"     	  descriptor="deFaixaBotoes"/>
         <media id="faixaTelaInicial"    src="Media/menu/linhaTelaInicial.png" descriptor="deFaixaTelaInicial"/>
         <media id="textoInicial" src="Media/menu/textoInicial.png" descriptor="deMenuAux"/>
         <media id="mediaVideo" src="sbtvd-ts://video" descriptor="deFullScreenMedia">
