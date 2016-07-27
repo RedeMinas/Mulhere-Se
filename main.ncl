@@ -35,13 +35,13 @@
             
             <region id="rgMenuAux"              top="51%"       width="40.42%"      height="38%"     left="5%"          zIndex="3"/>
             
-            <region id="rgBtnExit"              top="90%"     width="5%"          height="3%"        left="91%"         zIndex="8"/>
+            <region id="rgBtnExit"              top="92%"     width="5%"          height="3%"        left="91%"         zIndex="8"/>
             
-            <region id="rgBotaoEsc"             top="90%"     width="1.88%"       height="3.8%"      left="70%"         zIndex="8"/>
-            <region id="rgBotaoDir"             top="90%"     width="1.88%"       height="3.8%"      left="73%"        zIndex="8"/>
+            <region id="rgBotaoEsc"             top="92%"     width="1.88%"       height="3.8%"      left="70%"         zIndex="8"/>
+            <region id="rgBotaoDir"             top="92%"     width="1.88%"       height="3.8%"      left="73%"        zIndex="8"/>
             
-            <region id="rgBotaoCima"            top="90%"     width="2.14%"       height="3.33%"      left="78%"         zIndex="8"/>
-            <region id="rgBotaoBaixo"           top="90%"     width="2.14%"       height="3.33%"      left="80%"         zIndex="8"/>
+            <region id="rgBotaoCima"            top="92%"     width="2.14%"       height="3.33%"      left="78%"         zIndex="8"/>
+            <region id="rgBotaoBaixo"           top="92%"     width="2.14%"       height="3.33%"      left="80%"         zIndex="8"/>
             
             <region id="rgFaixaBotoes"          top="9.5%"      width="41.49%"      height="0.8%"      left="54.94%"      zIndex="8"/>
             <region id="rgFaixaTelaInicial"     top="9.5%"      width="41.4583%"    height="0.8%"      left="54.94%"      zIndex="8"/>
@@ -90,10 +90,10 @@
         <!-- Extra -->
         <media id="backGroundImage"     src="Media/extra/fundo120.png"        descriptor="deBackGroundImage"/>
         
-        <media id="botaoDir"            src="Media/extra/direita.png"      	  descriptor="deBotaoDireito"/>
-        <media id="botaoEsquerdo"       src="Media/extra/esquerda.png"     	  descriptor="deBotaoEsquerdo"/>
-        <media id="botaoCima"       	src="Media/extra/cima.png"     		  descriptor="deBotaoCima"/>
-        <media id="botaoBaixo" 		    src="Media/extra/baixo.png"     	  descriptor="deBotaoBaixo"/>
+        <media id="botaoDir"            src="Media/menu/direita.png"      	  descriptor="deBotaoDireito"/>
+        <media id="botaoEsquerdo"       src="Media/menu/esquerda.png"     	  descriptor="deBotaoEsquerdo"/>
+        <media id="botaoCima"       	src="Media/menu/cima.png"     		  descriptor="deBotaoCima"/>
+        <media id="botaoBaixo" 		    src="Media/menu/baixo.png"     	  descriptor="deBotaoBaixo"/>
         
         <media id="iconInteract"        src="Media/extra/icon.png"         	  descriptor="deIconInteract"/>
         <media id="Exit"                src="Media/extra/sair.png"         	  descriptor="deBtnExit"/>
@@ -250,7 +250,7 @@
             <bind role="start"   component="menuRedOff"/>
             <bind role="start"   component="telaInicial"/>
             <bind role="start"   component="textoInicial"/>
-            <bind role="start"   component="faixaTelaInicial"/>
+            <!--<bind role="start"   component="faixaTelaInicial"/>-->
             <bind role="start"   component="menuGreenOff"/>
             <bind role="start"   component="menuYellowOff"/>
             <bind role="start"   component="menuBlueOff"/>
@@ -309,7 +309,7 @@
             <bind role="start" component="faixaVermelha"/>
             <bind role="start" component="frameRedBtn1"/>
             <bind role="start" component="frameRedMenuAux1"/>
-            <bind role="stop"  component="faixaTelaInicial"/>
+            <!--<bind role="stop"  component="faixaTelaInicial"/>-->
             <bind role="stop"  component="telaInicial"/>
 			<bind role="start" component="menuGreenOff"/>
             <bind role="start" component="menuYellowOff"/>
