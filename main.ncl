@@ -8,29 +8,37 @@
      -->
     <head>
       <regionBase>
-        <region id="rgBackGroundImage"                          width="100%"       height="100%"                         zIndex="1"/>
-            <region id="rgFullScreenMedia"                      width="100%"       height="100%"                         zIndex="3"/>
-            <region id="rgIconInteract"         top="88%"       width="20%"        height="5.6%"      left="78%"         zIndex="3"/>
-            <region id="rgFrameRed"             top="5%"        width="10.4166%"   height="4.6296%"   left="54.94%"      zIndex="7"/>
-            <region id="rgFrameRedOff"          top="5%"        width="10.4166%"   height="4.6296%"   left="54.94%"      zIndex="6"/>
-            <region id="rgFrameGreen"           top="5%"        width="10.4166%"   height="4.6296%"   left="65.3045%"    zIndex="7"/>
-            <region id="rgFrameGreenOff"        top="5%"        width="10.4166%"   height="4.6296%"   left="65.3045%"    zIndex="6"/>
-            <region id="rgFrameYellow"          top="5%"        width="10.4166%"   height="4.6296%"   left="75.669%"     zIndex="7"/>
-            <region id="rgFrameYellowOff"       top="5%"        width="10.4166%"   height="4.6296%"   left="75.669%"     zIndex="6"/>
-            <region id="rgFrameBlue"            top="5%"        width="10.4166%"   height="4.6296%"   left="86.0335%"    zIndex="7"/>
-            <region id="rgFrameBlueOff"         top="5%"        width="10.4166%"   height="4.6296%"   left="86.0335%"    zIndex="6"/>
-            <region id="rgBtnExit"              top="92.3%"     width="5%"         height="3%"        left="91%"         zIndex="8"/>
-            <region id="rgFrameBlueBtn"         top="10.1%"     width="41.4583333%"     height="82.31%"    left="54.95%"  zIndex="4"/>
-            <region id="rgFrameGreenBtn"        top="10.18%"    width="41.4583333%"     height="35.83%"    left="54.95%"  zIndex="4"/>
-	        <region id="rgFrameYellowBtn"       top="10.05%"    width="41.4583333%"     height="18.05%"    left="54.95%" zIndex="4"/>
-            <region id="rgFrameRedBtn"          top="10.18%"    width="41.4583333%"     height="35%"    left="54.95%"      zIndex="4"/>
-            <region id="rgFrameTelaInicial"     top="9%"    width="41.4583%"   height="79.7222%"  left="54.95%"      zIndex="5"/>
-            <region id="rgMenuAuxLua"           top="52%"       width="45.4%"      height="40%"       left="4.7%"        zIndex="4"/>
-            <region id="rgMenuAux"              top="55%"       width="40.62%"     height="37.6%"     left="7%"          zIndex="3"/>
-            <region id="rgBotaoEsc"             top="44%"       width="2%"         height="3%"        left="52%"         zIndex="5"/>
-            <region id="rgBotaoDir"             top="44%"       width="2%"         height="3%"        left="97%"         zIndex="5"/>
-            <region id="rgFaixaBotoes"          top="9.5%"      width="41.49%"   height="0.8%"      left="54.94%"      zIndex="8"/>
-            <region id="rgFaixaTelaInicial"     top="9.5%"      width="41.4583%"   height="0.8%"      left="54.94%"   zIndex="8"/>
+        <region id="rgBackGroundImage"                          width="100%"        height="100%"                         zIndex="1"/>
+            <region id="rgFullScreenMedia"                      width="100%"        height="100%"                         zIndex="3"/>
+            <region id="rgIconInteract"         top="88%"       width="20%"         height="5.6%"      left="78%"         zIndex="3"/>
+            
+            <region id="rgFrameRed"             top="5%"        width="10.413%"    height="4.6296%"   left="54.94%"      zIndex="7"/>
+            <region id="rgFrameRedOff"          top="5%"        width="10.413%"    height="4.6296%"   left="54.94%"      zIndex="6"/>
+            <region id="rgFrameGreen"           top="5%"        width="10.413%"    height="4.6296%"   left="65.3045%"    zIndex="7"/>
+            <region id="rgFrameGreenOff"        top="5%"        width="10.413%"    height="4.6296%"   left="65.3045%"    zIndex="6"/>
+            <region id="rgFrameYellow"          top="5%"        width="10.413%"    height="4.6296%"   left="75.669%"     zIndex="7"/>
+            <region id="rgFrameYellowOff"       top="5%"        width="10.413%"    height="4.6296%"   left="75.669%"     zIndex="6"/>
+            <region id="rgFrameBlue"            top="5%"        width="10.413%"    height="4.6296%"   left="86.0335%"    zIndex="7"/>
+            <region id="rgFrameBlueOff"         top="5%"        width="10.413%"    height="4.6296%"   left="86.0335%"    zIndex="6"/>
+            
+            
+            <region id="rgFrameBlueBtn"         top="10.1%"     width="41.4583333%" height="82.31%"    left="54.95%"      zIndex="4"/>
+            
+            <region id="rgFrameGreenBtn"        top="10.18%"    width="41.4583333%" height="40.28%"    left="54.95%"      zIndex="4"/>
+            
+	        <region id="rgFrameYellowBtn"       top="10.05%"    width="41.4583333%" height="18.05%"    left="54.95%"      zIndex="4"/>
+            <region id="rgFrameRedBtn"          top="10.18%"    width="41.4583333%" 	height="53.61%"    left="54.95%"      zIndex="4"/>
+          
+            <region id="rgBtnExit"              top="92.3%"     width="5%"          height="3%"        left="91%"         zIndex="8"/>
+            <region id="rgFrameTelaInicial"     top="9%"    	width="41.4583%"    height="79.7222%"  left="54.95%"      zIndex="5"/>
+            <region id="rgMenuAuxLua"           top="52%"       width="45.4%"       height="40%"       left="4.7%"        zIndex="4"/>
+            
+            <region id="rgMenuAux"              top="51%"       width="40.42%"      height="38%"     left="5%"          zIndex="3"/>
+            
+            <region id="rgBotaoEsc"             top="44%"       width="2%"          height="3%"        left="52%"         zIndex="5"/>
+            <region id="rgBotaoDir"             top="44%"       width="2%"          height="3%"        left="97%"         zIndex="5"/>
+            <region id="rgFaixaBotoes"          top="9.5%"      width="41.49%"      height="0.8%"      left="54.94%"      zIndex="8"/>
+            <region id="rgFaixaTelaInicial"     top="9.5%"      width="41.4583%"    height="0.8%"      left="54.94%"      zIndex="8"/>
         </regionBase>
 
         <descriptorBase>
@@ -39,6 +47,7 @@
             <descriptor id="deFaixaTelaInicial"      region="rgFaixaTelaInicial"/>
             <descriptor id="deFrameTelaInicial"      region="rgFrameTelaInicial"/>
             <descriptor id="deIconInteract"         region="rgIconInteract"/>
+            
             <descriptor id="deMenuRed"              region="rgFrameRed"/>
             <descriptor id="deMenuRedOff"           region="rgFrameRedOff"/>
             <descriptor id="deMenuGreen"            region="rgFrameGreen"/>
@@ -48,6 +57,7 @@
             <descriptor id="deMenuYellowOff"        region="rgFrameYellowOff"/>
             <descriptor id="deMenuBlue"             region="rgFrameBlue"/>
             <descriptor id="deMenuBlueOff"          region="rgFrameBlueOff"/>
+            
             <descriptor id="deBtnExit"              region="rgBtnExit"/>
             <descriptor id="deMenuAuxLua"           region="rgMenuAuxLua"/>
             <descriptor id="deMenuAux"              region="rgMenuAux"/>
@@ -70,7 +80,7 @@
         <port id="pMediaInitialPort" component="mediaVideo"/>
 
         <!-- Extra -->
-        <media id="backGroundImage"     src="Media/extra/fundo.png"       descriptor="deBackGroundImage"/>
+        <media id="backGroundImage"     src="Media/extra/fundo120.png"       descriptor="deBackGroundImage"/>
         <media id="botaoDir"            src="Media/extra/direita.png"      descriptor="deBotaoDireito"/>
         <media id="botaoEsquerdo"       src="Media/extra/esquerda.png"     descriptor="deBotaoEsquerdo"/>
         <media id="iconInteract"        src="Media/extra/icon.png"         descriptor="deIconInteract"/>
@@ -119,14 +129,14 @@
         <media id="frameGreenBtn1" src="Media/quadros/verde/btn01.png" descriptor="deFrameGreenBtn"/>
         <media id="frameGreenBtn2" src="Media/quadros/verde/btn02.png" descriptor="deFrameGreenBtn"/>
         <media id="frameGreenBtn3" src="Media/quadros/verde/btn03.png" descriptor="deFrameGreenBtn"/>
-        <media id="frameGreenBtn4" src="Media/quadros/verde/btn04.png" descriptor="deFrameGreenBtn"/>
+        <!--<media id="frameGreenBtn4" src="Media/quadros/verde/btn04.png" descriptor="deFrameGreenBtn"/>-->
 
-        <media id="frameGreenMenuAux1" src="Media/quadros/verde/01.jpg" descriptor="deMenuAux"/>
-        <media id="frameGreenMenuAux2" src="Media/quadros/verde/02.jpg" descriptor="deMenuAux"/>
-        <media id="frameGreenMenuAux3" src="Media/quadros/verde/03.jpg" descriptor="deMenuAux"/>
-        <media id="frameGreenMenuAux4" src="Media/quadros/verde/04.jpg" descriptor="deMenuAux"/>
-
-        <!--
+        <media id="frameGreenMenuAux1" src="Media/quadros/verde/01.png" descriptor="deMenuAux"/>
+        <media id="frameGreenMenuAux2" src="Media/quadros/verde/02.png" descriptor="deMenuAux"/>
+        <media id="frameGreenMenuAux3" src="Media/quadros/verde/03.png" descriptor="deMenuAux"/>
+		
+		<!--
+        <media id="frameGreenMenuAux4" src="Media/quadros/verde/04.png" descriptor="deMenuAux"/>
         <media id="frameBtn5" src="Media/quadros/quadroverde/btn5.png" descriptor="deFrameBtn5"/>
         <media id="frameBtn6" src="Media/quadros/quadroverde/btn6.png" descriptor="deFrameBtn6"/>
         -->
@@ -172,6 +182,9 @@
         <media id="frameBlueBtn16" src="Media/quadros/azul/btn16.png"   descriptor="deFrameBlueBtn"/>
         <media id="frameBlueBtn17" src="Media/quadros/azul/btn17.png"   descriptor="deFrameBlueBtn"/>
         <media id="frameBlueBtn18" src="Media/quadros/azul/btn18.png"   descriptor="deFrameBlueBtn"/>
+        
+        <media id="frameBlueBtn19" src="Media/quadros/azul/btn19.png"   descriptor="deFrameBlueBtn"/>
+        
         <media id="frameBlueMenuAux1" src="Media/quadros/azul/01.png"   descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux2" src="Media/quadros/azul/02.png"   descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux3" src="Media/quadros/azul/03.png"   descriptor="deMenuAux"/>
@@ -190,6 +203,8 @@
         <media id="frameBlueMenuAux16" src="Media/quadros/azul/16.png"  descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux17" src="Media/quadros/azul/17.png"  descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux18" src="Media/quadros/azul/18.png"  descriptor="deMenuAux"/>
+        
+        <media id="frameBlueMenuAux19" src="Media/quadros/azul/18.png"  descriptor="deMenuAux"/>
         <!--
         <media id="menuAuxNoticias"  type="application/x-ginga-NCLua" src="carrosel.lua" descriptor="deMenuAuxLua"/>
         -->
@@ -340,11 +355,11 @@
             <bind role="stop"  component="frameGreenBtn1"/>
             <bind role="stop"  component="frameGreenBtn2"/>
             <bind role="stop"  component="frameGreenBtn3"/>
-            <bind role="stop"  component="frameGreenBtn4"/>
+            <!--<bind role="stop"  component="frameGreenBtn4"/>-->
             <bind role="stop"  component="frameGreenMenuAux1"/>
             <bind role="stop"  component="frameGreenMenuAux2"/>
             <bind role="stop"  component="frameGreenMenuAux3"/>
-            <bind role="stop"  component="frameGreenMenuAux4"/>
+            <!--<bind role="stop"  component="frameGreenMenuAux4"/>-->
             <bind role="stop"  component="faixaVerde"/>
             <bind role="start" component="menuGreenOff"/>
         </link>
@@ -368,8 +383,8 @@
             <bind role="stop" component="frameGreenBtn1"/>
             <bind role="stop" component="frameGreenBtn2"/>
             <bind role="stop" component="frameGreenBtn3"/>
-            <bind role="stop" component="frameGreenBtn4"/>
 			<!--
+            <bind role="stop" component="frameGreenBtn4"/>
             <bind role="stop" component="frameBlueBtn8"/>
             <bind role="stop" component="frameBlueBtn9"/>
             -->
@@ -444,6 +459,7 @@
             <bind role="stop" component="frameBlueBtn16"/>
             <bind role="stop" component="frameBlueBtn17"/>
             <bind role="stop" component="frameBlueBtn18"/>
+            <bind role="stop" component="frameBlueBtn19"/>
         </link>
         <link id="link_onEndFrameBlue2" xconnector="conBase#onEndStop">
             <bind component="menuBlueOn" role="onEnd"/>
@@ -465,6 +481,7 @@
             <bind role="stop" component="frameBlueMenuAux16"/>
             <bind role="stop" component="frameBlueMenuAux17"/>
             <bind role="stop" component="frameBlueMenuAux18"/>
+            <bind role="stop" component="frameBlueMenuAux19"/>
             <bind role="stop" component="faixaAzul"/>
         </link>
         <!--END BLUE-->
@@ -752,8 +769,8 @@
 
             <bind role="stop"  component="frameGreenBtn1"/>
             <bind role="stop"  component="frameGreenMenuAux1"/>
-            <bind role="start" component="frameGreenMenuAux4"/>
-            <bind role="start" component="frameGreenBtn4"/>
+            <bind role="start" component="frameGreenMenuAux3"/>
+            <bind role="start" component="frameGreenBtn3"/>
         </link>
 
         <link id="link_frameGreenMenuUpBtn2" xconnector="conBase#onSelectionStartStop">
@@ -785,8 +802,8 @@
 
             <bind role="stop"  component="frameGreenBtn3"/>
             <bind role="stop"  component="frameGreenMenuAux3"/>
-            <bind role="start" component="frameGreenMenuAux4"/>
-            <bind role="start" component="frameGreenBtn4"/>
+            <bind role="start" component="frameGreenMenuAux1"/>
+            <bind role="start" component="frameGreenBtn1"/>
         </link>
 
         <link id="link_frameGreenMenuUpBtn3" xconnector="conBase#onSelectionStartStop">
@@ -799,6 +816,8 @@
             <bind role="start" component="frameGreenBtn2"/>
         </link>
 
+
+		<!--
         <link id="link_frameGreenMenuDownBtn4" xconnector="conBase#onSelectionStartStop">
             <bind role="onSelection" component="frameGreenBtn4">
                 <bindParam name="keyCode" value="CURSOR_DOWN"/>
@@ -821,7 +840,6 @@
             <bind role="start" component="frameGreenBtn3"/>
         </link>
 
-        <!--
         <link id="link_frameGreenMenuDownBtn5" xconnector="conBase#onSelectionStartStop">
             <bind role="onSelection" component="frameBtn5">
                 <bindParam name="keyCode" value="CURSOR_DOWN"/>
@@ -887,8 +905,8 @@
 
             <bind role="stop"  component="frameBlueBtn1"/>
             <bind role="stop"  component="frameBlueMenuAux1"/>
-            <bind role="start" component="frameBlueMenuAux18"/>
-            <bind role="start" component="frameBlueBtn18"/>
+            <bind role="start" component="frameBlueMenuAux19"/>
+            <bind role="start" component="frameBlueBtn19"/>
         </link>
 
         <link id="link_frameBlueMenuUpBtn2" xconnector="conBase#onSelectionStartStop">
@@ -1258,6 +1276,28 @@
 
             <bind role="stop" component="frameBlueBtn18"/>
             <bind role="stop" component="frameBlueMenuAux18"/>
+            <bind role="start" component="frameBlueMenuAux19"/>
+            <bind role="start" component="frameBlueBtn19"/>
+        </link>
+        
+        <link id="link_frameBlueMenuUpBtn19" xconnector="conBase#onSelectionStartStop">
+            <bind role="onSelection" component="frameBlueBtn19">
+                <bindParam name="keyCode" value="CURSOR_UP"/>
+            </bind>
+
+            <bind role="stop" component="frameBlueBtn19"/>
+            <bind role="stop" component="frameBlueMenuAux19"/>
+            <bind role="start" component="frameBlueMenuAux18"/>
+            <bind role="start" component="frameBlueBtn18"/>
+        </link>
+
+        <link id="link_frameBlueMenuDownBtn19" xconnector="conBase#onSelectionStartStop">
+            <bind role="onSelection" component="frameBlueBtn19">
+                <bindParam name="keyCode" value="CURSOR_DOWN"/>
+            </bind>
+
+            <bind role="stop" component="frameBlueBtn19"/>
+            <bind role="stop" component="frameBlueMenuAux19"/>
             <bind role="start" component="frameBlueMenuAux1"/>
             <bind role="start" component="frameBlueBtn1"/>
         </link>
