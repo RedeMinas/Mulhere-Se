@@ -89,7 +89,7 @@
         <port id="pMediaInitialPort" component="mediaVideo"/>
 
         <!-- Extra -->
-        <media id="backGroundImage"     src="Media/extra/fundo120.png"        descriptor="deBackGroundImage"/>
+        <media id="backGroundImage"     src="Media/extra/fundo.jpg"        descriptor="deBackGroundImage"/>
         
         <media id="botaoDir"            src="Media/menu/direita.png"      	  descriptor="deBotaoDireito"/>
         <media id="botaoEsquerdo"       src="Media/menu/esquerda.png"     	  descriptor="deBotaoEsquerdo"/>
