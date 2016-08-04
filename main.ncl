@@ -33,7 +33,7 @@
             <region id="rgMenuAuxLua"           top="52%"       width="45.4%"       height="40%"       left="4.7%"        zIndex="4"/>
             
             
-            <region id="rgMenuAux"              top="51%"       width="40.42%"      height="38%"     left="5%"          zIndex="3"/>
+            <region id="rgMenuAux"              top="51%"       width="40.36%"      height="40%"     left="5%"          zIndex="3"/>
             
             <region id="rgBtnExit"              top="92%"     width="5%"          height="3%"        left="91%"         zIndex="8"/>
             
@@ -89,7 +89,7 @@
         <port id="pMediaInitialPort" component="mediaVideo"/>
 
         <!-- Extra -->
-        <media id="backGroundImage"     src="Media/extra/fundo.jpg"        descriptor="deBackGroundImage"/>
+        <media id="backGroundImage"     src="Media/menu/fundo.png"        descriptor="deBackGroundImage"/>
         
         <media id="botaoDir"            src="Media/menu/direita.png"      	  descriptor="deBotaoDireito"/>
         <media id="botaoEsquerdo"       src="Media/menu/esquerda.png"     	  descriptor="deBotaoEsquerdo"/>
@@ -196,6 +196,7 @@
         <media id="frameBlueBtn17" src="Media/quadros/azul/btn17.png"   descriptor="deFrameBlueBtn"/>
         <media id="frameBlueBtn18" src="Media/quadros/azul/btn18.png"   descriptor="deFrameBlueBtn"/>
         <media id="frameBlueBtn19" src="Media/quadros/azul/btn19.png"   descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn20" src="Media/quadros/azul/btn20.png"   descriptor="deFrameBlueBtn"/>
         <media id="frameBlueMenuAux1" src="Media/quadros/azul/01.png"   descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux2" src="Media/quadros/azul/02.png"   descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux3" src="Media/quadros/azul/03.png"   descriptor="deMenuAux"/>
@@ -215,6 +216,7 @@
         <media id="frameBlueMenuAux17" src="Media/quadros/azul/17.png"  descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux18" src="Media/quadros/azul/18.png"  descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux19" src="Media/quadros/azul/19.png"  descriptor="deMenuAux"/>
+        <media id="frameBlueMenuAux20" src="Media/quadros/azul/20.png"  descriptor="deMenuAux"/>
         <!--
         <media id="menuAuxNoticias"  type="application/x-ginga-NCLua" src="carrosel.lua" descriptor="deMenuAuxLua"/>
         -->
@@ -472,6 +474,7 @@
             <bind role="stop" component="frameBlueBtn17"/>
             <bind role="stop" component="frameBlueBtn18"/>
             <bind role="stop" component="frameBlueBtn19"/>
+            <bind role="stop" component="frameBlueBtn20"/>
         </link>
         <link id="link_onEndFrameBlue2" xconnector="conBase#onEndStop">
             <bind component="menuBlueOn" role="onEnd"/>
@@ -494,6 +497,7 @@
             <bind role="stop" component="frameBlueMenuAux17"/>
             <bind role="stop" component="frameBlueMenuAux18"/>
             <bind role="stop" component="frameBlueMenuAux19"/>
+            <bind role="stop" component="frameBlueMenuAux20"/>
             <bind role="stop" component="faixaAzul"/>
         </link>
         <!--END BLUE-->
@@ -917,8 +921,8 @@
 
             <bind role="stop"  component="frameBlueBtn1"/>
             <bind role="stop"  component="frameBlueMenuAux1"/>
-            <bind role="start" component="frameBlueMenuAux19"/>
-            <bind role="start" component="frameBlueBtn19"/>
+            <bind role="start" component="frameBlueMenuAux20"/>
+            <bind role="start" component="frameBlueBtn20"/>
         </link>
 
         <link id="link_frameBlueMenuUpBtn2" xconnector="conBase#onSelectionStartStop">
@@ -1310,6 +1314,28 @@
 
             <bind role="stop" component="frameBlueBtn19"/>
             <bind role="stop" component="frameBlueMenuAux19"/>
+            <bind role="start" component="frameBlueMenuAux20"/>
+            <bind role="start" component="frameBlueBtn20"/>
+        </link>
+        
+        <link id="link_frameBlueMenuUpBtn20" xconnector="conBase#onSelectionStartStop">
+            <bind role="onSelection" component="frameBlueBtn20">
+                <bindParam name="keyCode" value="CURSOR_UP"/>
+            </bind>
+
+            <bind role="stop" component="frameBlueBtn20"/>
+            <bind role="stop" component="frameBlueMenuAux20"/>
+            <bind role="start" component="frameBlueMenuAux19"/>
+            <bind role="start" component="frameBlueBtn19"/>
+        </link>
+
+        <link id="link_frameBlueMenuDownBtn20" xconnector="conBase#onSelectionStartStop">
+            <bind role="onSelection" component="frameBlueBtn20">
+                <bindParam name="keyCode" value="CURSOR_DOWN"/>
+            </bind>
+
+            <bind role="stop" component="frameBlueBtn20"/>
+            <bind role="stop" component="frameBlueMenuAux20"/>
             <bind role="start" component="frameBlueMenuAux1"/>
             <bind role="start" component="frameBlueBtn1"/>
         </link>
