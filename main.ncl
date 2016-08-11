@@ -95,7 +95,6 @@
         <media id="botaoEsquerdo"       src="Media/menu/esquerda.png"     	  descriptor="deBotaoEsquerdo"/>
         <media id="botaoCima"       	src="Media/menu/cima.png"     		  descriptor="deBotaoCima"/>
         <media id="botaoBaixo" 		    src="Media/menu/baixo.png"     	  descriptor="deBotaoBaixo"/>
-        
         <media id="iconInteract"        src="Media/extra/icon.png"         	  descriptor="deIconInteract"/>
         <media id="Exit"                src="Media/extra/sair.png"         	  descriptor="deBtnExit"/>
         <media id="faixaVermelha"       src="Media/menu/linhaVermelha.png" 	  descriptor="deFaixaBotoes"/>
@@ -197,6 +196,7 @@
         <media id="frameBlueBtn18" src="Media/quadros/azul/btn18.png"   descriptor="deFrameBlueBtn"/>
         <media id="frameBlueBtn19" src="Media/quadros/azul/btn19.png"   descriptor="deFrameBlueBtn"/>
         <media id="frameBlueBtn20" src="Media/quadros/azul/btn20.png"   descriptor="deFrameBlueBtn"/>
+        <media id="frameBlueBtn21" src="Media/quadros/azul/btn21.png"   descriptor="deFrameBlueBtn"/>
         <media id="frameBlueMenuAux1" src="Media/quadros/azul/01.png"   descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux2" src="Media/quadros/azul/02.png"   descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux3" src="Media/quadros/azul/03.png"   descriptor="deMenuAux"/>
@@ -217,6 +217,7 @@
         <media id="frameBlueMenuAux18" src="Media/quadros/azul/18.png"  descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux19" src="Media/quadros/azul/19.png"  descriptor="deMenuAux"/>
         <media id="frameBlueMenuAux20" src="Media/quadros/azul/20.png"  descriptor="deMenuAux"/>
+        <media id="frameBlueMenuAux21" src="Media/quadros/azul/21.png"  descriptor="deMenuAux"/>
         <!--
         <media id="menuAuxNoticias"  type="application/x-ginga-NCLua" src="carrosel.lua" descriptor="deMenuAuxLua"/>
         -->
@@ -475,6 +476,7 @@
             <bind role="stop" component="frameBlueBtn18"/>
             <bind role="stop" component="frameBlueBtn19"/>
             <bind role="stop" component="frameBlueBtn20"/>
+            <bind role="stop" component="frameBlueBtn21"/>
         </link>
         <link id="link_onEndFrameBlue2" xconnector="conBase#onEndStop">
             <bind component="menuBlueOn" role="onEnd"/>
@@ -498,6 +500,7 @@
             <bind role="stop" component="frameBlueMenuAux18"/>
             <bind role="stop" component="frameBlueMenuAux19"/>
             <bind role="stop" component="frameBlueMenuAux20"/>
+            <bind role="stop" component="frameBlueMenuAux21"/>
             <bind role="stop" component="faixaAzul"/>
         </link>
         <!--END BLUE-->
@@ -921,8 +924,8 @@
 
             <bind role="stop"  component="frameBlueBtn1"/>
             <bind role="stop"  component="frameBlueMenuAux1"/>
-            <bind role="start" component="frameBlueMenuAux20"/>
-            <bind role="start" component="frameBlueBtn20"/>
+            <bind role="start" component="frameBlueMenuAux21"/>
+            <bind role="start" component="frameBlueBtn21"/>
         </link>
 
         <link id="link_frameBlueMenuUpBtn2" xconnector="conBase#onSelectionStartStop">
@@ -1336,6 +1339,27 @@
 
             <bind role="stop" component="frameBlueBtn20"/>
             <bind role="stop" component="frameBlueMenuAux20"/>
+            <bind role="start" component="frameBlueMenuAux21"/>
+            <bind role="start" component="frameBlueBtn21"/>
+        </link>
+         <link id="link_frameBlueMenuUpBtn21" xconnector="conBase#onSelectionStartStop">
+            <bind role="onSelection" component="frameBlueBtn21">
+                <bindParam name="keyCode" value="CURSOR_UP"/>
+            </bind>
+
+            <bind role="stop" component="frameBlueBtn21"/>
+            <bind role="stop" component="frameBlueMenuAux21"/>
+            <bind role="start" component="frameBlueMenuAux20"/>
+            <bind role="start" component="frameBlueBtn20"/>
+        </link>
+
+        <link id="link_frameBlueMenuDownBtn21" xconnector="conBase#onSelectionStartStop">
+            <bind role="onSelection" component="frameBlueBtn21">
+                <bindParam name="keyCode" value="CURSOR_DOWN"/>
+            </bind>
+
+            <bind role="stop" component="frameBlueBtn21"/>
+            <bind role="stop" component="frameBlueMenuAux21"/>
             <bind role="start" component="frameBlueMenuAux1"/>
             <bind role="start" component="frameBlueBtn1"/>
         </link>
