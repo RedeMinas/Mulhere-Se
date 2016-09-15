@@ -1,0 +1,19 @@
+<media id="entrada" src="input.lua"  descriptor="dsInput"> 
+    <area id="selecao"/> 
+    <property name="texto"/> 
+</media>
+
+
+
+
+
+
+
+<link xconnector="onEndAttributionSet"> 
+    <bind role="onEndAttribution" component="entrada"     interface="texto"/> 
+    <bind role="set" component="saida1" interface="texto"> 
+        <bindParam name="var" value="$get"/> 
+    </bind> 
+    <bind role="get" component="entrada" interface=
+"texto"/> 
+</link> 
