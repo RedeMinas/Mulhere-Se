@@ -33,6 +33,16 @@
         </compoundAction>
       </causalConnector>
 
+       <causalConnector id="onBeginStopStartSet">
+            <connectorParam name="valueSet"/> 
+        <simpleCondition role="onBegin"/>
+        <compoundAction operator="seq">
+          <simpleAction role="start" max="unbounded" qualifier="seq"/>
+          <simpleAction role="stop" max="unbounded" qualifier="seq"/>
+         <simpleAction role="set" max="unbounded" qualifier="seq" value="$valueSet"/> 
+        </compoundAction>
+      </causalConnector>
+
       <causalConnector id="onSelectionStart">
         <connectorParam name="keyCode"/>
         <simpleCondition role="onSelection" key="$keyCode"/>
@@ -61,6 +71,18 @@
         </compoundAction>
       </causalConnector>
 
+
+      <causalConnector id="onSelectionStartStopSet">
+        <connectorParam name="keyCode"/>
+        <connectorParam name="valueSet"/>
+        <simpleCondition role="onSelection" key="$keyCode"/>
+        <compoundAction operator="seq">
+          <simpleAction role="start" max="unbounded" qualifier="seq"/>
+          <simpleAction role="stop" max="unbounded" qualifier="seq"/>
+        <simpleAction role="set" max="unbounded" qualifier="seq" value="$valueSet"/> 
+        </compoundAction>
+      </causalConnector>
+    
 
       <causalConnector id="onBeginSet">
         <connectorParam name="value"/>

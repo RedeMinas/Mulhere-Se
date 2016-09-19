@@ -1,5 +1,5 @@
 width, height = canvas:attrSize()   -- pega as dimensões da região
-img_size = 13
+img_size = 20
 
 canvas:attrColor ("yellow") -- trocar
 canvas:drawRect("fill",0,0,width, height)
@@ -7,7 +7,7 @@ canvas:flush()
 
 qrencode = dofile("qrencode.lua")
 local arg = "teste"
-local ok, tab_or_message = qrencode.qrcode("https://youtu.be/Q8sxnRWQ4t8")
+local ok, tab_or_message = qrencode.qrcode("https://goo.gl/c3ZF4R")
 if ok then
    for x in pairs(tab_or_message) do
       for y in pairs(tab_or_message[x]) do
