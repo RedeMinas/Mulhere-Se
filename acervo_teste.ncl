@@ -16,15 +16,6 @@
         <simpleCondition role="onBegin"/>
         <simpleAction role="start" max="unbounded"/>
       </causalConnector>
-      <causalConnector id="onBeginStop">
-        <simpleCondition role="onBegin"/>
-        <simpleAction role="stop" max="unbounded"/>
-      </causalConnector>
-      <causalConnector id="onBeginSet">
-        <connectorParam name="var"/>
-        <simpleCondition role="onBegin"/>
-        <simpleAction role="set" value="$var"/>
-      </causalConnector>
       <causalConnector id="onEndAttributionSet">
         <connectorParam name="var"/>
         <simpleCondition role="onEndAttribution"/>
@@ -37,10 +28,10 @@
     <port id="pLua" component="mAcervo" />
     
     <media id="mAcervo" src="acervo.lua" descriptor="descMenu">
-      <property name="propriedade"/>
+      <property name="propriedadea"/>
     </media>
     
-    <media id="mAcervoAux" src="exibidoraux.lua" descriptor="descAux" >
+    <media id="mAcervoAux" src="acervoaux.lua" descriptor="descAux" >
       <property name="propriedade"/>
     </media>
     
@@ -54,20 +45,13 @@
     </link>
     
     <link xconnector="onEndAttributionSet">
-      <bind role="onEndAttribution" component="input" interface="text"/>
+      <bind role="onEndAttribution" component="mAcervo" interface="propriedadea"/>
       <bind role="set" component="mAcervoAux" interface="propriedade">
         <bindParam name="var" value="$get"/>
       </bind>
-      <bind role="get" component="mAcervo" interface="propriedade"/>
+      <bind role="get" component="mAcervo" interface="propriedadea"/>
     </link>
     
-    <link xconnector="onBeginSet">
-      <bind role="onBegin" component="mAcervo" interface="select"/>
-      <bind role="set" component="mAcervoAux" interface="propriedade">
-        <bindParam name="var" value="2"/>
-      </bind>
-      <bind role="get" component="mAcervo" interface="propriedade"/>
-    </link>
     
   </body>
 </ncl>

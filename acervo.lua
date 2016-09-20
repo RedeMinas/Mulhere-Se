@@ -1,11 +1,10 @@
 local screen_width, screen_height = canvas:attrSize()
 local itens = 8
 
-local evt2 = {
-    class = 'ncl',
-    type  = 'attribution',
-    property = 'propriedade',
-    name  = 'text',
+local evento = {
+   class = 'ncl',
+   type  = 'attribution',
+   name  = 'propriedadea',
 }
 
 dofile("tbl_episodios.lua")
@@ -33,7 +32,7 @@ end
 
 function MenuAcervo:draw(t)
    --canvas:clear( )
-   local item_h = 30
+   -- escalonar
    --configura fonte 
    canvas:attrFont("vera", 40)
    --fundo preto
@@ -51,34 +50,47 @@ function MenuAcervo:draw(t)
 end
 
 function MenuAcervo:draw_item(t, slot, ativo)
-   local padding = 100
+   local padding = 80
+   local item_h = 136
+   local font_size = 25
    --canvas:clear( )
+   --
    if ativo then
-      canvas:attrColor('purple')
-
+      canvas:attrColor(242,241,241)
+      canvas:drawRect('fill', 2, padding*slot, screen_width, item_h )
+      canvas:attrFont("vera", font_size,"bold")
+      canvas:attrColor(40,18,67)
    else
-      canvas:attrColor("gray")
+      canvas:attrColor(153,132,186)
+      canvas:drawRect('fill', 2, padding*slot, screen_width-10, item_h )
+      canvas:attrColor(40,18,67)
+      canvas:drawRect('fill', screen_width-10, padding*slot, screen_width, item_h )
+      canvas:attrFont("vera", font_size,"bold")
+      canvas:attrColor(242,241,241)
    end
-   canvas:drawRect('fill', 2, padding*slot, screen_width-50, screen_height/8 )
-   canvas:attrColor("blue")
-   canvas:drawRect('fill', screen_width-50, padding*slot, screen_width, screen_height/8 )
-   canvas:attrFont("vera", 30)
-   canvas:attrColor('white')
-   canvas:drawText(0, padding*slot,  self:shift(t) ..  ": " .. self.list[self:shift(t)]["nome"]  )  canvas:flush()
+   canvas:drawText(0, padding*slot+10,  t ..  ": " .. self.list[t]["nome"]  )  canvas:flush()
 end
 
 function handler (evt)
    if (evt.class == 'key' and evt.type == 'press') then      
       if evt.key == "CURSOR_UP" then
 	 s.pos=s:shift(s.pos,-1)
-	       s:draw(itens)
+	 s:draw(itens)
+	 evento.value = s.pos
+	 evento.action = 'start'; event.post(evento)
+	 evento.action = 'stop';  event.post(evento)
+
       elseif evt.key == "CURSOR_DOWN" then
 	 s.pos=s:shift(s.pos,1)
-	       s:draw(itens)
+	 s:draw(itens)
+	 evento.value = s.pos
+	 evento.action = 'start'; event.post(evento)
+	 evento.action = 'stop';  event.post(evento)
+
       elseif evt.key == "ENTER" then
-	 evt2.value = s.pos
-	 evt2.action = 'start'; event.post(evt2)
-	 evt2.action = 'stop';  event.post(evt2)
+
+	 --local TEXT = ""
+	 --TEXT = tostring(s.pos)
       end
    end
 end

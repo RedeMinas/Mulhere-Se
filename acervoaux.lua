@@ -1,7 +1,10 @@
 width, height = canvas:attrSize()   -- pega as dimensões da região
 img_size = 6
+
+--posicionamento do qrcode no quadro
 offsetx = 680
 offsety = 254
+
 --habilitar para testes
 teste=true
 
@@ -12,11 +15,15 @@ qrencode = dofile("qrcode/qrencode.lua")
 
 function desenha() 
    local pos = tonumber(propriedade)
+   -- fix it:
+   --pos =1
+   print ("propriedade :" .. propriedade)
+   print ("pos : " .. pos)
    canvas:attrColor(242,241,241) 
    canvas:drawRect('fill', 0, 0, 856, 430)
    canvas:attrColor('maroon')
    canvas:attrFont("Comfortaa-Bold", 35)
-   --canvas:drawText(20, 0,  "Ep. " .. propriedade .. ": " .. menu[pos]["nome"] )
+   canvas:drawText(20, 0,  "Ep. " .. propriedade .. ": " .. menu[pos]["nome"] )
    canvas:attrFont("decker", 35)
    canvas:attrColor('black')
    --canvas:drawText(22, 2,  "Ep. " .. propriedade .. ": " .. menu[pos]["nome"] )
@@ -25,8 +32,11 @@ function desenha()
    canvas:drawText(0, 0, menu[pos]["descricao"])
    --print(canvas:measureText (menu[pos]["descricao"]))
    canvas:drawText(15, 400, "Exibição: " .. menu[pos]["exibicao"])
-   canvas:drawText(400, 400, "Reprise: " .. menu[pos]["reprise"])
+   if menu[pos]["reprise"] ~= "" then
+      canvas:drawText(400, 400, "Reprise: " .. menu[pos]["reprise"])
+   end
    canvas:flush()
+      
    -- qrcode
    if (menu[pos]["url"] ~= "") then
       local ok, tab_or_message = qrencode.qrcode(menu[pos]["url"])
@@ -49,12 +59,15 @@ end
 
 function handler(evt) 
    if evt.class == 'ncl' then 
-      if evt.type == 'attribution' then 
+      if evt.type == 'attribution' then
 	 if evt.name == 'propriedade' then 
 	    if evt.action == 'start' then 
-	       propriedade = evt.value
-	       print (propriedade)
 	       evt.action = 'stop' 
+	       propriedade = evt.value
+	       print("recebeu evt.value: " .. evt.value)
+	       for x,y in pairs(evt) do
+		  print(x,y)
+	       end
 	       event.post(evt) 
 	    end 
 	 end 
@@ -76,12 +89,10 @@ function handler(evt)
 	    propriedade=26
 	 end
       elseif evt.key == "ENTER" then
-	 for i=1,25 do
-	    propriedade=i
-	    event.timer(500, desenha)
+	 print ("propriedade: " ..propriedade)
 	 end
-      end
    end
-   desenha()
+desenha()
 end
+
 event.register(handler)
