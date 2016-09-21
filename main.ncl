@@ -70,7 +70,7 @@
 
         <port id="pInicia" component="mediaVideo"/>
         <!-- Extra -->
-        <media id="backGroundImage"     src="Media/menu/fundo.jpeg"        								    descriptor="deBackGroundImage"/>
+        <media id="backGroundImage"     src="Media/menu/fundo.jpg"        								    descriptor="deBackGroundImage"/>
         <media id="botaoDir"            src="Media/menu/direita.png"      	  							    descriptor="deBotaoDireito"/>
         <media id="botaoEsquerdo"       src="Media/menu/esquerda.png"     	  								descriptor="deBotaoEsquerdo"/>
         <media id="botaoCima"       	src="Media/menu/cima.png"     		  								descriptor="deBotaoCima"/>
