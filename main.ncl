@@ -138,7 +138,7 @@
         <media id="menuBlueOff"  src="Media/menu/azulDesligado.png"       descriptor="deMenuBlueOff"/>
         <media id="menuBlueOn"   src="Media/menu/azulLigado.png"          descriptor="deMenuBlue"/>
         <!-- EXIBIDOR (CARROSEL) -->
-        <media id="exibidor" src="exibidoraux.lua"  descriptor="deMenuAux"> 
+        <media id="exibidor" src="acervoaux.lua"  descriptor="deMenuAux"> 
    			<property name="propriedade"/> 
 		</media>
          

@@ -1,8 +1,10 @@
 width, height = canvas:attrSize()   -- pega as dimensões da região
+
+-- configura o pixel do qrcode
 img_size = 6
 
 --habilitar para testes
-teste=false
+teste=true
 
 dofile("tbl_episodios.lua")
 
@@ -22,11 +24,29 @@ function MenuAcervoAux:draw(t)
    canvas:drawRect('fill', 0, 0, 856, 430)
    canvas:attrColor('maroon')
    canvas:attrFont("Comfortaa-Bold", 35)
-   --   canvas:drawText(20, 0,  "Ep. " .. propriedade .. ": " .. self.list[self.pos]["nome"] )
+   --canvas:drawText(20, 0,  "Ep. " .. propriedade .. ": " .. self.list[self.pos]["nome"] )
    canvas:attrFont("decker", 35)
-   canvas:attrColor('black')
-   canvas:attrFont("Montserrat-Regular.otf", 20) 
-   canvas:drawText(0, 0, self.list[self.pos]["descricao"])
+   canvas:attrColor(1,1,1)
+   --canvas:attrFont("Montserrat-Regular.otf", 20)
+   canvas:attrFont("opens___.ttf", 20)
+   t = self.list[self.pos]["descricao"]
+   tamanho=45
+   --x,y= canvas:measureText(texto) 
+
+   for i=1,(string.len(t)/tamanho)+1 do
+      if i==1 then
+	 saida=string.sub(t,i,tamanho)
+	 canvas:drawText(10, 0, saida )
+      else
+	 saida=string.sub(t,((i-1)*tamanho)+1,(i*tamanho))
+	 if string.sub(saida,1,1) == " " then
+	    saida = string.sub(saida,2,tamanho)
+	 end
+	 canvas:drawText(10, (i-1)*35, saida)
+      end
+--      print(saida)
+   end
+
    canvas:drawText(15, 400, "Exibição: " .. self.list[self.pos]["exibicao"])
    if self.list[self.pos]["reprise"] ~= "" then
       canvas:drawText(400, 400, "Reprise: " .. self.list[self.pos]["reprise"])

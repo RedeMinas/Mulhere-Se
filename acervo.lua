@@ -1,5 +1,5 @@
 local screen_width, screen_height = canvas:attrSize()
-local itens = 8
+local itens = 10
 
 local evento = {
    class = 'ncl',
@@ -52,7 +52,7 @@ end
 function MenuAcervo:draw_item(t, slot, ativo)
    local padding = 80
    local item_h = 136
-   local font_size = 25
+   local font_size = 22
    --canvas:clear( )
    --
    if ativo then
@@ -68,7 +68,7 @@ function MenuAcervo:draw_item(t, slot, ativo)
       canvas:attrFont("vera", font_size,"bold")
       canvas:attrColor(242,241,241)
    end
-   canvas:drawText(0, padding*slot+10,  t ..  ": " .. self.list[t]["nome"]  )  canvas:flush()
+   canvas:drawText(0, padding*slot+24,  t ..  ": " .. self.list[t]["nome"]  )  canvas:flush()
 end
 
 function handler (evt)

@@ -51,7 +51,5 @@
       </bind>
       <bind role="get" component="mAcervo" interface="propriedadea"/>
     </link>
-    
-    
   </body>
 </ncl>
