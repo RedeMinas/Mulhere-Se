@@ -50,17 +50,17 @@ function MenuAcervo:draw_item(t, slot, ativo)
    --canvas:clear( )
    --
    if ativo then
-      canvas:attrColor(242,241,241)
+      canvas:attrColor(242,241,241,255)
       canvas:drawRect('fill', 2, padding*slot, screen_width, item_h )
       canvas:attrFont("vera", font_size,"bold")
-      canvas:attrColor(40,18,67)
+      canvas:attrColor(40,18,67,255)
    else
-      canvas:attrColor(153,132,186)
+      canvas:attrColor(153,132,186,255)
       canvas:drawRect('fill', 2, padding*slot, screen_width-10, item_h )
-      canvas:attrColor(40,18,67)
+      canvas:attrColor(40,18,67,255)
       canvas:drawRect('fill', screen_width-10, padding*slot, screen_width, item_h )
       canvas:attrFont("vera", font_size,"bold")
-      canvas:attrColor(242,241,241)
+      canvas:attrColor(242,241,241,255)
    end
    canvas:drawText(0, padding*slot+24,  t ..  ": " .. self.list[t]["nome"]  )  canvas:flush()
 end

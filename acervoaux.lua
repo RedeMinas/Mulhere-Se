@@ -4,9 +4,13 @@ width, height = canvas:attrSize()   -- pega as dimensões da região
 img_size = 6
 
 --habilitar para testes
-teste=true
-
+teste=false
+qrcode=false
 dofile("tbl_episodios.lua")
+
+if qrcode then
+   qrencode = dofile("qrcode/qrencode.lua")
+end
 
 MenuAcervoAux = {pos = 1, list=menu, offsetx=680, offsety=254, propriedade=1 }
 
@@ -17,16 +21,10 @@ function MenuAcervoAux:new (o)
    return o
 end
 
-qrencode = dofile("qrcode/qrencode.lua")
-
 function MenuAcervoAux:draw(t) 
-   canvas:attrColor(242,241,241) 
+   canvas:attrColor(242,241,241,255) 
    canvas:drawRect('fill', 0, 0, 856, 430)
-   canvas:attrColor('maroon')
-   canvas:attrFont("Comfortaa-Bold", 35)
-   --canvas:drawText(20, 0,  "Ep. " .. propriedade .. ": " .. self.list[self.pos]["nome"] )
-   canvas:attrColor(1,1,1)
-   --canvas:attrFont("Montserrat-Regular.otf", 20)
+   canvas:attrColor(1,1,1,255)
    canvas:attrFont("vera", 20)
    t = self.list[self.pos]["descricao"]
    tamanho=45
@@ -53,22 +51,24 @@ function MenuAcervoAux:draw(t)
    canvas:flush()
    
    -- qrcode
-   if (self.list[self.pos]["url"] ~= "") then
-      local ok, tab_or_message = qrencode.qrcode(self.list[self.pos]["url"])
-      if ok then
-	 for x in pairs(tab_or_message) do
-	    for y in pairs(tab_or_message[x]) do
-	       if (tab_or_message[x][y] == -2 or tab_or_message[x][y] == -1 ) then
-		  canvas:attrColor ("white")
-		  canvas:drawRect("fill",x*img_size+self.offsetx,y*img_size+self.offsety,img_size,img_size)
-	       else -- caso 2, -2
-		  canvas:attrColor (41,19,69) -- roxo escuro mulhere-se
-		  canvas:drawRect("fill",x*img_size+self.offsetx,y*img_size+self.offsety,img_size,img_size)
+   if qrcode then
+      if (self.list[self.pos]["url"] ~= "") then
+	 local ok, tab_or_message = qrencode.qrcode(self.list[self.pos]["url"])
+	 if ok then
+	    for x in pairs(tab_or_message) do
+	       for y in pairs(tab_or_message[x]) do
+		  if (tab_or_message[x][y] == -2 or tab_or_message[x][y] == -1 ) then
+		     canvas:attrColor ("white")
+		     canvas:drawRect("fill",x*img_size+self.offsetx,y*img_size+self.offsety,img_size,img_size)
+		  else -- caso 2, -2
+		     canvas:attrColor (41,19,69,255) -- roxo escuro mulhere-se
+		     canvas:drawRect("fill",x*img_size+self.offsetx,y*img_size+self.offsety,img_size,img_size)
+		  end
 	       end
 	    end
 	 end
+	 canvas:flush()
       end
-      canvas:flush()
    end
 end
 
