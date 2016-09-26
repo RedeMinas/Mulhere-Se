@@ -25,10 +25,9 @@ function MenuAcervoAux:draw(t)
    canvas:attrColor('maroon')
    canvas:attrFont("Comfortaa-Bold", 35)
    --canvas:drawText(20, 0,  "Ep. " .. propriedade .. ": " .. self.list[self.pos]["nome"] )
-   canvas:attrFont("decker", 35)
    canvas:attrColor(1,1,1)
    --canvas:attrFont("Montserrat-Regular.otf", 20)
-   canvas:attrFont("opens___.ttf", 20)
+   canvas:attrFont("vera", 20)
    t = self.list[self.pos]["descricao"]
    tamanho=45
    --x,y= canvas:measureText(texto) 

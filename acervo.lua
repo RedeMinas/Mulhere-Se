@@ -31,14 +31,8 @@ function MenuAcervo:shift(x,v)
 end
 
 function MenuAcervo:draw(t)
-   --canvas:clear( )
-   -- escalonar
-   --configura fonte 
-   canvas:attrFont("vera", 40)
-   --fundo preto
    canvas:attrColor('white')
    canvas:drawRect('fill', 0, 0, screen_width, screen_height )
-
    for i=1,t  do
       if i==1 then
 	 self:draw_item(self:shift(self.pos-1,i),i,true)
