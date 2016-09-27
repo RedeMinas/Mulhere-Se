@@ -4,7 +4,7 @@ local itens = 10
 local evento = {
    class = 'ncl',
    type  = 'attribution',
-   name  = 'propriedadea',
+   name  = 'propriedade',
 }
 
 dofile("tbl_episodios.lua")

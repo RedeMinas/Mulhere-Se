@@ -8,18 +8,20 @@
             <region id="rgFrameRed"             left="51.77%" top="5.56%"  width="10.73%"      height="4.63%"   zIndex="8"/>
             <region id="rgFrameGreen"           left="62.5%"  top="5.56%"  width="10.73%"      height="4.63%"   zIndex="8"/>
             <region id="rgFrameYellow"          left="73.22%" top="5.56%"  width="10.73%"      height="4.63%"   zIndex="8"/>
-            <region id="rgFrameBlue"            left="83.96%" top="5.56%"  width="10.73%"      height="4.63%"   zIndex="8"/>
+            <region id="rgFrameBlue"            left="83.94%" top="5.56%"  width="10.73%"      height="4.63%"   zIndex="8"/>
+           
             <region id="rgFrameRedOff"          left="51.77%" top="5.56%"  width="10.73%"      height="4.63%"   zIndex="7"/>
             <region id="rgFrameGreenOff"        left="62.5%"  top="5.56%"  width="10.73%"      height="4.63%"   zIndex="7"/>
-            <region id="rgFrameYellowOff"       left="73.22%" top="5.56%"  width="10.73%"      height="4.63%"   zIndex="7"/>
-            <region id="rgFrameBlueOff"         left="83.96%" top="5.56%"  width="10.73%"      height="4.63%"   zIndex="7"/>
+            <region id="rgFrameYellowOff"       left="73.20%" top="5.56%"  width="10.73%"      height="4.63%"   zIndex="7"/>
+            <region id="rgFrameBlueOff"         left="83.94%" top="5.56%"  width="10.73%"      height="4.63%"   zIndex="7"/>
+           
+            <region id="rgFrameTelaInicial"     left="51.77%" top="10.56%" width="42.92%"      height="75.56%"  zIndex="5"/>
             <region id="rgFrameBlueBtn"         left="51.77%" top="10.55%" width="42.91%" 	   height="80%"     zIndex="4"/>
-            <region id="rgFrameGreenBtn"        left="51.77%" top="10.55%" width="42.91%" 	   height="50.37%"  zIndex="4"/>
+            <region id="rgFrameGreenBtn"        left="51.77%" top="10.55%" width="42.92%" 	   height="50.37%"  zIndex="4"/>
 	        <region id="rgFrameYellowBtn"       left="51.77%" top="10.55%" width="42.91%"	   height="39.629%" zIndex="4"/>
             <region id="rgFrameRedTelaInicial"  left="51.77%" top="10.55%" width="42.91%"      height="38.61%"  zIndex="4"/>
-            <region id="rgMenuAux"              left="4.69%"  top="54.63%" width="42.92%"      height="39.815%" zIndex="3"/>
+            <region id="rgMenuAux"              left="4.69%"  top="54.63%" width="44.58%"      height="39.815%" zIndex="3"/>
             <region id="rgFaixaBotoes"    		left="51.77%" top="10.19%" width="42.92%"      height="0.39%"   zIndex="6"/>
-            <region id="rgFrameTelaInicial"     left="51.77%" top="10.56%" width="42.92%"      height="75.56%"  zIndex="5"/>
             <region id="rgMenuAuxLua"           left="4.7%"   top="52%"    width="45.4%"       height="40%"     zIndex="4"/>
             <region id="rgBotaoEsc"             left="65.78%" top="90.28%" width="2.14%"       height="3.8%"    zIndex="8"/>
             <region id="rgBotaoDir"             left="68.96%" top="90.28%" width="2.14%"       height="3.8%"    zIndex="8"/>
@@ -74,7 +76,7 @@
         <media id="botaoEsquerdo"       src="Media/menu/esquerda.png"     	  								descriptor="deBotaoEsquerdo"/>
         <media id="botaoCima"       	src="Media/menu/cima.png"     		  								descriptor="deBotaoCima"/>
         <media id="botaoBaixo" 		    src="Media/menu/baixo.png"     	 				 					descriptor="deBotaoBaixo"/>
-        <media id="Exit"                src="Media/extra/sair.png"         	  								descriptor="deBtnExit"/>
+        <media id="Exit"                src="Media/menu/sair.png"         	  								descriptor="deBtnExit"/>
         <media id="faixaVermelha"       src="Media/menu/linhaVermelha.png" 	  								descriptor="deFaixaBotoes"/>
         <media id="faixaVerde"          src="Media/menu/linhaVerde.png"    	  								descriptor="deFaixaBotoes"/>
         <media id="faixaAmarela"        src="Media/menu/linhaAmarela.png"  	  								descriptor="deFaixaBotoes"/>
@@ -625,8 +627,8 @@
             </bind>
             <bind role="stop"  component="yellowBtn13"/>
             <bind role="stop"  component="yellowAux13"/>
-            <bind role="start" component="yellowBtn14"/>
-            <bind role="start" component="yellowAux14"/>
+            <bind role="start" component="yellowBtn12"/>
+            <bind role="start" component="yellowAux12"/>
         </link>
         <link id="yellowDownBtn14" xconnector="conBase#onSelectionStartStop">
             <bind role="onSelection" component="yellowBtn14">
@@ -751,8 +753,8 @@
             </bind>
             <bind role="stop"  component="yellowBtn20"/>
             <bind role="stop"  component="yellowAux20"/>
-            <bind role="start" component="yellowBtn21"/>
-            <bind role="start" component="yellowAux21"/>
+            <bind role="start" component="yellowBtn19"/>
+            <bind role="start" component="yellowAux19"/>
         </link>
         <link id="yellowDownBtn21" xconnector="conBase#onSelectionStartStop">
             <bind role="onSelection" component="yellowBtn21">
@@ -769,8 +771,8 @@
             </bind>
             <bind role="stop"  component="yellowBtn21"/>
             <bind role="stop"  component="yellowAux21"/>
-            <bind role="start" component="yellowBtn22"/>
-            <bind role="start" component="yellowAux22"/>
+            <bind role="start" component="yellowBtn20"/>
+            <bind role="start" component="yellowAux20"/>
         </link>
         <link id="yellowDownBtn22" xconnector="conBase#onSelectionStartStop">
             <bind role="onSelection" component="yellowBtn22">
@@ -945,6 +947,30 @@
             <bind role="onEnd" component="menuBlueOn"/>
             <bind role="stop"  component="QRcodeAzul"/>
             <bind role="stop"  component="faixaAzul"/>
+        </link>
+        
+        <link id="SAIR" xconnector="conBase#onSelectionStartStopSet">
+        	<bind role="onSelection" component="Exit">
+	        	<bindParam name="keyCode" value="EXIT"/>
+	        </bind>
+	        <bind role="stop"  component="menuRedOff"/>
+	        <bind role="stop"  component="menuRedOn"/>
+	        <bind role="stop"  component="menuGreenOff"/>
+	        <bind role="stop"  component="menuGreenOn"/>
+	        <bind role="stop"  component="menuYellowOff"/>
+	        <bind role="stop"  component="menuYellowOn"/>
+	        <bind role="stop"  component="menuBlueOff"/>
+	        <bind role="stop"  component="menuBlueOn"/>
+	        <bind role="stop"  component="backGroundImage"/>
+	        <bind role="stop"  component="Exit"/>
+	        <bind role="stop"  component="botaoDir"/>
+	        <bind role="stop"  component="botaoEsquerdo"/>
+	        <bind role="stop"  component="botaoCima"/>
+	        <bind role="stop"  component="botaoBaixo"/>
+	        <bind role="start" component="iconInteract"/> 
+	        <bind role="set" component="mediaVideo" interface="bounds">
+	        	<bindParam name="valueSet" value="0%,0%,100%,100%" />
+	        </bind>
         </link>
         
         
