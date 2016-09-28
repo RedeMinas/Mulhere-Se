@@ -5,14 +5,12 @@ img_size = 6
 
 --habilitar para testes
 teste=false
-qrcode=false
-dofile("tbl_episodios.lua")
+qrcode=true
 
-if qrcode then
-   qrencode = dofile("qrcode/qrencode.lua")
-end
+dofile("acervo_lib.lua")
+local tab = tabelaMulherese(leiaTabela("tbl_episodios.txt"))
 
-MenuAcervoAux = {pos = 1, list=menu, offsetx=680, offsety=254, propriedade=1 }
+MenuAcervoAux = {pos = 1, list=tab, offsetx=680, offsety=254, propriedade=1 }
 
 function MenuAcervoAux:new (o)
    o = o or {}
@@ -26,7 +24,7 @@ function MenuAcervoAux:draw(t)
    canvas:drawRect('fill', 0, 0, 856, 430)
    canvas:attrColor(1,1,1,255)
    canvas:attrFont("vera", 20)
-   t = self.list[self.pos]["descricao"]
+   t = self.list[self.pos]["desc2"]
    tamanho=45
    --x,y= canvas:measureText(texto) 
 
@@ -44,16 +42,17 @@ function MenuAcervoAux:draw(t)
 --      print(saida)
    end
 
-   canvas:drawText(15, 400, "Exibição: " .. self.list[self.pos]["exibicao"])
-   if self.list[self.pos]["reprise"] ~= "" then
-      canvas:drawText(400, 400, "Reprise: " .. self.list[self.pos]["reprise"])
+   canvas:drawText(15, 400, "Exibição: " .. self.list[self.pos]["exib"])
+   if self.list[self.pos]["rep"] ~= "" then
+      canvas:drawText(400, 400, "Reprise: " .. self.list[self.pos]["rep"])
    end
    canvas:flush()
    
    -- qrcode
    if qrcode then
-      if (self.list[self.pos]["url"] ~= "") then
-	 local ok, tab_or_message = qrencode.qrcode(self.list[self.pos]["url"])
+      qrencode = dofile("qrcode/qrencode.lua")
+      if (self.list[self.pos]["url2"] ~= "") then
+	 local ok, tab_or_message = qrencode.qrcode(self.list[self.pos]["url2"])
 	 if ok then
 	    for x in pairs(tab_or_message) do
 	       for y in pairs(tab_or_message[x]) do

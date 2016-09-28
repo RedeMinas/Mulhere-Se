@@ -7,9 +7,11 @@ local evento = {
    name  = 'propriedadea',
 }
 
-dofile("tbl_episodios.lua")
+dofile("acervo_lib.lua")
 
-MenuAcervo = {pos = 1, limit=26, pad=30, list=menu }
+local tab = tabelaMulherese(leiaTabela("tbl_episodios.txt"))
+
+MenuAcervo = {pos = 1, limit=26, pad=30, list=tab }
 
 function MenuAcervo:new (o)
    o = o or {}
@@ -62,7 +64,7 @@ function MenuAcervo:draw_item(t, slot, ativo)
       canvas:attrFont("vera", font_size,"bold")
       canvas:attrColor(242,241,241,255)
    end
-   canvas:drawText(0, padding*slot+24,  t ..  ": " .. self.list[t]["nome"]  )  canvas:flush()
+   canvas:drawText(8, padding*slot+24,  t ..  " - " .. self.list[t]["nome"]  )  canvas:flush()
 end
 
 function handler (evt)
@@ -80,11 +82,6 @@ function handler (evt)
 	 evento.value = s.pos
 	 evento.action = 'start'; event.post(evento)
 	 evento.action = 'stop';  event.post(evento)
-
-      elseif evt.key == "ENTER" then
-
-	 --local TEXT = ""
-	 --TEXT = tostring(s.pos)
       end
    end
 end
