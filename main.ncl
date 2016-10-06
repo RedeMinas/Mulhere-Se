@@ -71,7 +71,7 @@
 
         <port id="pInicia" component="mediaVideo"/>
         <!-- Extra -->
-        <media id="backGroundImage"     src="Media/menu/fundo.jpg"        								    descriptor="deBackGroundImage"/>
+        <media id="backGroundImage"     src="Media/menu/fundo.png"        								    descriptor="deBackGroundImage"/>
         <media id="botaoDir"            src="Media/menu/direita.png"      	  							    descriptor="deBotaoDireito"/>
         <media id="botaoEsquerdo"       src="Media/menu/esquerda.png"     	  								descriptor="deBotaoEsquerdo"/>
         <media id="botaoCima"       	src="Media/menu/cima.png"     		  								descriptor="deBotaoCima"/>
@@ -109,7 +109,7 @@
         <media id="greenAux2" src="Media/quadros/02 - verdeQuadros/02.png"    descriptor="deMenuAux"/>
         <media id="greenAux3" src="Media/quadros/02 - verdeQuadros/03.png"    descriptor="deMenuAux"/>
         <media id="greenAux4" src="Media/quadros/02 - verdeQuadros/04.png"    descriptor="deMenuAux"/>
-        	
+
         <!-- Frame Yellow -->
         <media id="menuYellowOff"       src="Media/menu/amareloDesligado.png"  			 descriptor="deMenuYellowOff"/>
         <media id="menuYellowOn"        src="Media/menu/amareloLigado.png"     			 descriptor="deMenuYellow"/>
