@@ -4,7 +4,7 @@ local itens = 10
 local evento = {
    class = 'ncl',
    type  = 'attribution',
-   name  = 'propriedade',
+   name  = 'propriedadea',
 }
 
 dofile("acervo_lib.lua")

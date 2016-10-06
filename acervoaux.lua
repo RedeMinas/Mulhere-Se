@@ -44,7 +44,7 @@ function MenuAcervoAux:draw(t)
 
    canvas:drawText(15, 400, "Exibição: " .. self.list[self.pos]["exib"])
    if self.list[self.pos]["rep"] ~= "" then
-      canvas:drawText(400, 400, "Reprise: " .. self.list[self.pos]["rep"])
+--      canvas:drawText(400, 400, "Reprise: " .. self.list[self.pos]["rep"])
    end
    canvas:flush()
    
